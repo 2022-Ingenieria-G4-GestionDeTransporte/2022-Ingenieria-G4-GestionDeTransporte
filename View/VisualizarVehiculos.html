@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html xml:th="http://thymeleaf.org">
+<head>
+    <title>Vehiculos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" th:src="@{/js/funciones.js}"></script>
+</head>
+<body>
+    <div id="fondo">
+        <h1>Lista de Vehiculos</h1>
+        <br>
+        <form th:action="@{/filtroBusqueda}" method="post">
+        <input type="submit" value="<"><input type="search" name="tipo" required placeholder="Buscar">
+        </form>
+        </br>
+        <table class="separado" border="1px">
+            <tr>
+                <th>Matricula</th>
+                <th>Tipo</th>
+                <th>Modelo</th>
+                <th>Estado</th>
+            </tr>
+            <tr th:each="temp:${lista}">
+                <td th:text="${temp.matricula}"></td>
+                <td th:text="${temp.tipo}"></td>
+                <td th:text="${temp.modelo}"></td>
+                <td th:text="${temp.estado}"></td>
+                <td><button th:onclick="javascript:modificar('[[${temp.matricula}]]')" class="btnModificar"></button></td>
+                <td><button th:onclick="javascript:eliminar('[[${temp.matricula}]]')" class="btnEliminar"></button></td>
+
+            </tr>
+        </table>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+        </br>
+        <form action="/registrarVehiculo">
+            <input type="submit" value="Registrar Vehiculo!" />
+            <div id="contenedor"></div>
+        </form>
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+    </div>
+</body>
+</html>
