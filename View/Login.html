@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xml:th="http://thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body class="bodylogin">
+
+    <Center>
+        <h1 class="rojo"> Gestion de Transporte</h1>
+        <div id="login-form-wrap">
+            <form th:action="@{/validar}" method="post" id="login-form">
+
+                <p>
+                    <label>User</label><br>
+                    <input type="text" class="cedula" name="cedula" placeholder="Ingrese cedula" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                    <label>Password</label><br>
+                    <input type="password" class="password" name="password" placeholder="Ingrese contraseña" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                    <input type="submit" class="login" value="Sign In">
+                </p>
+                <a href="https://www.nodefinido.com">Forgot Password?</a>.
+            </form>
+        </div>
+        <br><br>
+        <form action="/registro">
+            <input type="submit" value="Registrarse" />
+            <div id="contenedor"></div>
+        </form>
+    </Center>
+    <br><br>
+
+
+</body>
+</html>
