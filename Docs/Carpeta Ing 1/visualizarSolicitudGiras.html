@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html  xmlns:th="http://www.thymeleaf.org ">
+    <head>
+        <title>Modulo Director</title>
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" type ="text/css" th:href="@{/css/style.css}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body >
+
+
+
+        <h1>Ingresar Profesores!</h1>        
+        <a th:href="@{../director/insertar/profesor}" class="linkPrincipal">Insertar Profesor...</a>
+
+
+        <h1>Lista de Profesores</h1>
+
+        <form th:action="@{/director/filtrarprofe}" method="post">
+
+
+            <input type="hidden" th:value="${nombreFiltro}" name="nombreFiltro" readonly=""/>  
+            <input type="text" value="" placeholder="Nombre a filtrar..." name="nombreFiltro" required=""/> 
+            <input type="submit" value="Filtrar"/>
+
+
+
+        </form>
+
+
+
+
+
+
+        <table border="2">
+
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Password</th>
+                <th colspan="2">Acciones</th>
+
+            </tr>
+
+
+            <tr th:each="temp:${listProfe}">
+                <td th:text="${temp.cedula}"></td>
+                <td th:text="${temp.nombre}"></td>
+                <td th:text="${temp.apellidos}"></td> 
+                <td th:text="${temp.password}"></td>
+                <td><a th:href="@{/director/profesor/edicion/{idProfesor}(idProfesor = ${temp.idProfesor})}"><input class="idModifi" type="image" src="/css/editar.png"/></a></td>
+                <td><a th:href="@{/director/eliminar/{idProfesor}(idProfesor=${temp.idProfesor})}"><input class="idElimi" type="image" src="/css/eliminar.png"/></a></td>               
+            </tr>
+        </table>    
+
+        <form th:action="@{/director/vistaprofesor}" >
+            <input type="submit" value="Ver Todos"/>
+        </form>
+
+
+        <a th:href="@{../director/inicio}" class="linkPrincipal">[Volver]</a>
+
+
+
+
+
+    </body>
+</html>
+
