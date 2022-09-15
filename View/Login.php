@@ -11,7 +11,6 @@ error_reporting(0);
     include '../business/LoginBusiness.php';
     ?>
 </head>
-
 <body class="bodylogin">  
 
     <Center>
