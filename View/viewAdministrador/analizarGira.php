@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html xml:th="http://thymeleaf.org">
-    <head>
-        <title>Analizar Gira</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id = "fondo">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizar Gira</title>
+</head>
+
+<body>
+    <Center>
+        <div id="fondo">
             <h1>Espacio exclusivo para Uso Administrativo</h1>
             <h2>Aprobar o denegar gira</h2>
             <br>
@@ -22,9 +25,11 @@
             <textarea id="motivo" name="motivo" rows="4" cols="50">
             </textarea>
 
-            <input type="submit" value="Regresar"/>
+            <input type="submit" value="Regresar" />
             </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
         </div>
-    </body>
+    </Center>
+</body>
+
 </html>

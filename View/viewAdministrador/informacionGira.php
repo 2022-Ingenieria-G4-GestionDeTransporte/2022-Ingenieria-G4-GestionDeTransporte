@@ -1,11 +1,13 @@
-<html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Informacion de Giras</title>
-        <meta charset="UTF-8">        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="div1"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="div1"> 
         <form th:action="" th:object="" method="post">
 
             <h1>Informacion de Giras</h1>
@@ -40,32 +42,33 @@
             <label><input type="checkbox" id="cbox1" value="first_checkbox">Sí</label><br>
             <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">No</label>
 
-            <input type="submit" value="Modificar"/>
-            <input type="submit" value="Ver más datos de gira"/>
-            <input type="submit" value="Guardar y salir"/>
+            
         </form>
         </div>
-        
+        <Center>
         <div>
-            <h1>Informacion de participantes de gira</h1>
-            <br>
+            <h2>Informacion de participantes de gira</h2>
             <table class = "separado">
                 <tr>
-                    <th>cedula</th>
+                    <th>Cédula</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>Carrera</th>
                     <th>Institución</th>
                 </tr>
-                <tr th:each="">
-                    <td th:text=""></td>
-                    <td th:text=""></td>
-                    <td th:text=""></td>
-                    <td th:text=""></td>
-                    <td th:text=""></td>
+                <tr>
+                    <td>702880773</td>
+                    <td>Kendall</td>
+                    <td>Ortega</td>
+                    <td>Ingeniería en Sistemas</td>
+                    <td>Universidad Nacional</td>
                 </tr>
             </table>
         </div>
-        
-    </body>
+        </Center>
+        <input type="button" value="Modificar"/>
+        <a href="./destinoInformacionGira.php">Ver más datos de gira</a>
+            <input type="submit" value="Guardar y salir"/>
+
+</body>
 </html>

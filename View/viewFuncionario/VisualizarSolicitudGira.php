@@ -46,7 +46,7 @@ error_reporting(0);
                 <th></th>
             </tr>
             <?php
-            $GirasBusiness = new GirasBusiness();
+            $GirasBusiness;
             $allGiras = $GirasBusiness->getGiras();
             foreach ($allGiras as $current) {
                 echo '<td><input type="text" name="gira_destino" id="gira_destino" value="' . $current->getGiraDestino() . '"/></td>';

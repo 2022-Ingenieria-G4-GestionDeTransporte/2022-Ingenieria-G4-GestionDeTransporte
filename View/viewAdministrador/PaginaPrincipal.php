@@ -37,7 +37,7 @@ error_reporting(0);
 
         <table>
             <?php
-            $GirasBusiness = new GirasBusiness();
+            $GirasBusiness;
             $allGiras = $GirasBusiness->getAllGiras();
             foreach ($allGiras as $current) {
                 echo '<tr>';
