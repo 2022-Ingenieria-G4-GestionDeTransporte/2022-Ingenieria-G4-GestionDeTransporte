@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 
 <html xml:th="http://thymeleaf.org">
@@ -46,3 +47,4 @@
     </div>
 </body>
 </html>
+?>
