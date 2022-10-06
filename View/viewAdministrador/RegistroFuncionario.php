@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+
+<?php
+<!DOCTYPE html>
 <html xml:th="http://thymeleaf.org">
 <head>
     <title>Registro de Funcionarios!</title>
@@ -26,3 +28,4 @@
     </div>
 </body>
 </html>
+<?
