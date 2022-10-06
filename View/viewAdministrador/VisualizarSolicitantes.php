@@ -100,7 +100,7 @@ error_reporting(0);
             <a href="#">&raquo;</a>
         </div>
         </br>
-        <form method="post" enctype="multipart/form-data" action="../View/RegistrarFuncionario.php">
+        <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/RegistroSolicitante.php">
                 <tr>
                 <?php
                    echo '<td><input type="submit" value="Registrar Funcionario" name="registro" id="registro"/></td></tr></br>';
@@ -108,7 +108,7 @@ error_reporting(0);
                  </br>
         </form>
         </br>
-    <form action="/paginaPrincipal">
+    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form> 

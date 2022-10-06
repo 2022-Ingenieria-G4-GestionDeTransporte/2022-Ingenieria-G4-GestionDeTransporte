@@ -1,5 +1,3 @@
-
-<?php
 <!DOCTYPE html>
 <html xml:th="http://thymeleaf.org">
 <head>
@@ -26,6 +24,10 @@
             <div id="contenedor"></div>
         </form>
     </div>
+    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
+        <input type="submit" value="Pagina Principal" />
+        <div id="contenedor"></div>
+    </form>
 </body>
 </html>
 <?

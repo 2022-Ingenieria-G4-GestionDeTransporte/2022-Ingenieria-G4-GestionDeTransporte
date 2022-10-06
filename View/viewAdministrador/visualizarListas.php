@@ -36,7 +36,7 @@ You are at JavaTpoint Site.....
         <div id="contenedor"></div>
     </form> 
 </br>
-    <form action="/paginaPrincipal">
+    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form> 

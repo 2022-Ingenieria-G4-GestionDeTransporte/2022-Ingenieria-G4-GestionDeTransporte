@@ -109,7 +109,7 @@ error_reporting(0);
         </form>
                 </br>
     </div>
-    <form action="/paginaPrincipal">
+    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>
