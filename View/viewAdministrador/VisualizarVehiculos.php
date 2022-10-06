@@ -8,21 +8,43 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include '../business/VehiculoBusiness.php';
+    //include '../business/VehiculoBusiness.php';
     ?>
+    <link rel = "stylesheet" href="css/style.css" type = "text/css"></link>
 </head>
 <body>
+<header>
+<h1>Listas</h1>      
+<nav>  
+<ul>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
+</li>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarSolicitantes.php"> Solicitantes </a>  
+</li>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarChoferes.php"> Choferes </a>  
+</li>  
+<li> 
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarVehiculos.php"> Vehiculos </a>  
+</li>    
+</ul>  
+</nav>  
+</header>
     <div id="fondo">
         <h1>Lista de Vehiculos</h1>
         <br>
-        <form method="post" enctype="multipart/form-data" action="../business/FuncionarioAction.php">
+        <form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">
                 <?php
-                   echo '<td><input type="search" value="" name="buscar" id="buscar" paceholder = "Buscar"/></td></tr></br>';
+                   echo '<td><input type="submit" value="<">';
+                   echo '<td><input type="search" value="" name="buscar" id="buscar" placeholder = "Buscar"/></td></tr></br>';
                  ?>
+                 </br>
         </form>
         </br>
 
-        <table>
+        <table border="1px">
             <tr>
                 <th>Matricula</th>
                 <th>Tipo</th>
@@ -31,8 +53,8 @@ error_reporting(0);
                 <th></th>
             </tr>
             <?php
-            $vehiculoBusiness = new VehiculoBusiness();
-            $allVehiculos = $VehiculoBusiness->getAllVehiculos();
+            //$vehiculoBusiness = new VehiculoBusiness();
+            $allVehiculos = NULL; //$VehiculoBusiness->getAllVehiculos();
             foreach ($allvehiculos as $current) {
                 echo '<form method="post" enctype="multipart/form-data" action="../business/VehiculoAction.php">';
                 echo '<input type="hidden" name="vehiculo_id" value="' . $current->getVehiculoId() . '">';
@@ -85,8 +107,11 @@ error_reporting(0);
                  ?>
                  </br>
         </form>
-        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
+                </br>
     </div>
+    <form action="/paginaPrincipal">
+        <input type="submit" value="Pagina Principal" />
+        <div id="contenedor"></div>
+    </form>
 </body>
 </html>

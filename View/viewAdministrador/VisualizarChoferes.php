@@ -8,22 +8,43 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include '../business/ChoferBusiness.php';
+    //include '../business/ChoferBusiness.php';
     ?>
+    <link rel = "stylesheet" href="css/style.css" type = "text/css"></link>
 </head>
 <body>
+<header>
+<h1>Listas</h1>      
+<nav>  
+<ul>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
+</li>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarSolicitantes.php"> Solicitantes </a>  
+</li>  
+<li>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarChoferes.php"> Choferes </a>  
+</li>  
+<li> 
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarVehiculos.php"> Vehiculos </a>  
+</li>    
+</ul>  
+</nav>  
+</header>
     <div id="fondo">
         <h1>Lista de Choferes</h1>
         <br>
         <form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">
                 <?php
-                   echo '<td><input type="search" value="" name="buscar" id="buscar" paceholder = "Buscar"/></td></tr></br>';
+                   echo '<td><input type="submit" value="<">';
+                   echo '<td><input type="search" value="" name="buscar" id="buscar" placeholder = "Buscar"/></td></tr></br>';
                  ?>
                  </br>
         </form>
         </br>
 
-        <table>
+        <table border="1px">
             <tr>
                 <th>Nombre Completo</th>
                 <th>Cedula</th>
@@ -31,8 +52,8 @@ error_reporting(0);
                 <th></th>
             </tr>
             <?php
-            $ChoferBusiness = new ChoferBusiness();
-            $allChoferes = $ChoferBusiness->getAllChoferes();
+            //$ChoferBusiness = new ChoferBusiness();
+            $allChoferes = NULL;//$ChoferBusiness->getAllChoferes();
             foreach ($allChoferes as $current) {
                 echo '<form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">';
                 echo '<input type="hidden" name="chofer_id" value="' . $current->getChoferId() . '">';
@@ -86,5 +107,14 @@ error_reporting(0);
         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
     </div>
+    <form action="/paginaPrincipal">
+        <input type="submit" value="Pagina Principal" />
+        <div id="contenedor"></div>
+    </form>
+    </br>
+    <form action="/paginaPrincipal">
+        <input type="submit" value="Pagina Principal" />
+        <div id="contenedor"></div>
+    </form> 
 </body>
 </html>
