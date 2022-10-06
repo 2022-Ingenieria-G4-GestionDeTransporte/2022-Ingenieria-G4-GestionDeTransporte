@@ -4,9 +4,8 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html xmlns:th="http://www.thymeleaf.org ">
     <head>
-        <title>Modificar estudiante</title>
+        <title>Modificar administrador</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" type ="text/css" th:href="@{/css/style.css}"/>
@@ -14,7 +13,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body >
         <div class="modificar">
             <h1>Modificar datos de estudiante</h1>
-            <form th:action="@{/profesor/estudiantes/editar}" method="post">
+            <form th:action="@{/adminitrador/administrador/editar}" method="post">
                 <input type="hidden" th:value="${idAlumno}" name="idAlumno" readonly=" "/><br/>
                 <label>Cedula:</label> <input type="text" name="cedula" required/> <br/>
                 <label>Nombre:</label> <input type="text" name="nombre"/> <br/>
@@ -27,5 +26,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
         
     </body>
-</html>
+
 <?
