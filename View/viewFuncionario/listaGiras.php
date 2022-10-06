@@ -1,7 +1,6 @@
 <?php
 <!DOCTYPE html>
 
-<html xml:th="http://thymeleaf.org">
 <head>
     <title>Giras</title>
     <meta charset="UTF-8">
@@ -46,5 +45,5 @@
 
     </div>
 </body>
-</html>
+
 ?>
