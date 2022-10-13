@@ -108,7 +108,11 @@ error_reporting(0);
                  </br>
         </form>
         </br>
+<<<<<<< HEAD
     <form action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/PaginaPrincipal.php">
+=======
+    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
+>>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form> 
