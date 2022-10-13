@@ -67,7 +67,7 @@
         </div>
         </Center>
         <input type="button" value="Modificar"/>
-        <a href="./destinoInformacionGira.php">Ver más datos de gira</a>
+        <a href="./DestinoInformacionGira.php">Ver más datos de gira</a>
             <input type="submit" value="Guardar y salir"/>
 
 </body>

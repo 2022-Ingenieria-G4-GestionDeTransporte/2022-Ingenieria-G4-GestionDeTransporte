@@ -24,6 +24,10 @@
             <div id="contenedor"></div>
         </form>
     </div>
+    <form action="/Proyecto-Ingenieria-UNA/View/Index.php">
+        <input type="submit" value="Pagina Principal" />
+        <div id="contenedor"></div>
+    </form>
 </body>
 </html>
 <?

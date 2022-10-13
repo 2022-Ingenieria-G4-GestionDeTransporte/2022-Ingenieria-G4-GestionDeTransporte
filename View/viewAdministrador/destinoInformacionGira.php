@@ -31,7 +31,7 @@
                 </tr>
             </table>
             <input type="submit" value="Regresar"/>
-            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            </br>
 
         </div>
 </body>

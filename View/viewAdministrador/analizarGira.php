@@ -26,7 +26,7 @@
             </textarea>
 
             <input type="submit" value="Regresar" />
-            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            </br>
 
         </div>
     </Center>

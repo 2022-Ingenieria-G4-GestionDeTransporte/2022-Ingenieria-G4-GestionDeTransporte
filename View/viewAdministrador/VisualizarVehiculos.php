@@ -18,16 +18,16 @@ error_reporting(0);
 <nav>  
 <ul>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarChoferes.php"> Choferes </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarVehiculos.php"> Vehiculos </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
@@ -109,7 +109,7 @@ error_reporting(0);
         </form>
                 </br>
     </div>
-    <form action="/paginaPrincipal">
+    <form action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/PaginaPrincipal.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>

@@ -7,10 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Gestión de Transportes</h1>
-    <a href="./viewAdministrador/Login.php">Inicio de sesion</a><br>
-    <a href="./viewAdministrador/index.php">Administrador</a><br>
-    <a href="./viewFuncionario/paginaPrincipalFuncionario.php">Funcionario</a><br>
-    <a href="./viewChofer/InformacionChofer.php">Chofer</a><br>
+<?php 
+   header('Location: http://localhost/Proyecto-Ingenieria-UNA/View/viewAdministrador/Login.php'); 
+?>
 </body>
 </html>

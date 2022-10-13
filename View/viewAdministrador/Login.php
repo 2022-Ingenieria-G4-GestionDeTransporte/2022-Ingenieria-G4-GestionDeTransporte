@@ -16,7 +16,7 @@ error_reporting(0);
     <Center>
         <h1 class="rojo">Gestion de Transporte</h1>
         <div id="login-form-wrap">
-            <form method="post" enctype="multipart/form-data" action="../business/LoginAction.php">
+            <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/Business/LoginAction.php">
                 <tr>
                 <?php
                    echo '<td><input required type="text"  placeholder="Ingrese su cedula" name="cedula" id="cedula"/></td></br>';
@@ -38,7 +38,13 @@ error_reporting(0);
         </form>
     </Center>
     <br><br>
-
+                   <?php
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == "dbError") {
+                            echo '<center><p style="color: red">Acceso denegado, datos incorrectos!</p></center>';
+                        }
+                    }
+                    ?>
 
 </body>
 </html>

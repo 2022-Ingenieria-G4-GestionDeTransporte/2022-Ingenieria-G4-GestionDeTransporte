@@ -19,16 +19,16 @@ error_reporting(0);
 <nav>  
 <ul>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarChoferes.php"> Choferes </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/visualizarVehiculos.php"> Vehiculos </a>  
+<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
@@ -100,7 +100,7 @@ error_reporting(0);
             <a href="#">&raquo;</a>
         </div>
         </br>
-        <form method="post" enctype="multipart/form-data" action="../View/RegistrarFuncionario.php">
+        <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/RegistroSolicitante.php">
                 <tr>
                 <?php
                    echo '<td><input type="submit" value="Registrar Funcionario" name="registro" id="registro"/></td></tr></br>';
@@ -108,7 +108,7 @@ error_reporting(0);
                  </br>
         </form>
         </br>
-    <form action="/paginaPrincipal">
+    <form action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/PaginaPrincipal.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form> 
