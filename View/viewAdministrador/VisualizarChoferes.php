@@ -18,16 +18,16 @@ error_reporting(0);
 <nav>  
 <ul>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/Proyecto-Ingenieria-UNA/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
@@ -106,9 +106,9 @@ error_reporting(0);
                 </br>
     </div>
 <<<<<<< HEAD
-    <form action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/PaginaPrincipal.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
 =======
-    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
 >>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>

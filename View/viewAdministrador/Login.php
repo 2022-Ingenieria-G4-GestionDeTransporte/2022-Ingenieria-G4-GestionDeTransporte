@@ -16,7 +16,7 @@ error_reporting(0);
     <Center>
         <h1 class="rojo">Gestion de Transporte</h1>
         <div id="login-form-wrap">
-            <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/Business/LoginAction.php">
+            <form method="post" enctype="multipart/form-data" action="/2022-Ingenieria-G4-GestionDeTransporte/Business/LoginAction.php">
                 <tr>
                 <?php
                    echo '<td><input required type="text"  placeholder="Ingrese su cedula" name="cedula" id="cedula"/></td></br>';

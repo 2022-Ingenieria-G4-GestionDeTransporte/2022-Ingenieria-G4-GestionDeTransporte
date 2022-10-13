@@ -25,9 +25,9 @@
         </form>
     </div>
 <<<<<<< HEAD
-    <form action="/Proyecto-Ingenieria-UNA/View/Index.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/Index.php">
 =======
-    <form action="/Proyecto-Ingenieria-UNA/View/index.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
 >>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>

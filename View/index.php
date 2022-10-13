@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php 
-   header('Location: http://localhost/Proyecto-Ingenieria-UNA/View/viewAdministrador/Login.php'); 
+   header('Location: http://localhost/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/Login.php'); 
 ?>
 </body>
 </html>
