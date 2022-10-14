@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 08:34:46
+-- Tiempo de generación: 14-10-2022 a las 22:04:41
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 7.4.30
 
@@ -45,6 +45,18 @@ CREATE TABLE `tbchofer` (
 CREATE TABLE `tbcurso` (
   `tbcursonrc` int(11) NOT NULL,
   `tbcursonombre` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbcursosgira`
+--
+
+CREATE TABLE `tbcursosgira` (
+  `tbcursosgiraid` int(11) NOT NULL,
+  `tbgiraid` int(11) NOT NULL,
+  `tbcursonrc` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -121,6 +133,14 @@ ALTER TABLE `tbcurso`
   ADD PRIMARY KEY (`tbcursonrc`);
 
 --
+-- Indices de la tabla `tbcursosgira`
+--
+ALTER TABLE `tbcursosgira`
+  ADD PRIMARY KEY (`tbcursosgiraid`),
+  ADD KEY `FK_Gira_CursosGira` (`tbgiraid`),
+  ADD KEY `FK_Cursos_CursosGira` (`tbcursonrc`);
+
+--
 -- Indices de la tabla `tbgira`
 --
 ALTER TABLE `tbgira`
@@ -137,6 +157,16 @@ ALTER TABLE `tbsolicitante`
 --
 ALTER TABLE `tbvehiculo`
   ADD PRIMARY KEY (`tbvehiculoid`);
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `tbcursosgira`
+--
+ALTER TABLE `tbcursosgira`
+  ADD CONSTRAINT `FK_Cursos_CursosGira` FOREIGN KEY (`tbcursonrc`) REFERENCES `tbcurso` (`tbcursonrc`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
