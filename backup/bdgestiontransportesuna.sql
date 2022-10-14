@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 00:15:45
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 7.4.28
+-- Tiempo de generación: 14-10-2022 a las 08:34:46
+-- Versión del servidor: 10.4.25-MariaDB
+-- Versión de PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,40 @@ CREATE TABLE `tbchofer` (
   `tbchoferlicenciavigente` int(11) NOT NULL,
   `tbchoferfechavencimientolicencia` date NOT NULL,
   `tbchoferpassword` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbcurso`
+--
+
+CREATE TABLE `tbcurso` (
+  `tbcursonrc` int(11) NOT NULL,
+  `tbcursonombre` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbgira`
+--
+
+CREATE TABLE `tbgira` (
+  `tbgiraid` int(11) NOT NULL,
+  `tbgiranombreencargado` text NOT NULL,
+  `tbgiraapellidoencargado` text NOT NULL,
+  `tbgiracedulaencargado` varchar(20) NOT NULL,
+  `tbgirafechasolicitud` date NOT NULL,
+  `tbgiranombreacompanante` text NOT NULL,
+  `tbgiraapellidoacompanante` text NOT NULL,
+  `tbgiracedulaacompanante` varchar(20) NOT NULL,
+  `tbgirafechagira` date NOT NULL,
+  `tbgiracarrera` text NOT NULL,
+  `tbgiratipogira` text NOT NULL,
+  `tbgirarequierechofer` tinyint(2) NOT NULL,
+  `tbgiraobjetivo` text NOT NULL,
+  `tbgiraidchofer` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -79,6 +113,18 @@ CREATE TABLE `tbvehiculo` (
 --
 ALTER TABLE `tbchofer`
   ADD PRIMARY KEY (`tbchoferid`);
+
+--
+-- Indices de la tabla `tbcurso`
+--
+ALTER TABLE `tbcurso`
+  ADD PRIMARY KEY (`tbcursonrc`);
+
+--
+-- Indices de la tabla `tbgira`
+--
+ALTER TABLE `tbgira`
+  ADD PRIMARY KEY (`tbgiraid`);
 
 --
 -- Indices de la tabla `tbsolicitante`
