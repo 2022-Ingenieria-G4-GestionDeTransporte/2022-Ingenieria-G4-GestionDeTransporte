@@ -22,21 +22,64 @@ class DestinoGira{
     }
 
     
-    function getdestinoGiraId() {
+    function getDestinoGiraId() {
         return $this->destinoGiraId;
     }
 
-    function setdestinoGiraId($destinoGiraId) {
+    function setDestinoGiraId($destinoGiraId) {
         $this->destinoGiraId = $destinoGiraId;
     }
 
-    function getcursoNombre() {
-        return $this->cursoNombre;
+    function getDestinoGiraProvincia() {
+        return $this->destinoGiraProvincia;
     }
 
-    function setcursoNombre($cursoNombre) {
-        $this->cursoNombre = $cursoNombre;
+    function setDestinoGiraProvincia($destinoGiraProvincia) {
+        $this->destinoGiraProvincia = $destinoGiraProvincia;
     }
+
+    function getDestinoGiraCanton() {
+        return $this->destinoGiraCanton;
+    }
+
+    function setDestinoGiraCanton($destinoGiraCanton) {
+        $this->destinoGiraCanton = $destinoGiraCanton;
+    }
+
+    function getDestinoGiraDistrito() {
+        return $this->destinoGiraDistrito;
+    }
+
+    function setDestinoGiraDistrito($destinoGiraDistrito) {
+        $this->destinoGiraDistrito = $destinoGiraDistrito;
+    }
+
+    function getDestinoGiraHospedaje() {
+        return $this->destinoGiraHospedaje;
+    }
+
+    function setDestinoGiraHospedaje($destinoGiraHospedaje) {
+        $this->destinoGiraHospedaje = $destinoGiraHospedaje;
+    }
+
+    function getDestinoGiraSalida() {
+        return $this->destinoGiraSalida;
+    }
+
+    function setDestinoGiraSalida($destinoGiraSalida) {
+        $this->destinoGiraSalida = $destinoGiraSalida;
+    }
+
+    function getDestinoGiraLlegada() {
+        return $this->destinoGiraLlegada;
+    }
+
+    function setDestinoGiraLlegada($destinoGiraLlegada) {
+        $this->destinoGiraLlegada = $destinoGiraLlegada;
+    }
+
+
+
 }
 
 
