@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 22:04:41
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 7.4.30
+-- Tiempo de generación: 16-10-2022 a las 00:22:03
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -62,6 +62,23 @@ CREATE TABLE `tbcursosgira` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tbdestinogira`
+--
+
+CREATE TABLE `tbdestinogira` (
+  `tbdestinogiraid` int(11) NOT NULL,
+  `tbdestinogiraprovincia` varchar(100) NOT NULL,
+  `tbdestinogiracanton` varchar(100) NOT NULL,
+  `tbdestinogiradistrito` varchar(100) NOT NULL,
+  `tbdestinogirahospedaje` varchar(100) NOT NULL,
+  `tbdestinogirasalida` time NOT NULL,
+  `tbdestinogirallegada` time NOT NULL,
+  `tbdestinogiraidgira` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tbgira`
 --
 
@@ -80,6 +97,36 @@ CREATE TABLE `tbgira` (
   `tbgirarequierechofer` tinyint(2) NOT NULL,
   `tbgiraobjetivo` text NOT NULL,
   `tbgiraidchofer` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbitinerariogira`
+--
+
+CREATE TABLE `tbitinerariogira` (
+  `tbitinerariogiraid` int(11) NOT NULL,
+  `tbitinerariogirafecha` date NOT NULL,
+  `tbitinerariogiraactividad` varchar(300) NOT NULL,
+  `tbitinerariogirahorainicio` time NOT NULL,
+  `tbitinerariogirahorafinalizacion` time NOT NULL,
+  `tbitinerariogiraidgira` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbparticipante`
+--
+
+CREATE TABLE `tbparticipante` (
+  `tbparticipanteid` int(11) NOT NULL,
+  `tbparticipantenombre` varchar(100) NOT NULL,
+  `tbparticipantecedula` varchar(20) NOT NULL,
+  `tbparticipantecarrera` varchar(200) NOT NULL,
+  `tbparticipanteinstitucion` varchar(250) NOT NULL,
+  `tbparticipanteidgira` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -141,10 +188,28 @@ ALTER TABLE `tbcursosgira`
   ADD KEY `FK_Cursos_CursosGira` (`tbcursonrc`);
 
 --
+-- Indices de la tabla `tbdestinogira`
+--
+ALTER TABLE `tbdestinogira`
+  ADD PRIMARY KEY (`tbdestinogiraid`);
+
+--
 -- Indices de la tabla `tbgira`
 --
 ALTER TABLE `tbgira`
   ADD PRIMARY KEY (`tbgiraid`);
+
+--
+-- Indices de la tabla `tbitinerariogira`
+--
+ALTER TABLE `tbitinerariogira`
+  ADD PRIMARY KEY (`tbitinerariogiraid`);
+
+--
+-- Indices de la tabla `tbparticipante`
+--
+ALTER TABLE `tbparticipante`
+  ADD PRIMARY KEY (`tbparticipanteid`);
 
 --
 -- Indices de la tabla `tbsolicitante`
@@ -157,6 +222,28 @@ ALTER TABLE `tbsolicitante`
 --
 ALTER TABLE `tbvehiculo`
   ADD PRIMARY KEY (`tbvehiculoid`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `tbdestinogira`
+--
+ALTER TABLE `tbdestinogira`
+  MODIFY `tbdestinogiraid` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tbitinerariogira`
+--
+ALTER TABLE `tbitinerariogira`
+  MODIFY `tbitinerariogiraid` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tbparticipante`
+--
+ALTER TABLE `tbparticipante`
+  MODIFY `tbparticipanteid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas

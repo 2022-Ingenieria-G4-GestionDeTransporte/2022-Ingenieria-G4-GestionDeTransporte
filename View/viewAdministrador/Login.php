@@ -12,7 +12,6 @@ error_reporting(0);
     ?>
 </head>
 <body class="bodylogin">  
-
     <Center>
         <h1 class="rojo">Gestion de Transporte</h1>
         <div id="login-form-wrap">
