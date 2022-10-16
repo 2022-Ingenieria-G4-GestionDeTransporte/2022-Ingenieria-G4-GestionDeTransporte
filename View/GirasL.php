@@ -5,45 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    </link>
+    <title>Document</title>
     <?php
     include '../business/GiraBusiness.php';
     ?>
 </head>
 
 <body>
-    <header>
-        <h1>Listas</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarGiras.php"> Giras </a>
-                </li>
-                <li>
-                    <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>
-                </li>
-                <li>
-                    <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>
-                </li>
-                <li>
-                    <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <h1>Lista de Giras</h1>
-    <br>
-    <form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">
-        <?php
-        echo '<td><input type="submit" value="<">';
-        echo '<td><input type="search" value="" name="buscar" id="buscar" placeholder = "Buscar"/></td></tr></br>';
-        ?>
-        </br>
-    </form>
-    </br>
     <table border="1px">
         <tr>
             <th>Nombre de Encargado</th>
@@ -92,14 +60,6 @@
             ?>
         </tbody>
     </table>
-
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
-
-        <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
-            <input type="submit" value="Pagina Principal" />
-            <div id="contenedor"></div>
-        </form>
-    </form>
 
 </body>
 

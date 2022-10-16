@@ -8,7 +8,7 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include '../business/GirasBusiness.php';
+    include '../business/GiraBusiness.php';
     ?>
 </head>
 <body>
@@ -36,6 +36,7 @@ error_reporting(0);
             <li><a href="#">Modificar Datos Administrativos</a></li>
             <li><a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarListas.php">Visualizar Listas</a></li>
             <li><a href="#">Ver Reportes</a></li>
+            <li><a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/visualizarGiras.php">Giras</a></li>
         </ul>
 
     </div>

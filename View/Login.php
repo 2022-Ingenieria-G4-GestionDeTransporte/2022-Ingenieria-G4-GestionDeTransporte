@@ -35,6 +35,7 @@ error_reporting(0);
                  ?>
                  </br>
         </form>
+        <a href="./GirasL.php">Giras</a>
     </Center>
     <br><br>
                    <?php
