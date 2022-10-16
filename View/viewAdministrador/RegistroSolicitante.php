@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xml:th="http://thymeleaf.org">
 <head>
-    <title>Registro de Funcionarios!</title>
+    <title>Registro de Solicitantes!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
     <div id="fondo">
-        <h1>Registro de Funcionarios!</h1>
+        <h1>Registro de Solicitantes!</h1>
         <form th:action="@{/registrar}" method="post">
             Nombre: <input type="text" name="nombre" required />
             Apellidos: <input type="text" name="apellidos" required /> </br>
@@ -24,11 +24,7 @@
             <div id="contenedor"></div>
         </form>
     </div>
-<<<<<<< HEAD
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/Index.php">
-=======
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
->>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>
