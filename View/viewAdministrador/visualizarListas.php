@@ -16,7 +16,7 @@
 <nav>  
 <ul>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
 <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  

@@ -18,10 +18,10 @@ if (isset($_POST['login'])) {
                         header("location: ../view/viewAdministrador/Login.php?error=dbError");
                     }
         } else {
-            header("location: ../view/ClienteView.php?error=emptyField");
+            header("location: ../view/index.php?error=emptyField");
         }
         
     } else {
-        header("location: ../view/ClienteView.php?error=error");
+        header("location: ../view/index.php?error=error");
     }
 }
