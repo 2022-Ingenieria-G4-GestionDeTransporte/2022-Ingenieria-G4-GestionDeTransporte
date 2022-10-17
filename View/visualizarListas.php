@@ -32,11 +32,7 @@
 </header>
 You are at JavaTpoint Site.....    
 </br>
-<<<<<<< HEAD
-<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
-=======
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
->>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form> 
