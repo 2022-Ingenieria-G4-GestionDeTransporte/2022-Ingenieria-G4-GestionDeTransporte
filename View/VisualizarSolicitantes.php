@@ -19,16 +19,16 @@ error_reporting(0);
 <nav>  
 <ul>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
@@ -100,7 +100,7 @@ error_reporting(0);
             <a href="#">&raquo;</a>
         </div>
         </br>
-        <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/View/viewAdministrador/RegistroSolicitante.php">
+        <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/View/RegistroSolicitante.php">
                 <tr>
                 <?php
                    echo '<td><input type="submit" value="Registrar Funcionario" name="registro" id="registro"/></td></tr></br>';
@@ -109,7 +109,7 @@ error_reporting(0);
         </form>
         </br>
 <<<<<<< HEAD
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
 =======
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
 >>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f

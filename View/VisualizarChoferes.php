@@ -4,11 +4,11 @@ error_reporting(0);
 ?>
 <head>
     <script src="../js/Function.js"></script>
-    <title>Vehiculos</title>
+    <title>Choferes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    //include '../business/VehiculoBusiness.php';
+    //include '../business/ChoferBusiness.php';
     ?>
     <link rel = "stylesheet" href="css/style.css" type = "text/css"></link>
 </head>
@@ -18,22 +18,22 @@ error_reporting(0);
 <nav>  
 <ul>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarGiras.php"> Giras </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
 </header>
     <div id="fondo">
-        <h1>Lista de Vehiculos</h1>
+        <h1>Lista de Choferes</h1>
         <br>
         <form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">
                 <?php
@@ -46,24 +46,22 @@ error_reporting(0);
 
         <table border="1px">
             <tr>
-                <th>Matricula</th>
-                <th>Tipo</th>
-                <th>Modelo</th>
-                <th>Estado</th>
+                <th>Nombre Completo</th>
+                <th>Cedula</th>
+                <th>Licencia Vigente</th>
                 <th></th>
             </tr>
             <?php
-            //$vehiculoBusiness = new VehiculoBusiness();
-            $allVehiculos = NULL; //$VehiculoBusiness->getAllVehiculos();
-            foreach ($allvehiculos as $current) {
-                echo '<form method="post" enctype="multipart/form-data" action="../business/VehiculoAction.php">';
-                echo '<input type="hidden" name="vehiculo_id" value="' . $current->getVehiculoId() . '">';
-                echo '<td><input type="text" name="vehiculo_matricula" id="vehiculo_matricula" value="' . $current->getVehiculoMatricula() . '"/></td>';
-                echo '<td><input type="text" name="vehiculo_tipo" id="vehiculo_tipo" value="' . $current->getVehiculoTipo() . '"/></td>';
-                echo '<td><input type="text" name="vehiculo_modelo" id="vehiculo_modelo" value="' . $current->getVehiculoModelo() . '"/></td>';
-                echo '<td><input type="text" name="vehiculo_estado" id="vehiculo_estado" value="' . $current->getVehiculoEstado() . '"/></td>';
+            //$ChoferBusiness = new ChoferBusiness();
+            $allChoferes = NULL;//$ChoferBusiness->getAllChoferes();
+            foreach ($allChoferes as $current) {
+                echo '<form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">';
+                echo '<input type="hidden" name="chofer_id" value="' . $current->getChoferId() . '">';
+                echo '<td><input type="text" name="chofer_nombre" id="chofer_nombre" value="' . $current->getChoferNombre() . '"/></td>';
+                echo '<td><input type="text" name="chofer_cedula" id="chofer_cedula" value="' . $current->getChoferCedula() . '"/></td>';
+                echo '<td><input type="text" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="' . $current->getChoferLicenciaVigente() . '"/></td>';
                 echo '<td><input type="submit" value="Actualizar" name="update" id="update"/></td>';
-                echo '<td><button onclick="deleteVehiculo('. $current->getVehiculoId() .')">Eliminar</button></td>';
+                echo '<td><button onclick="deleteChofer('. $current->getChoferId() .')">Eliminar</button></td>';
                 echo '</tr>';
                 echo '</form>';
             }
@@ -87,9 +85,6 @@ error_reporting(0);
                 </td>
             </tr>
         </table>
-
-
-
         <div class="pagination">
             <a href="#">&laquo;</a>
             <a href="#">1</a>
@@ -100,17 +95,18 @@ error_reporting(0);
             <a href="#">&raquo;</a>
         </div>
         </br>
-        <form method="post" enctype="multipart/form-data" action="../View/RegistrarVehiculo.php">
+
+        <form method="post" enctype="multipart/form-data" action="../View/RegistrarChofer.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" value="Registrar Vehiculo" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" value="Registrar Chofer" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
                 </br>
     </div>
 <<<<<<< HEAD
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
 =======
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
 >>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f

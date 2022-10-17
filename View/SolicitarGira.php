@@ -21,22 +21,22 @@
 <nav>  
 <ul>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/SolicitudDeGira.php"> Solicitud de Gira </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/SolicitudDeGira.php"> Solicitud de Gira </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/DestinoGira.php"> Destino Gira </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/DestinoGira.php"> Destino Gira </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/ItinerarioGira.php"> Itinerario Gira </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/ItinerarioGira.php"> Itinerario Gira </a>  
 </li>  
 <li> 
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/RegistroParticipanteGira.php"> Registro Participantes De La Gira </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/RegistroParticipanteGira.php"> Registro Participantes De La Gira </a>  
 </li>   
 </ul>  
 </nav>  
 </header>
 
-   <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
+   <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>

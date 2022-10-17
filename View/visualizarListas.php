@@ -16,16 +16,16 @@
 <nav>  
 <ul>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/visualizarGiras.php"> Giras </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/visualizarGiras.php"> Giras </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarSolicitantes.php"> Solicitantes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php"> Solicitantes </a>  
 </li>  
 <li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarChoferes.php"> Choferes </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php"> Choferes </a>  
 </li>  
 <li> 
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/VisualizarVehiculos.php"> Vehiculos </a>  
+<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php"> Vehiculos </a>  
 </li>    
 </ul>  
 </nav>  
@@ -33,7 +33,7 @@
 You are at JavaTpoint Site.....    
 </br>
 <<<<<<< HEAD
-<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/viewAdministrador/PaginaPrincipal.php">
+<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
 =======
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
 >>>>>>> 51d00f1122315f076a598b910ef81fd5a4a9b52f

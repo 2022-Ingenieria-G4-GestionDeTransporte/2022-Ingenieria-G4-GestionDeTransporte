@@ -11,7 +11,7 @@ error_reporting(0);
     include '../business/LoginBusiness.php';
     ?>
 </head>
-<body class="bodylogin">  
+<body class="bodylogin">
     <Center>
         <h1 class="rojo">Gestion de Transporte</h1>
         <div id="login-form-wrap">
@@ -35,7 +35,6 @@ error_reporting(0);
                  ?>
                  </br>
         </form>
-        <a href="./GirasL.php">Giras</a>
     </Center>
     <br><br>
                    <?php
