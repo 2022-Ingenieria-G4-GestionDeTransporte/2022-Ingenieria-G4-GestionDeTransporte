@@ -6,11 +6,11 @@ class SolicitanteBusiness {
 
     private $SolicitantesData;
 
-    public function GiraBusiness() {
+    public function SolicitanteBusiness() {
         $this->SolicitantesData = new SolcitantesData();
     }
 
-    public function getAllGira() {
+    public function getAllSolicitantes() {
         return $this->SolicitantesData->getAllSolicitantes();
     }
 
