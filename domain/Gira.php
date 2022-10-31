@@ -16,8 +16,9 @@ class Gira{
     private $giraRequireChofer;
     private $giraObjetivo;
     private $giraIdChofer;
+	private $giraEstado;
 
-    function Gira($giraId, $giraNombreEncargado, $giraApellidoEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraApellidoACompanante, $giraCedulaAcompanante, $giraFechaGira, $giraCarrera, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer){
+    function Gira($giraId, $giraNombreEncargado, $giraApellidoEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraApellidoACompanante, $giraCedulaAcompanante, $giraFechaGira, $giraCarrera, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer, $giraEstado){
         $this->giraId = $giraId;
         $this->giraNombreEncargado = $giraNombreEncargado;
         $this->giraApellidoEncargado = $giraApellidoEncargado;
@@ -32,6 +33,7 @@ class Gira{
         $this->giraRequireChofer = $giraRequireChofer;
         $this->giraObjetivo = $giraObjetivo;
         $this->giraIdChofer = $giraIdChofer;
+		$this->giraEstado = $giraEstado;
     }
 	
 	function getGiraId() {
@@ -157,5 +159,12 @@ class Gira{
 	function setGiraIdChofer($giraIdChofer) {
 		$this->giraIdChofer = $giraIdChofer;
 	
+	}
+	function getGiraEstado() {
+		return $this->giraEstado;
+	}
+	
+	function setGiraEstado($giraEstado) {
+		$this->giraEstado = $giraEstado;
 	}
 }

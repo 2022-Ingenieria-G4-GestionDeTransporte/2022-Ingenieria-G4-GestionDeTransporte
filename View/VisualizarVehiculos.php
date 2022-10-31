@@ -109,7 +109,7 @@ error_reporting(0);
         </form>
                 </br>
     </div>
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/index.php">
+    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>

@@ -16,7 +16,7 @@ class GirasData extends Data {
             $currentGira = new Gira($row['tbgiraid'], $row['tbgiranombreencargado'], $row['tbgiraapellidoencargado'], 
             $row['tbgiracedulaencargado'], $row['tbgirafechasolicitud'], $row['tbgiranombreacompanante'], $row['tbgiraapellidoacompanante']
             , $row['tbgiracedulaacompanante'], $row['tbgirafechagira'], $row['tbgiracarrera'], $row['tbgiratipogira']
-            , $row['tbgirarequierechofer'], $row['tbgiraobjetivo'], $row['tbgiraidchofer']);
+            , $row['tbgirarequierechofer'], $row['tbgiraobjetivo'], $row['tbgiraidchofer'], $row['tbgiraestado']);
             array_push($Giras, $currentGira);
         }
         return $Giras;
