@@ -10,7 +10,6 @@ error_reporting(0);
     <?php
     //include '../business/ChoferBusiness.php';
     ?>
-    <link rel = "stylesheet" href="css/style.css" type = "text/css"></link>
 </head>
 <body>
 <header>
@@ -110,4 +109,8 @@ error_reporting(0);
         <div id="contenedor"></div>
     </form>
 </body>
+
+
+
 </html>
+

@@ -1,33 +1,8 @@
-body   
-{  
-height: 125vh;  
-margin-top: 80px;  
-padding: 30px;  
-background-size: cover;  
-font-family: sans-serif;  
-}  
- 
-header {  
-background-color: red;  
-position: fixed;  
-left: 0;  
-right: 0;  
-top: 5px;  
-height: 30px;  
-display: flex;  
-align-items: center;  
-box-shadow: 0 0 25px 0 black;  
-}  
-header * {  
-display: inline;  
-}  
-header li {  
-margin: 20px;  
-}  
-header li a {  
-color: blue;  
-text-decoration: none;  
-} 
-      
-
+    .container {
+    background-image: url(../Images/Fondo.webp);
+    background-color: red;
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+   }
 
