@@ -101,13 +101,28 @@
                 $Estado = "Sin revisar"; //Representar con colores
                 }
                 echo '<td><input type="submit" value= "'. $Estado .'" name="estado" id="estado"/></td>';
+                echo '</tr>';
                 echo '</form>';
             }
             ?>
         </tbody>
     </table>
-<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
 
+    <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Siguiente</a>
+    </li>
+  </ul>
+</nav>
+
+<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
     <form action="">
             <input type="submit" value="Ingresar una nueva gira" />
             <div id="contenedor"></div>
