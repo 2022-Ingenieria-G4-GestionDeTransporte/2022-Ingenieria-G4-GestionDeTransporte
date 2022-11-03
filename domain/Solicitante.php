@@ -3,6 +3,7 @@
 class Solicitante{
 
     private $solicitanteId;
+    private $solicitanteCedula;
     private $solicitanteNombre;
     private $solicitanteApellidos;
     private $solicitanteCorreo;
@@ -11,8 +12,9 @@ class Solicitante{
     private $solicitanteFechaVencimientoLicencia;
     private $solicitantepassword;
 
-    function Solicitante($solicitanteId, $solicitanteNombre, $solicitanteApellidos, $solicitanteCorreo, $solicitanteCargo, $solicitanteLicenciaVigente, $solicitanteFechaVencimientoLicencia, $solicitantepassword){
+    function Solicitante($solicitanteId, $solicitanteCedula, $solicitanteNombre, $solicitanteApellidos, $solicitanteCorreo, $solicitanteCargo, $solicitanteLicenciaVigente, $solicitanteFechaVencimientoLicencia, $solicitantepassword){
         $this->solicitanteId = $solicitanteId;
+        $this->solicitanteCedula = $solicitanteCedula;
         $this->solicitanteNombre = $solicitanteNombre;
         $this->solicitanteApellidos = $solicitanteApellidos;
         $this->solicitanteCorreo = $solicitanteCorreo;
@@ -28,6 +30,14 @@ class Solicitante{
 
     function setSolicitanteId($solicitanteId) {
         $this->solicitanteId = $solicitanteId;
+    }
+
+    function getSolicitanteCedula() {
+        return $this->solicitanteCedula;
+    }
+
+    function setSolicitanteCedula($solicitanteCedula) {
+        $this->solicitanteCedula = $solicitanteCedula;
     }
 
     function getSolicitanteNombre() {

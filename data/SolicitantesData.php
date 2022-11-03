@@ -1,4 +1,6 @@
 <?php
+include_once 'data.php';
+include '../domain/Solicitante.php';
 
 class SolcitantesData extends Data{
 

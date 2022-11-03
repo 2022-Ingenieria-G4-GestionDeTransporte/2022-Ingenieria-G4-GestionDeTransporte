@@ -4,13 +4,14 @@ class Vehiculo{
 
     private $vehiculoId;
     private $vehiculoMatricula;
+    private $vehiculoMarca;
     private $vehiculoModelo;
     private $vehiculoTipo;
     private $vehiculoEstado;
     private $vehiculoNivelAceite;
     private $vehiculoKilometraje;
 
-    function Vehiculo($vehiculoId, $vehiculoMatricula, $vehiculoModelo, $vehiculoTipo, $vehiculoEstado, $vehiculoNivelAceite, $vehiculoKilometraje){
+    function Vehiculo($vehiculoId, $vehiculoMatricula, $vehiculoMarca, $vehiculoModelo, $vehiculoTipo, $vehiculoEstado, $vehiculoNivelAceite, $vehiculoKilometraje){
         $this->vehiculoId = $vehiculoId;
         $this->vehiculoMatricula = $vehiculoMatricula;
         $this->vehiculoModelo = $vehiculoModelo;
@@ -18,6 +19,7 @@ class Vehiculo{
         $this->vehiculoEstado = $vehiculoEstado;
         $this->vehiculoNivelAceite = $vehiculoNivelAceite;
         $this->vehiculoKilometraje = $vehiculoKilometraje;
+        $this->vehiculoMarca = $vehiculoMarca;
     }
 
     function getVehiculoId() {
@@ -34,6 +36,14 @@ class Vehiculo{
 
     function setVehiculoMatricula($vehiculoMatricula) {
         $this->vehiculoMatricula = $vehiculoMatricula;
+    }
+
+    function getVehiculoMarca() {
+        return $this->vehiculoMarca;
+    }
+
+    function setVehiculoMarca($vehiculoMarca) {
+        $this->vehiculoMarca = $vehiculoMarca;
     }
 
     function getVehiculoModelo() {

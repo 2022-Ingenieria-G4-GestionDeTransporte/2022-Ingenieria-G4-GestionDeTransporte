@@ -1,4 +1,6 @@
 <?php
+include_once 'data.php';
+include '../domain/Vehiculo.php';
 
 class VehiculoData extends Data{
 
@@ -11,7 +13,7 @@ class VehiculoData extends Data{
         mysqli_close($conn);
         $Vehiculos = [];
         while ($row = mysqli_fetch_array($result)) {
-            $currentVehiculo = new Vehiculo($row['tbvehiculoid'], $row['tbvehiculomatricula'], $row['tbvehiculomodelo'], 
+            $currentVehiculo = new Vehiculo($row['tbvehiculoid'], $row['tbvehiculomatricula'], $row['tbvehiculomarca'], $row['tbvehiculomodelo'], 
             $row['tbvehiculotipo'], $row['tbvehiculoestado'], $row['tbvehiculonivelaceite'], $row['tbvehiculokilometraje']);
             array_push($Vehiculos, $currentVehiculo);
         }

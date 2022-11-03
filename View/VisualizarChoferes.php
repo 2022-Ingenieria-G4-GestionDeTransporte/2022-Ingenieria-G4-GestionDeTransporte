@@ -1,66 +1,91 @@
 ﻿<!DOCTYPE html>
-<?php
-error_reporting(0);
-?>
 <head>
-    <script src="../js/Function.js"></script>
     <title>Choferes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    //include '../business/ChoferBusiness.php';
+    include '../business/ChoferBusiness.php';
     ?>
+    </link>
+    <link rel = "stylesheet" href="../css/style.css" type = "text/css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/Function.js"></script>
 </head>
-<body>
-<header>
-<h1>Listas</h1>      
-<nav>  
-<ul>  
-<li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php"> Giras </a>  
-</li>  
-<li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php"> Solicitantes </a>  
-</li>  
-<li>  
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php"> Choferes </a>  
-</li>  
-<li> 
-<a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php"> Vehiculos </a>  
-</li>    
-</ul>  
-</nav>  
-</header>
-    <div id="fondo">
-        <h1>Lista de Choferes</h1>
-        <br>
-        <form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">
-                <?php
-                   echo '<td><input type="submit" value="<">';
-                   echo '<td><input type="search" value="" name="buscar" id="buscar" placeholder = "Buscar"/></td></tr></br>';
-                 ?>
-                 </br>
-        </form>
-        </br>
+<body class="bg-light">
+<nav class = "navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#" _msthash="418717" _msttexthash="924456">Listas</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <table border="1px">
+    <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php" _msthash="1070225" _msttexthash="177827"><ion-icon name="flag-outline"></ion-icon>Giras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php" _msthash="1070407" _msttexthash="257478"><ion-icon name="hand-right-outline"></ion-icon>Solicitantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" _msthash="1070953" _msttexthash="262119"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
+          <ul class="dropdown-menu" _mstvisible="0">
+            <li _mstvisible="1"><a class="dropdown-item" href="#" _msthash="1622712" _msttexthash="93353" _mstvisible="2">Acción</a></li>
+            <li _mstvisible="1"><a class="dropdown-item" href="#" _msthash="1622894" _msttexthash="180622" _mstvisible="2">Otra acción</a></li>
+            <li _mstvisible="1"><a class="dropdown-item" href="#" _msthash="1623076" _msttexthash="230152" _mstvisible="2">Algo más aquí</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <form class="d-flex" role="search">
+        
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" _mstplaceholder="76154" _mstaria-label="76154">
+        <button class="btn btn-outline-success" type="submit" _msthash="1202799" _msttexthash="76154">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</body>
+
+<body class = "" style="background-image: url(../Images/FondoU.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+</br></br>
+        <h2 class="display-4 text-light">Lista de Choferes</h2>
+        </br></br>
+
+        <table class="table">
+        <thead class="table-dark">
             <tr>
-                <th>Nombre Completo</th>
+                <th>Nombre</th>
                 <th>Cedula</th>
                 <th>Licencia Vigente</th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+                <th>Visualizar</th>
                 <th></th>
             </tr>
+        </thead>
             <?php
-            //$ChoferBusiness = new ChoferBusiness();
-            $allChoferes = NULL;//$ChoferBusiness->getAllChoferes();
+            $ChoferBusiness = new ChoferBusiness();
+            $allChoferes = $ChoferBusiness->getAllChofer();
             foreach ($allChoferes as $current) {
                 echo '<form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">';
                 echo '<input type="hidden" name="chofer_id" value="' . $current->getChoferId() . '">';
                 echo '<td><input type="text" name="chofer_nombre" id="chofer_nombre" value="' . $current->getChoferNombre() . '"/></td>';
                 echo '<td><input type="text" name="chofer_cedula" id="chofer_cedula" value="' . $current->getChoferCedula() . '"/></td>';
                 echo '<td><input type="text" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="' . $current->getChoferLicenciaVigente() . '"/></td>';
-                echo '<td><input type="submit" value="Actualizar" name="update" id="update"/></td>';
-                echo '<td><button onclick="deleteChofer('. $current->getChoferId() .')">Eliminar</button></td>';
+                echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getChoferId() .')">delete</button></td>';
+                echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';
             }
@@ -84,28 +109,33 @@ error_reporting(0);
                 </td>
             </tr>
         </table>
-        <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#" class="active">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">&raquo;</a>
-        </div>
+        
+    <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+    <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#">Siguiente</a>
+    </li>
+    </ul>
+    </nav>
+
         </br>
 
         <form method="post" enctype="multipart/form-data" action="../View/RegistrarChofer.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" value="Registrar Chofer" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" class="btn btn-secondary" value="Registrar Chofer" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
                 </br>
-    </div>
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
-        <input type="submit" value="Pagina Principal" />
+        <input type="submit" class="btn btn-secondary" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>
 </body>
