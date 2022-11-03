@@ -10,6 +10,7 @@
     <link rel = "stylesheet" href="../css/style.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <?php
     include '../Business/GiraBusiness.php';
     //#302E71 #E50B2C
@@ -61,10 +62,10 @@
 </nav>
 </body>
 
-<body class = "" style="background-image: url(../Images/Fondo.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<body class = "" style="background-image: url(../Images/FondoU.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br></br>
-    <h1>Lista de Giras</h1>
-
+    <h2 class="display-4 text-light">Lista de Giras</h2>
+    </br>
     </form>
     </br>
     <table class="table">
@@ -88,19 +89,25 @@
             foreach ($allGiras as $current) {
                 echo '<form method="post" enctype="multipart/form-data" action="../business/GiraAction.php">';
                 echo '<input type="hidden" name="tbgiraid" value="' . $current->getGiraId() . '">';
-                echo '<td><input type="text" name="tbgiranombreencargado" id="tbgiranombreencargado" value="' . $current->getGiraNombreEncargado() . '"/></td>';
-                echo '<td><input type="date" name="tbgirafechasolicitud" id="tbgirafechasolicitud" value="' . $current->getGiraFechaSolicitud() . '"/></td>';
-                echo '<td><input type="date" name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
-                echo '<td><input type="text" name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
-                echo '<td><input type="text" name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
-                echo '<td><input type="submit" value="Eliminar" name="delete" id="delete"/></td>';
-                echo '<td><input type="submit" value="Visualizar" name="view" id="view"/></td>';
-                if($current->getGiraEstado() != ""){
-                $Estado = $current->getGiraEstado();
+                echo '<td><input type="text" readonly name="tbgiranombreencargado" id="tbgiranombreencargado" value="' . $current->getGiraNombreEncargado() . '"/></td>';
+                echo '<td><input type="date" readonly name="tbgirafechasolicitud" id="tbgirafechasolicitud" value="' . $current->getGiraFechaSolicitud() . '"/></td>';
+                echo '<td><input type="date" readonly name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
+                echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
+                echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
+                echo '<td><input type="submit" class="material-symbols-outlined" value="delete" name="delete" id="delete"/></td>';
+                echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
+                if($current->getGiraEstado() == "Aprobada"){
+                $Estado = "Aprobada"; //Representar con colores
+                echo '<td><input type="button" class="btn btn-success" readonly value= "'. $Estado .'" name="estado" id="estado"/></td>';
+                }else 
+                if($current->getGiraEstado() == "Denegada"){
+                $Estado = "Denegada"; //Representar con colores
+                echo '<td><input type="button" class="btn btn-danger" readonly value= "'. $Estado .'" name="estado" id="estado"/></td>';
                 }else{
-                $Estado = "Sin revisar"; //Representar con colores
-                }
-                echo '<td><input type="submit" value= "'. $Estado .'" name="estado" id="estado"/></td>';
+                  $Estado = "Sin revisar";
+                  echo '<td><input type="button" class="btn btn-warning" readonly value= "'. $Estado .'" name="estado" id="estado"/></td>';
+                  }
+                
                 echo '</tr>';
                 echo '</form>';
             }
@@ -124,7 +131,7 @@
 
 <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
     <form action="">
-            <input type="submit" value="Ingresar una nueva gira" />
+            <input type="submit" class="btn btn-secondary" value="Ingresar una nueva gira" />
             <div id="contenedor"></div>
         </form>
     </form>
@@ -132,7 +139,7 @@
     <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
 
         <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
-            <input type="submit" value="Pagina Principal" />
+            <input type="submit" class="btn btn-secondary" value="Pagina Principal" />
             <div id="contenedor"></div>
         </form>
     </form>
