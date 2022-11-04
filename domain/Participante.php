@@ -3,17 +3,21 @@
 class Participante{
 
     private $participanteId;
-    private $participanteNombre;
     private $participanteCedula;
+    private $participanteNombre;
+    private $participanteApellidos;
     private $participanteCarrera;
     private $participanteInstitucion;
+    private $giraId;
 
-    function Participante($participanteId, $participanteNombre, $participanteCedula, $participanteCarrera, $participanteInstitucion){
+    function Participante($participanteId, $participanteCedula, $participanteNombre, $participanteApellidos, $participanteCarrera, $participanteInstitucion, $giraId){
         $this->participanteId = $participanteId;
-        $this->participanteNombre = $participanteNombre;
         $this->participanteCedula = $participanteCedula;
+        $this->participanteNombre = $participanteNombre;
+        $this->participanteApellidos = $participanteApellidos;
         $this->participanteCarrera = $participanteCarrera;
         $this->participanteInstitucion = $participanteInstitucion;
+        $this->giraId = $giraId;
     }
 
     function getParticipanteId() {
@@ -23,6 +27,14 @@ class Participante{
     function setParticipanteId($participanteId) {
         $this->participanteId = $participanteId;
     }
+    
+    function getParticipanteCedula() {
+        return $this->participanteCedula;
+    }
+
+    function setParticipanteCedula($participanteCedula) {
+        $this->participanteCedula = $participanteCedula;
+    }
 
     function getParticipanteNombre() {
         return $this->participanteNombre;
@@ -31,13 +43,13 @@ class Participante{
     function setParticipanteNombre($participanteNombre) {
         $this->participanteNombre = $participanteNombre;
     }
-
-    function getParticipanteCedula() {
-        return $this->participanteCedula;
+    
+    function getParticipanteApellidos() {
+        return $this->participanteApellidos;
     }
 
-    function setParticipanteCedula($participanteCedula) {
-        $this->participanteCedula = $participanteCedula;
+    function setParticipanteApellidos($participanteApellidos) {
+        $this->participanteApellidos = $participanteApellidos;
     }
 
     function getParticipanteCarrera() {
@@ -54,6 +66,14 @@ class Participante{
 
     function setParticipanteInstitucion($participanteInstitucion) {
         $this->participanteInstitucion = $participanteInstitucion;
+    }
+
+    function getGiraId() {
+        return $this->giraId;
+    }
+
+    function setGiraId($giraId) {
+        $this->giraId = $giraId;
     }
 
 }

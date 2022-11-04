@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-11-2022 a las 20:08:47
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 7.4.30
+-- Tiempo de generación: 04-11-2022 a las 07:11:36
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -139,12 +139,22 @@ CREATE TABLE `tbitinerariogira` (
 
 CREATE TABLE `tbparticipante` (
   `tbparticipanteid` int(11) NOT NULL,
+  `tbparticipantecedula` varchar(18) NOT NULL,
   `tbparticipantenombre` varchar(100) NOT NULL,
-  `tbparticipantecedula` varchar(20) NOT NULL,
+  `tbparticipanteapellidos` varchar(20) NOT NULL,
   `tbparticipantecarrera` varchar(200) NOT NULL,
   `tbparticipanteinstitucion` varchar(250) NOT NULL,
   `tbparticipanteidgira` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tbparticipante`
+--
+
+INSERT INTO `tbparticipante` (`tbparticipanteid`, `tbparticipantecedula`, `tbparticipantenombre`, `tbparticipanteapellidos`, `tbparticipantecarrera`, `tbparticipanteinstitucion`, `tbparticipanteidgira`) VALUES
+(1, '702880773', 'Kendall', 'Ortega Miranda', 'Ingeniería en Sistemas', 'UNA-SRHNC', 1),
+(2, '702870369', 'Randy', 'Barrantes Pizarro', 'Ingeniería en Sistemas', 'UNA-SRHNC', 1),
+(3, '702870525', 'Ever', 'Solano Castro', 'Ingeniería en Sistemas', 'UNA-SRHNC', 1);
 
 -- --------------------------------------------------------
 
@@ -276,7 +286,7 @@ ALTER TABLE `tbitinerariogira`
 -- AUTO_INCREMENT de la tabla `tbparticipante`
 --
 ALTER TABLE `tbparticipante`
-  MODIFY `tbparticipanteid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tbparticipanteid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restricciones para tablas volcadas

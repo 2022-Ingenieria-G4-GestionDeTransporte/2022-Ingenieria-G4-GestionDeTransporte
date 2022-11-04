@@ -23,10 +23,10 @@
                 <th>Estado</th>
                
             </tr>
-            <tr th:each="temp:${lista}">
-                <td th:text="${temp.Dato1}"></td>
-                <td th:text="${temp.Dato2}"></td>
-                <td th:text="${temp.Dato3}"></td>
+            <tr >
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
         <div class="pagination">
