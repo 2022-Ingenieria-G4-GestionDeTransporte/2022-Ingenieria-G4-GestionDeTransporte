@@ -88,7 +88,7 @@
         <th>Fecha de Gira</th>
         <th>Carrera</th>
         <th>Tipo de Gira</th>
-        <th>Eliminar</th>
+        <th>Visualizar y Eliminar</th>
         <th>Analizar</th>
         <th>Estado</th>
         <th></th>
@@ -106,8 +106,9 @@
         echo '<td><input type="date" readonly name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
         echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
-        echo '<td><input type="submit" class="material-symbols-outlined" value="delete" name="delete" id="delete"/></td>';
-        echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
+        echo '<td><input type="submit" class="material-symbols-outlined" value="delete" name="delete" id="delete"/>
+      <input type="submit" class="material-symbols-outlined" value="visibility" name="show" id="show"/></td>';
+        echo '<td><input type="submit" class="material-symbols-outlined" value="search" name="search" id="search"/></td>';
         if ($current->getGiraEstado() == "Aprobada") {
           $Estado = "Aprobada"; //Representar con colores
           echo '<td><input type="button" class="btn btn-success" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';

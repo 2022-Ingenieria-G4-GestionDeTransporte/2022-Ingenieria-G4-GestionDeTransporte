@@ -12,6 +12,11 @@
     ?>
 </head>
 
+<img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
+<h3>Sistema Gestión de Transportes</h3>
+<h5>Información participantes de la gira</h5>
+<br>
+
 <body>
     <ul class="nav nav-pills" style="background-color: #302E71">
         <li class="nav-item">
@@ -27,11 +32,12 @@
             <a class="nav-link" style="color: white" aria-current="page" href="./destinoInformacionGira.php">Destino e Itinerario</a>
         </li>
     </ul>
+    <br><br>
 
-    <h2>Informacion de participantes de gira</h2>
+
     <div class="container">
         <table class="table table-striped table-responsive">
-            <thead>
+            <thead class="table-dark">
                 <tr>
                     <th>Cédula</th>
                     <th>Nombre</th>
@@ -58,7 +64,9 @@
                 }
                 ?>
             </tbody>
+
         </table>
+        <input type="submit" value="Actualizar y Guardar" />
     </div>
 </body>
 
