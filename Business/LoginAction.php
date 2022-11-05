@@ -11,10 +11,10 @@ if (isset($_POST['login'])) {
             $resultado = 0;
             if ($cedula == "administrador" && $password = "1234") {
                 $resultado = 1;
-            } 
+            }
             if ($resultado == 1) {
                 header("location: ../view/PaginaPrincipal.php");
-            } else {
+            }else {
                 header("location: ../view/Login.php?error=dbError");
             }
         } else {

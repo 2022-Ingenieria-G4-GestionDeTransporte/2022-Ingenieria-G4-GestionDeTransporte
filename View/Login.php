@@ -13,7 +13,7 @@ error_reporting(0);
 </head>
 <body class="bodylogin">
     <Center>
-        <h1 class="rojo">Gestion de Transporte</h1>
+        <h1 class="rojo">Gestión de Transporte</h1>
         <div id="login-form-wrap">
             <form method="post" enctype="multipart/form-data" action="/2022-Ingenieria-G4-GestionDeTransporte/Business/LoginAction.php">
                 <tr>
