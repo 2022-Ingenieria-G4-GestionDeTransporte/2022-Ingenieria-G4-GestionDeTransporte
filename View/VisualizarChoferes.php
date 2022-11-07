@@ -59,7 +59,7 @@
 
 <body class = "" style="background-image: url(../Images/FondoU.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br></br>
-        <h2 class="display-4 text-light">Lista de Choferes</h2>
+        <h2 class="display-5 text-light">Lista de Choferes</h2>
         </br></br>
 
         <table class="table">
