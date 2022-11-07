@@ -28,11 +28,13 @@ error_reporting(0);
 
                 <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
 
-                  <div class="d-flex align-items-center mb-3 pb-1">
+                  <div class="d-flex align-items-center mb-1 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                     <img src="../Images/Logo-UNA.png" width="70" height="60">
                     <span class="h1 fw-bold mb-0">  Universidad Nacional</span>
                   </div>
+                  
+                  <center><h5 class="h5 fw-bold mb-0">Sistema Gestión de Transporte</h5></center></br>
                   <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Ingrese sus datos</h5>
 
                   <div class="form-outline mb-4">
