@@ -16,7 +16,7 @@
     <script src="../js/Function.js"></script>
     <?php
     include '../Business/GiraBusiness.php';
-    //#302E71 #E50B2C
+    //#302E71 #C30721
     ?>
 
 <body class="bg-light">
