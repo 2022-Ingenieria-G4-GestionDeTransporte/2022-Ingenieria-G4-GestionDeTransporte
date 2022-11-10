@@ -26,7 +26,7 @@
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
                 <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
-                  <center><h2 class="" style="margin-top:-120px"> Registro Choferes</h2></center></br>
+                  <center><h2 class="" style="margin-top:-120px"> Registro Chofer</h2></center></br>
 
 
      <table  border = '2' class="table">
