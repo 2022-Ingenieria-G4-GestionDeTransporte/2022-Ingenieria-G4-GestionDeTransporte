@@ -17,8 +17,8 @@
       <div class="col col-xl-10">
         <div class="card" style="border-radius: 1rem;">
           <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="../Images/Login.jpg" 
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="../Images/registros.png" 
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -26,7 +26,7 @@
 
                 <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
                             
-                  <center><h3 class="h3 fw-bold mb-0"> Registro Solicitante</h3></center></br>
+                  <center><h2 class="" style= ""> Registro Solicitante</h2></center></br>
 
 
      <table border = '2' class="table">
@@ -131,15 +131,17 @@
                                     
               
 
-<div class="container text-center">
+<div align="left">
                 
                   <div class="pt-0.1 mb-4">
                     <button class="btn btn-dark btn-lg btn-block" name="login" id="login" type="submit">Registrar</button>
                   </div>
+                  
+                  
 
 </form>
      
-      <div>
+      <div align="right">
 <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php">
         <input type="submit" class="btn btn-dark btn-lg btn-block" value="Pagina Principal" />
         </form> 
