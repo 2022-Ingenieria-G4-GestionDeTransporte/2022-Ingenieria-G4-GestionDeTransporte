@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
 </head>
-  <body class="body">
+  <body style="background-color: #AA041B;"  class="body">
 <section class="vh-100" style="background-color: #AA041B;">
   <div class="container py-5 h-50">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -26,11 +26,11 @@
                   <center><h2 class="" style= ""> Registro Solicitante</h2></center></br>
 
 
-     <table border = '2' class="table">
+     <table  border = '2' class="table">
   <thead>
     
   </thead>
-  <tbody>
+  <tbody align="center">
     <tr>
 
       <td width='200'>
@@ -66,7 +66,7 @@
 <tr>
 <td  colspan="2" width='200'>
         <label for="exampleFormControlInput1" class="form-label">Correo:</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@dominio.com">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="                           nombre@dominio.com">
       
     </td>
 
@@ -128,22 +128,21 @@
                                     
               
 
-<div align="center">
+
                 
-                  <div class="pt-0.1 mb-4">
-                    <button class="btn btn-dark btn-lg btn-block" name="login" id="login" type="submit">Registrar</button>
-                  </div>
+                  <div align ="center" class="pt-0.1 mb-4">
+                    <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Registrar</button>
+                 
                   
                   
 
-</form>
-     
-      <div align="right">
+</form> 
+</div><div align ="right">
 <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php">
-        <input type="submit" class="btn btn-dark btn-lg btn-block" value="Pagina Principal" />
+        <input type="button" class="btn btn-link btn-block" value="Pagina Principal" />
         </form> 
-</div>
-                           
+
+        </div>
 
                 </div>
             </div>
