@@ -56,8 +56,8 @@ error_reporting(0);
 
                   <div align="center">
                   <a class="small text-muted" href="#!">¿Olvidaste tu contraseña?</a>
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">¿No tienes una cuenta? <a href="#!"
-                      style="color: #393f81;">Regístrese aquí</a></p>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">¿No tienes una cuenta? 
+                  <a href="/2022-Ingenieria-G4-GestionDeTransporte/View/RegistroSolicitanteInicio.php" style="color: #393f81;">Regístrese aquí</a></p>
                   <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a>
 </div>
