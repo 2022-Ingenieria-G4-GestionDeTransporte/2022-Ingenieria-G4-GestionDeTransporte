@@ -36,6 +36,8 @@ error_reporting(0);
             <li><a href="#">Modificar Datos Administrativos</a></li>
             <li><a href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php">Visualizar Listas</a></li>
             <li><a href="#">Ver Reportes</a></li>
+            <li><a href="../index.php">Cerrar sesión</a></li>
+
         </ul>
 
     </div>
