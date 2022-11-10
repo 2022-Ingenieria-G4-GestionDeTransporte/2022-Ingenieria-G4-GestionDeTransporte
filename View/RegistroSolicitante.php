@@ -30,7 +30,7 @@
   <thead>
     
   </thead>
-  <tbody align="center">
+  <tbody align="left">
     <tr>
 
       <td width='200'>
@@ -66,7 +66,7 @@
 <tr>
 <td  colspan="2" width='200'>
         <label for="exampleFormControlInput1" class="form-label">Correo:</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="                                @dominio.com">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@dominio.com">
       
     </td>
 

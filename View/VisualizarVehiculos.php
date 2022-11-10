@@ -125,7 +125,7 @@
   </ul>
 </nav>
         </br>
-        <form method="post" enctype="multipart/form-data" action="../View/RegistrarVehiculo.php">
+        <form method="post" enctype="multipart/form-data" action="../View/RegistroVehiculo.php">
                 <tr>
                 <?php
                    echo '<td><input type="submit" class="btn btn-secondary" value="Registrar Vehiculo" name="registro" id="registro"/></td></tr></br>';
