@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
-    
 </head>
-
   <body class="body">
 <section class="vh-100" style="background-color: #AA041B;">
   <div class="container py-5 h-50">
@@ -18,12 +16,11 @@
         <div class="card" style="border-radius: 1rem;">
           <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="../Images/registros.png" 
+              <img src="../Images/Login.jpg" 
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
-
                 <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
                             
                   <center><h2 class="" style= ""> Registro Solicitante</h2></center></br>
@@ -131,7 +128,7 @@
                                     
               
 
-<div align="left">
+<div align="center">
                 
                   <div class="pt-0.1 mb-4">
                     <button class="btn btn-dark btn-lg btn-block" name="login" id="login" type="submit">Registrar</button>
