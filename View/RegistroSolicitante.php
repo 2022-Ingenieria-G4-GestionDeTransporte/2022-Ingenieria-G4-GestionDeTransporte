@@ -139,7 +139,7 @@
 </form> 
 </div><div align ="right">
 <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php">
-        <input type="button" class="btn btn-link btn-block" value="Pagina Principal" />
+        <input type="submit" class="btn btn-link btn-block" value="Pagina Principal" />
         </form> 
 
         </div>
