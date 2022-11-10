@@ -14,6 +14,7 @@
 <h5>Información General de la Gira</h5>
 <br>
 
+
 <body>
 
     <ul class="nav nav-pills" style="background-color: #302E71">

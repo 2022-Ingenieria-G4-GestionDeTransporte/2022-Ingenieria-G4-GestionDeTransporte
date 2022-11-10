@@ -129,10 +129,10 @@
   </nav>
 
         </br>
-        <form method="post" enctype="multipart/form-data" action="/Proyecto-Ingenieria-UNA/View/RegistroSolicitante.php">
+        <form method="post" enctype="multipart/form-data" action="/2022-Ingenieria-G4-GestionDeTransporte/View/RegistroSolicitante.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" class="btn btn-secondary" value="Registrar Funcionario" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" class="btn btn-secondary" value="Registrar Solicitante" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
