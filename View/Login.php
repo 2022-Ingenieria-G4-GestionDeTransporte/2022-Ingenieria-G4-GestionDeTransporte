@@ -12,8 +12,8 @@ error_reporting(0);
     include '../business/LoginBusiness.php';
     ?>
 </head>
-<body class="body">
-<section class="vh-100" style="background-color: #AA041B;">
+<body style="background-color: #AA041B;"  class="body">
+<section class="vh-100" >
   <div class="container py-5 h-50">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
