@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participantes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <?php
     include '../Business/ParticipantesBusiness.php';
     ?>
 </head>
-
-<img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
-<h3>Sistema Gestión de Transportes</h3>
-<h5>Información participantes de la gira</h5>
-<br>
+<div style="background-color: #AA041B">
+    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
+    <h3 style="color: white">Sistema Gestión de Transportes</h3>
+    <h5 style="color: white">Información participantes de la gira</h5>
+    <br>
+</div>
 
 <body>
     <ul class="nav nav-pills" style="background-color: #302E71">
         <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./visualizarGiras.php">Regresar</a>
+            <a class="nav-link" style="color: white" aria-current="page" href="./visualizarGiras.php" _msthash="1070225" _msttexthash="177827">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>Regresar
+            </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" style="color: white" aria-current="page" href="./informacionGira.php">Información Básica</a>
@@ -66,7 +73,21 @@
             </tbody>
 
         </table>
-        <input type="submit" value="Actualizar y Guardar" />
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+
+        <input type="submit" class="btn btn-secondary" value="Actualizar y Guardar" />
     </div>
 </body>
 
