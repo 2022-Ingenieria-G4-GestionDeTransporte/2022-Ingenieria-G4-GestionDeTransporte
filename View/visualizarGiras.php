@@ -18,7 +18,12 @@
     include '../Business/GiraBusiness.php';
     //#302E71 #C30721
     ?>
-
+</head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
 <body class="bg-light">
   <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
     <div class="container-fluid">
@@ -78,7 +83,7 @@
   </form>
   </br>
   <table class="table">
-    <thead class="table-dark">
+    <thead style="background-color: #302E71;">
       <tr>
         <th>Nombre de Encargado</th>
         <th>Fecha Solicitud</th>

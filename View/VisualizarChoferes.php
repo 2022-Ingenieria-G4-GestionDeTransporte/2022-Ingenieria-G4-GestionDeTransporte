@@ -15,6 +15,11 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/Function.js"></script>
 </head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
 <body class="bg-light">
 <nav class = "navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
 <div class="container-fluid">
@@ -63,7 +68,7 @@
         </br></br>
 
         <table class="table">
-        <thead class="table-dark">
+        <thead style="background-color: #302E71;">
             <tr>
                 <th>Nombre</th>
                 <th>Cedula</th>
