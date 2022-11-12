@@ -102,9 +102,7 @@
                 
                   <div align ="center" class="pt-0.1 mb-4">
                     <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Actualizar</button>
-                 
-                  
-                  
+                     
 
 </form> 
 </div><div align ="right">
