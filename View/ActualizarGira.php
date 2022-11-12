@@ -9,50 +9,120 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
-        <h3>Sistema Gestión de Transportes</h3>
-        <h5>Actualizar Informacion de Gira</h5>
-        <br>        
-    </header>
-    <center>
-        <div class="container px-4">
-            <form>
-                <div class="row">
-                        
-                        <label><b>Nombre del lugar</b></label>
-                        <input type="text" class="form-control" placeholder="Ingrese el nombre del lugar..." name="nombrelugar" required=""> <br>
+<body style="background-color: #AA041B;"  class="body">
+<section class="vh-100" style="background-color: #AA041B;">
+  <div class="container py-5 h-50">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
 
-                        <label><b>Numero de telefono</b></label>
-                        <input type="number" class="form-control" placeholder="Ingrese el numero de telefono..." name="numerotelefono" required=""> <br>
-                        
-                        <div class="col">
-                            <label><b>Hora de llegada</b></label>
-                            <input type="time" class="form-control" name="horallegada" required=""> <br>
-                        </div>
+        <div class="card" style="border-radius: 1rem;">
+        </br></br></br></br>
+                  <div class="row g-0">
 
-                        <div class="col">
-                            <label><b>Hora de Salida</b></label>
-                            <input type="time" class="form-control" name="horasalida" required=""> <br>
-                        </div>
 
-                        <label><b>Seleccione chofer</b></label>
-                        <select class="form-select">
-                            <option>Chofer1</option>
-                            <option>Chofer2</option>
-                        </select>
-                        <br>
-                        <br>
-                        
-                        <label><b>Observacion</b></label>
-                        <textarea class="form-control" name="observaciones" placeholder="Observaciones" id="" cols="2" rows="2"></textarea> <br>
+             <div style="margin-top:60px; width:376px; height:470px" class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="../Images/FondoU.webp" 
+                alt="login form" class="img-fluid"  style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
+                  <center><h2 class="" style="margin-top:-120px">Actualizar Informacion Gira</h2></center></br>
+
+
+     <table  border = '2' class="table">
+  <thead>
+    
+  </thead>
+  <tbody align="left">
+    <tr>
+
+      <td width='200'>
+      <label><b>Nombre del lugar:</b></label>
+    <input type="text" class="form-control" placeholder="Ingrese el nombre del lugar..." name="nombrelugar" required=""> <br>
+
+</td>
+
+<td  width='200'>
+<label><b>Numero de telefono</b></label>
+<input type="number" class="form-control" placeholder="Ingrese el numero de telefono..." name="numerotelefono" required=""> <br>
+      
+  </td>
+ 
+    </tr>
+
+    <tr>
+      
+          <td  width='200'>
+          <label><b>Hora de llegada</b></label>
+        <input type="time" class="form-control" name="horallegada" required=""> <br>
+      
+  </td>
+
+
+  <td  width='200'>
+        <label><b>Hora de Salida</b></label>
+    <input type="time" class="form-control" name="horasalida" required=""> <br>
+      
+  </td>
+  </tr>
+
+
+  <tr>
+      
+      <td  width='200'>
+      <label for="exampleFormControlInput1" class="form-label"><b>Chofer:</b></label>   
+      <select class="form-select" aria-label="Default select example">
+  <option selected>Seleccione Chofer!</option>
+  <option value="1">Chofer1</option>
+  <option value="2">Chofer2</option>
+  <option value="3">Chofer3</option>
+</select>
+
+</td>
+
+ <td  width='200'>
+ <label><b>Observaciones</b></label>
+        <textarea class="form-control" name="observaciones" placeholder="Observaciones" id="" cols="2" rows="3"></textarea> <br>    
+</br>
+
+  
+</td>
+
+</tr>
+
+
+ 
+  </tbody>
+</table>
+                                    
+              
+
+
+                
+                  <div align ="center" class="pt-0.1 mb-4">
+                    <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Actualizar</button>
                  
+                  
+                  
+
+</form> 
+</div><div align ="right">
+<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipalChofer.php">
+        <input type="submit" class="btn btn-link btn-block" value="Pagina Principal" />
+        </form> 
+
+        </div>
+
                 </div>
-            </form>
-            <br>
-            <input type="submit" value="Actualizar y Guardar" />
-        </div>    
-    </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
 </body>
 </html>
      
