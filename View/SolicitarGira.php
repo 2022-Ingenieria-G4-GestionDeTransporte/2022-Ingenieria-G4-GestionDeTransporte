@@ -36,7 +36,7 @@
 </nav>  
 </header>
 
-   <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
+   <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipalSolicitante.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>

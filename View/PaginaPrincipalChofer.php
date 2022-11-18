@@ -15,6 +15,11 @@
         include '../Business/GiraBusiness.php';
     ?>
 </head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
     <div style="background-color: #AA041B">
         <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="155">
         <h3 style="color: white">Sistema Gestión de Transportes</h3>
@@ -26,7 +31,7 @@
         <br><br>
         <div class="container">
             <table border="2"  class="table table-striped">
-                <thead class="table-dark">
+                <thead style="background-color: #302E71;">
                 <tr>
                     <th>Nombre de Encargado</th>
                     <th>Fecha Solicitud</th>

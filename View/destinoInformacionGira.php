@@ -12,6 +12,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
 
 <div style="background-color: #AA041B">
     <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
@@ -40,7 +45,7 @@
     <div class="container">
         <br>
         <table class="table">
-            <thead class="table-dark">
+            <thead style="background-color: #302E71;">
                 <tr>
                     <th>Destino (Provincia, Canton, Distrito)</th>
                     <th>Hospedaje</th>

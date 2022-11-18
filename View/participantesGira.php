@@ -15,6 +15,11 @@
     include '../Business/ParticipantesBusiness.php';
     ?>
 </head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
 <div style="background-color: #AA041B">
     <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
@@ -44,7 +49,7 @@
 
     <div class="container">
         <table class="table table-striped table-responsive">
-            <thead class="table-dark">
+            <thead style="background-color: #302E71;">
                 <tr>
                     <th>Cédula</th>
                     <th>Nombre</th>
