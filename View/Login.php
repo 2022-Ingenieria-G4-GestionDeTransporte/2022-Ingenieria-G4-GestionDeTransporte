@@ -34,7 +34,7 @@ error_reporting(0);
                   <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Ingrese sus datos</h5>
 
                   <div class="form-outline mb-4">
-                  <label class="form-label" for="cedula">Cedula</label>
+                  <label class="form-label" for="cedula">Cédula</label>
                     <input type="text" name = "cedula" id="cedula" required placeholder = "Ingrese su cedula" class="form-control form-control-lg" />
                   </div>
 
