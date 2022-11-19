@@ -1,0 +1,19 @@
+
+.buttonAprobado {
+    background-color: #00e676 ;
+    border-radius: 8px;
+    border: none;
+}
+.buttonDenegado {
+    background-color: #f4511e   ;
+    border-radius: 8px;
+    border: none;
+}
+.buttonPendiente {
+    background-color: #ffff00 ;
+    border-radius: 8px;
+    border: none;
+}
+
+.button2 {width: 100%;}
+

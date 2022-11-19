@@ -83,7 +83,7 @@
             </ul>
         </nav>
         
-        <input type="submit" class="btn btn-secondary" value="Actualizar y Guardar" />
+        <input type="submit" class="btn btn-dark btn-block" value="Actualizar y Guardar" />
         </br>
 
     </div>

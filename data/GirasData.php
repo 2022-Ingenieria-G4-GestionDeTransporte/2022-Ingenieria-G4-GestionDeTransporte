@@ -15,7 +15,7 @@ class GirasData extends Data {
         while ($row = mysqli_fetch_array($result)) {
             $currentGira = new Gira($row['tbgiraid'], $row['tbgiranombreencargado'], $row['tbgiraapellidoencargado'], 
             $row['tbgiracedulaencargado'], $row['tbgirafechasolicitud'], $row['tbgiranombreacompanante'], $row['tbgiraapellidoacompanante']
-            , $row['tbgiracedulaacompanante'], $row['tbgirafechagira'], $row['tbgiracarrera'], $row['tbgiratipogira']
+            , $row['tbgiracedulaacompanante'], $row['tbgirafechagira'], $row['tbgirafechafin'], $row['tbgiracarrera'], $row['tbgiratipogira']
             , $row['tbgirarequierechofer'], $row['tbgiraobjetivo'], $row['tbgiraidchofer'], $row['tbgiraestado']);
             array_push($Giras, $currentGira);
         }

@@ -8,7 +8,7 @@
     include '../Business/SolicitanteBusiness.php';
     ?>
     </link>
-    <link rel = "stylesheet" href="../css/style1.css" type = "text/css"></link>
+    <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -64,10 +64,16 @@
 </body>
 
 
-<body class = "" style="background-image: url(../Images/FondoU.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<body class = "" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+</br>
+  <div style="background-color: #302E71">
+    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
+    <h3 style="color: white">Sistema Gestión de Transportes</h3>
+    <h5 style="color: white">Lista de Giras</h5>
+    <br>
+</div>
 </br></br>
-        <h2 class="display-5 text-light">Lista de Solicitantes</h2>
-        </br></br>
+
 
         <table class="table">
         <thead style="background-color: #302E71;">
@@ -137,14 +143,12 @@
         <form method="post" enctype="multipart/form-data" action="/2022-Ingenieria-G4-GestionDeTransporte/View/RegistroSolicitante.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" class="btn btn-secondary" value="Registrar Solicitante" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" class="btn btn-dark btn-block" value="Registrar Solicitante" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
-        </br>
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/PaginaPrincipal.php">
-        <input type="submit" class="btn btn-secondary" value="Pagina Principal" />
-        <div id="contenedor"></div>
-    </form> 
+
+        <a href="./PaginaPrincipal.php" style="color: #393f81;">Pagina Principal</a></p>
+
 </body>
 </html>

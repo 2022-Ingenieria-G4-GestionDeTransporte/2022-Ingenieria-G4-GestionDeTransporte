@@ -11,6 +11,7 @@ error_reporting(0);
     <?php
     include '../business/LoginBusiness.php';
     ?>
+    <link rel = "stylesheet" href="../css/styl.css" type = "text/css"></link>
 </head>
 <body class="body">
 <section class="vh-100" style="background-color: #AA041B;">
@@ -44,7 +45,7 @@ error_reporting(0);
                   </div>
 
                   <div class="pt-0.1 mb-4">
-                    <button class="btn btn-dark btn-lg btn-block" name="login" id="login" type="submit">Ingresar</button>
+                    <button class="btn btn-dark btn-lg btn-block button2" name="login" id="login" type="submit">Ingresar</button>
                   </div>
 
                   <a class="small text-muted" href="#!">¿Olvidaste tu contraseña?</a>

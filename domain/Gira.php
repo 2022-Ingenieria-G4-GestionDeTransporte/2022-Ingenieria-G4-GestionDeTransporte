@@ -11,6 +11,7 @@ class Gira{
     private $giraApellidoACompanante;
     private $giraCedulaAcompanante;
     private $giraFechaGira;
+	private $giraFechaGiraFin;
     private $giraCarrera;
     private $giraTipoGira;
     private $giraRequireChofer;
@@ -18,7 +19,7 @@ class Gira{
     private $giraIdChofer;
 	private $giraEstado;
 
-    function Gira($giraId, $giraNombreEncargado, $giraApellidoEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraApellidoACompanante, $giraCedulaAcompanante, $giraFechaGira, $giraCarrera, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer, $giraEstado){
+    function Gira($giraId, $giraNombreEncargado, $giraApellidoEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraApellidoACompanante, $giraCedulaAcompanante, $giraFechaGira, $giraFechaGiraFin, $giraCarrera, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer, $giraEstado){
         $this->giraId = $giraId;
         $this->giraNombreEncargado = $giraNombreEncargado;
         $this->giraApellidoEncargado = $giraApellidoEncargado;
@@ -28,6 +29,7 @@ class Gira{
         $this->giraApellidoACompanante = $giraApellidoACompanante;
         $this->giraCedulaAcompanante = $giraCedulaAcompanante;
         $this->giraFechaGira = $giraFechaGira;
+        $this->giraFechaGiraFin = $giraFechaGiraFin;
         $this->giraCarrera = $giraCarrera;
         $this->giraTipoGira = $giraTipoGira;
         $this->giraRequireChofer = $giraRequireChofer;
@@ -113,6 +115,15 @@ class Gira{
 	
 	function setGiraFechaGira($giraFechaGira) {
 		$this->giraFechaGira = $giraFechaGira;
+
+	}
+
+	function getGiraFechaFin() {
+		return $this->giraFechaGiraFin;
+	}
+	
+	function setGiraFechaFin($giraFechaGiraFin) {
+		$this->giraFechaGiraFin = $giraFechaGiraFin;
 
 	}
 	
