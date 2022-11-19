@@ -36,17 +36,17 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php" _msthash="1070225" _msttexthash="177827">
-              <ion-icon name="flag-outline"></ion-icon>Giras
+              <ion-icon name="flag-outline"></ion-icon> Giras
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php" _msthash="1070407" _msttexthash="257478">
-              <ion-icon name="hand-right-outline"></ion-icon>Solicitantes
+              <ion-icon name="hand-right-outline"></ion-icon> Solicitantes
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php" _msthash="1070589" _msttexthash="76245">
-              <ion-icon name="man-outline"></ion-icon>Choferes
+              <ion-icon name="man-outline"></ion-icon> Choferes
             </a>
           </li>
           <li class="nav-item">
@@ -56,7 +56,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" _msthash="1070953" _msttexthash="262119">
-              <ion-icon name="settings-outline"></ion-icon>Configuración
+              <ion-icon name="settings-outline"></ion-icon> Configuración
             </a>
             <ul class="dropdown-menu" _mstvisible="0">
               <li _mstvisible="1"><a class="dropdown-item" href="#" _msthash="1622712" _msttexthash="93353" _mstvisible="2">Acción</a></li>
