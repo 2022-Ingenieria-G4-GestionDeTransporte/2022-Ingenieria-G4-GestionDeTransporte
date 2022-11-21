@@ -26,9 +26,17 @@
         <h4 style="color: white">Pagina Principal Chofer</h4>
         <br>
         <br>
+      
     </div>
 <body>
         <br><br>
+        <div class="container-lg">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" _mstplaceholder="76154" _mstaria-label="76154">
+                <button class="btn btn-outline-success" type="submit" _msthash="1202799" _msttexthash="76154">Buscar</button>
+            </form>
+        </div>
+        <br>
         <div class="container">
             <table border="2"  class="table table-striped">
                 <thead style="background-color: #302E71;">
@@ -54,6 +62,7 @@
                         echo '<td><input type="date" readonly name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
                         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
                         echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
+                        echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="show" id="show"/></td>';
                         echo '</tr>';
                         echo '</form>';
                     }
