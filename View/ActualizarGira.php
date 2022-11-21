@@ -10,24 +10,22 @@
 </head>
 <body>
 <body style="background-color: #AA041B;"  class="body">
+<body style="background-color: #AA041B;"  class="body">
 <section class="vh-100" style="background-color: #AA041B;">
   <div class="container py-5 h-50">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
-
         <div class="card" style="border-radius: 1rem;">
-        </br></br></br></br>
-                  <div class="row g-0">
-
-
-             <div style="margin-top:60px; width:376px; height:470px" class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="../Images/FondoU.webp" 
-                alt="login form" class="img-fluid"  style="border-radius: 1rem 0 0 1rem;" />
+          <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="../Images/Login.jpg" 
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
                 <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
-                  <center><h2 class="" style="margin-top:-120px">Actualizar Informacion Gira</h2></center></br>
+                            
+                  <center><h2 class="" style= "">Actualizar Informacion Gira</h2></center></br>
 
 
      <table  border = '2' class="table">
