@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 04-11-2022 a las 07:11:36
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 7.4.28
+-- Host: 127.0.0.1
+-- Generation Time: Nov 21, 2022 at 01:16 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bdgestiontransportesuna`
+-- Database: `bdgestiontransportesuna`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbchofer`
+-- Table structure for table `tbchofer`
 --
 
 CREATE TABLE `tbchofer` (
@@ -37,7 +37,7 @@ CREATE TABLE `tbchofer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `tbchofer`
+-- Dumping data for table `tbchofer`
 --
 
 INSERT INTO `tbchofer` (`tbchoferid`, `tbchofercedula`, `tbchofernombre`, `tbchoferlicenciavigente`, `tbchoferfechavencimientolicencia`, `tbchoferpassword`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `tbchofer` (`tbchoferid`, `tbchofercedula`, `tbchofernombre`, `tbcho
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbcurso`
+-- Table structure for table `tbcurso`
 --
 
 CREATE TABLE `tbcurso` (
@@ -57,7 +57,7 @@ CREATE TABLE `tbcurso` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbcursosgira`
+-- Table structure for table `tbcursosgira`
 --
 
 CREATE TABLE `tbcursosgira` (
@@ -69,7 +69,7 @@ CREATE TABLE `tbcursosgira` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbdestinogira`
+-- Table structure for table `tbdestinogira`
 --
 
 CREATE TABLE `tbdestinogira` (
@@ -86,7 +86,7 @@ CREATE TABLE `tbdestinogira` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbgira`
+-- Table structure for table `tbgira`
 --
 
 CREATE TABLE `tbgira` (
@@ -99,6 +99,7 @@ CREATE TABLE `tbgira` (
   `tbgiraapellidoacompanante` text NOT NULL,
   `tbgiracedulaacompanante` varchar(20) NOT NULL,
   `tbgirafechagira` date NOT NULL,
+  `tbgirafechafin` date NOT NULL,
   `tbgiracarrera` text NOT NULL,
   `tbgiratipogira` text NOT NULL,
   `tbgirarequierechofer` tinyint(2) NOT NULL,
@@ -108,18 +109,18 @@ CREATE TABLE `tbgira` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `tbgira`
+-- Dumping data for table `tbgira`
 --
 
-INSERT INTO `tbgira` (`tbgiraid`, `tbgiranombreencargado`, `tbgiraapellidoencargado`, `tbgiracedulaencargado`, `tbgirafechasolicitud`, `tbgiranombreacompanante`, `tbgiraapellidoacompanante`, `tbgiracedulaacompanante`, `tbgirafechagira`, `tbgiracarrera`, `tbgiratipogira`, `tbgirarequierechofer`, `tbgiraobjetivo`, `tbgiraidchofer`, `tbgiraestado`) VALUES
-(1, 'Juan', 'Ramirez', '708760454', '2021-11-10', 'Maria', 'Gonzales', '308990654', '2022-11-12', 'Turismo', 'educativa', 0, 'Aprendizaje', 1, ''),
-(2, 'Marcelo', 'Solano Hernandez', '704560890', '2022-08-22', 'Fernanda', 'Perez Garro', '408970122', '2022-09-10', 'Turismo', 'Educativa', 0, 'Aprendizaje', 2, 'Aprobada'),
-(3, 'Carolina', 'Gonzales', '407650459', '2022-08-11', 'Juan', 'Tenorio', '109340876', '2022-04-10', 'Ingles', 'Academica', 1, 'Aorendizaje', 1, 'Denegada');
+INSERT INTO `tbgira` (`tbgiraid`, `tbgiranombreencargado`, `tbgiraapellidoencargado`, `tbgiracedulaencargado`, `tbgirafechasolicitud`, `tbgiranombreacompanante`, `tbgiraapellidoacompanante`, `tbgiracedulaacompanante`, `tbgirafechagira`, `tbgirafechafin`, `tbgiracarrera`, `tbgiratipogira`, `tbgirarequierechofer`, `tbgiraobjetivo`, `tbgiraidchofer`, `tbgiraestado`) VALUES
+(1, 'Carolina', 'Aguilar Solano', '407650677', '2022-10-09', 'Carlos', 'Hernandez Mora', '704560890', '2022-11-10', '2022-11-13', 'Turismo', 'Formativa', 1, 'Aprendizaje sobre el entorno', 1, 'Aprobada'),
+(2, 'Omar', 'Fernandez Aguirre', '507890654', '2022-10-19', 'Julian', 'Herrera Jimenez', '403450678', '2022-11-05', '2022-11-08', 'Ingles', 'Educativa', 0, 'Explorar ingles de la zona', 2, 'Sin Revisar'),
+(3, 'Maria', 'Gomez Pereira', '206780765', '2022-10-25', 'Roxana', 'Solis Carballo', '405670543', '2022-11-20', '2022-11-22', 'Ingles', 'Educativa', 1, 'Reforzar Idioma', 2, 'Denegada');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbitinerariogira`
+-- Table structure for table `tbitinerariogira`
 --
 
 CREATE TABLE `tbitinerariogira` (
@@ -134,7 +135,7 @@ CREATE TABLE `tbitinerariogira` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbparticipante`
+-- Table structure for table `tbparticipante`
 --
 
 CREATE TABLE `tbparticipante` (
@@ -148,7 +149,7 @@ CREATE TABLE `tbparticipante` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `tbparticipante`
+-- Dumping data for table `tbparticipante`
 --
 
 INSERT INTO `tbparticipante` (`tbparticipanteid`, `tbparticipantecedula`, `tbparticipantenombre`, `tbparticipanteapellidos`, `tbparticipantecarrera`, `tbparticipanteinstitucion`, `tbparticipanteidgira`) VALUES
@@ -159,7 +160,7 @@ INSERT INTO `tbparticipante` (`tbparticipanteid`, `tbparticipantecedula`, `tbpar
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbsolicitante`
+-- Table structure for table `tbsolicitante`
 --
 
 CREATE TABLE `tbsolicitante` (
@@ -175,7 +176,7 @@ CREATE TABLE `tbsolicitante` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `tbsolicitante`
+-- Dumping data for table `tbsolicitante`
 --
 
 INSERT INTO `tbsolicitante` (`tbsolicitanteid`, `tbsolicitantecedula`, `tbsolicitantenombre`, `tbsolicitanteapellidos`, `tbsolicitantecorreo`, `tbsolicitantecargo`, `tbsolicitantelicenciavigente`, `tbsolicitantefechavencimientolicencia`, `tbsolicitantepassword`) VALUES
@@ -184,7 +185,7 @@ INSERT INTO `tbsolicitante` (`tbsolicitanteid`, `tbsolicitantecedula`, `tbsolici
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbvehiculo`
+-- Table structure for table `tbvehiculo`
 --
 
 CREATE TABLE `tbvehiculo` (
@@ -199,7 +200,7 @@ CREATE TABLE `tbvehiculo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `tbvehiculo`
+-- Dumping data for table `tbvehiculo`
 --
 
 INSERT INTO `tbvehiculo` (`tbvehiculoid`, `tbvehiculomatricula`, `tbvehiculomarca`, `tbvehiculomodelo`, `tbvehiculotipo`, `tbvehiculoestado`, `tbvehiculonivelaceite`, `tbvehiculokilometraje`) VALUES
@@ -207,23 +208,23 @@ INSERT INTO `tbvehiculo` (`tbvehiculoid`, `tbvehiculomatricula`, `tbvehiculomarc
 (2, 'CR-027', 'Toyota', '2016', 'PickUp', 90, '95', '160km');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `tbchofer`
+-- Indexes for table `tbchofer`
 --
 ALTER TABLE `tbchofer`
   ADD PRIMARY KEY (`tbchoferid`);
 
 --
--- Indices de la tabla `tbcurso`
+-- Indexes for table `tbcurso`
 --
 ALTER TABLE `tbcurso`
   ADD PRIMARY KEY (`tbcursonrc`);
 
 --
--- Indices de la tabla `tbcursosgira`
+-- Indexes for table `tbcursosgira`
 --
 ALTER TABLE `tbcursosgira`
   ADD PRIMARY KEY (`tbcursosgiraid`),
@@ -231,69 +232,69 @@ ALTER TABLE `tbcursosgira`
   ADD KEY `FK_Cursos_CursosGira` (`tbcursonrc`);
 
 --
--- Indices de la tabla `tbdestinogira`
+-- Indexes for table `tbdestinogira`
 --
 ALTER TABLE `tbdestinogira`
   ADD PRIMARY KEY (`tbdestinogiraid`);
 
 --
--- Indices de la tabla `tbgira`
+-- Indexes for table `tbgira`
 --
 ALTER TABLE `tbgira`
   ADD PRIMARY KEY (`tbgiraid`);
 
 --
--- Indices de la tabla `tbitinerariogira`
+-- Indexes for table `tbitinerariogira`
 --
 ALTER TABLE `tbitinerariogira`
   ADD PRIMARY KEY (`tbitinerariogiraid`);
 
 --
--- Indices de la tabla `tbparticipante`
+-- Indexes for table `tbparticipante`
 --
 ALTER TABLE `tbparticipante`
   ADD PRIMARY KEY (`tbparticipanteid`);
 
 --
--- Indices de la tabla `tbsolicitante`
+-- Indexes for table `tbsolicitante`
 --
 ALTER TABLE `tbsolicitante`
   ADD PRIMARY KEY (`tbsolicitanteid`);
 
 --
--- Indices de la tabla `tbvehiculo`
+-- Indexes for table `tbvehiculo`
 --
 ALTER TABLE `tbvehiculo`
   ADD PRIMARY KEY (`tbvehiculoid`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `tbdestinogira`
+-- AUTO_INCREMENT for table `tbdestinogira`
 --
 ALTER TABLE `tbdestinogira`
   MODIFY `tbdestinogiraid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `tbitinerariogira`
+-- AUTO_INCREMENT for table `tbitinerariogira`
 --
 ALTER TABLE `tbitinerariogira`
   MODIFY `tbitinerariogiraid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `tbparticipante`
+-- AUTO_INCREMENT for table `tbparticipante`
 --
 ALTER TABLE `tbparticipante`
   MODIFY `tbparticipanteid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `tbcursosgira`
+-- Constraints for table `tbcursosgira`
 --
 ALTER TABLE `tbcursosgira`
   ADD CONSTRAINT `FK_Cursos_CursosGira` FOREIGN KEY (`tbcursonrc`) REFERENCES `tbcurso` (`tbcursonrc`);
