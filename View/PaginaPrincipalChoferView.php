@@ -20,7 +20,7 @@
   color: #fff;
 }
 </style>
-    <div style="background-color: #AA041B">
+    <div style="background-color: #302E71">
         <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="155">
         <h3 style="color: white">Sistema Gestión de Transportes</h3>
         <h4 style="color: white">Pagina Principal Chofer</h4>
@@ -47,6 +47,7 @@
                     <th>Carrera</th>
                     <th>Tipo de Gira</th>
                     <th>Visualizar</th>
+                    <th>Reporte Vehiculo</th>
                 </tr>
                 </thead>
                 <tbody id="buscar">
@@ -63,6 +64,7 @@
                         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
                         echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
                         echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="ver" id="ver"/></td>';
+                        echo '<td><input type="submit" class="material-symbols-outlined" value="add" name="reporte" id="ver"/></td>';
                         echo '</tr>';
                         echo '</form>';
                     }
@@ -85,5 +87,13 @@
         </nav>
         </div>
         <br>
+
+        <div class="container">
+
+        <br>
+        <form method="post" action="../business/GiraAction.php">
+            <input type="submit" class="btn btn-secondary" value="Cerrar sesión" name="volver">
+        </form>
+    </div>
 </body>
 </html>

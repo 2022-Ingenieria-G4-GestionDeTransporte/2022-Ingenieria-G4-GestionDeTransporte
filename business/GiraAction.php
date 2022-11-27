@@ -7,4 +7,10 @@ if ($_POST['show']) {
     header("location: ../view/AnalizarGiraView.php");
 }if ($_POST['back']) {
     header("location: ../view/GestionGirasView.php");
+}if ($_POST['ver']) {
+    header("location: ../view/ItenerarioChofer.php");
+}if ($_POST['reporte']) {
+    header("location: ../view/ReportesVehiculo.php");
+}if ($_POST['volver']) {
+    header("location: ../index.php");
 }
