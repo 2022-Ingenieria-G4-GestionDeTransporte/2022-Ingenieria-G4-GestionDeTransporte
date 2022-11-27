@@ -87,7 +87,7 @@
                                     <div align ="left">
                                         <form action="/2022-Ingenieria-G4-GestionDeTransporte/Index.php">
                                             <input type="submit" class="btn btn-dark btn-block" value="Regresar" />
-                                        </form> 
+                                        </form>  
                                     </div>
                                 </div>
                             </div>

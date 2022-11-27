@@ -2,9 +2,9 @@
 
 
 if ($_POST['show']) {
-        header("location: ../view/InformacionGira.php");
+        header("location: ../view/VisualizarDatosGiraView.php");
 }if ($_POST['search']) {
-    header("location: ../view/analizarGira.php");
+    header("location: ../view/AnalizarGiraView.php");
 }if ($_POST['back']) {
-    header("location: ../view/visualizarGiras.php");
+    header("location: ../view/GestionGirasView.php");
 }

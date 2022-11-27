@@ -101,19 +101,13 @@
 
 
                 
-                  <div align ="center" class="pt-0.1 mb-4">
+                  <div align ="left" class="pt-0.1 mb-4">
                     <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Registrar</button>
-                 
-                  
-                  
-
 </form> 
-</div><div align ="right">
-<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php">
-        <input type="submit" class="btn btn-link btn-block" value="Pagina Principal" />
-        </form> 
-
-        </div>
+        <form action="./GestionSolicitantesView.php">
+        <input type="submit" class="btn btn-link btn-block" value="Regresar" />
+        </form>   
+</div>
 
                 </div>
             </div>

@@ -35,22 +35,22 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php" _msthash="1070225" _msttexthash="177827">
+            <a class="nav-link active" aria-current="page" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
               <ion-icon name="flag-outline"></ion-icon> Giras
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php" _msthash="1070407" _msttexthash="257478">
+            <a class="nav-link" href="./GestionSolicitantesView.php" _msthash="1070407" _msttexthash="257478">
               <ion-icon name="hand-right-outline"></ion-icon> Solicitantes
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php" _msthash="1070589" _msttexthash="76245">
+            <a class="nav-link" href="./GestionChoferesView.php" _msthash="1070589" _msttexthash="76245">
               <ion-icon name="man-outline"></ion-icon> Choferes
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php" _msthash="1070771" _msttexthash="282880">
+            <a class="nav-link" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880">
               <ion-icon name="car-outline"></ion-icon> Vehiculos
             </a>
           </li>
@@ -157,7 +157,7 @@
   </form>
   </br>
   
-  <a href="./PaginaPrincipal.php" style="color: #393f81;">Pagina Principal</a></p>
+  <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Pagina Principal</a></p>
 
 </body>
 

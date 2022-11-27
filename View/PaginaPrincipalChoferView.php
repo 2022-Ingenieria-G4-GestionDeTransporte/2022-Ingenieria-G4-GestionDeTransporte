@@ -62,7 +62,7 @@
                         echo '<td><input type="date" readonly name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
                         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
                         echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
-                        echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="show" id="show"/></td>';
+                        echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="ver" id="ver"/></td>';
                         echo '</tr>';
                         echo '</form>';
                     }

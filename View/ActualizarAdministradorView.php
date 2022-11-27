@@ -7,7 +7,7 @@
     </head>
     <body >
         <div class="modificar">
-            <h1>Modificar datos de estudiante</h1>
+            <h1>Modificar datos de administrador</h1>
             <form th:action="@{/adminitrador/administrador/editar}" method="post">
                 <input type="hidden" th:value="${idAlumno}" name="idAlumno" readonly=" "/><br/>
                 <label>Cedula:</label> <input type="text" name="cedula" required/> <br/>

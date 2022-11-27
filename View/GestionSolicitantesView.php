@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <head>
-    <title>Choferes</title>
+    <script src="../js/Function.js"></script>
+    <title>Funcionarios</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include '../business/ChoferBusiness.php';
+    include '../Business/SolicitanteBusiness.php';
     ?>
     </link>
     <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
@@ -31,16 +32,16 @@
     <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php" _msthash="1070225" _msttexthash="177827"><ion-icon name="flag-outline"></ion-icon>Giras</a>
+          <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827"><ion-icon name="flag-outline"></ion-icon>Giras</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php" _msthash="1070407" _msttexthash="257478"><ion-icon name="hand-right-outline"></ion-icon>Solicitantes</a>
+          <a class="nav-link active" aria-current="page" href="./GestionSolicitantesView.php" _msthash="1070407" _msttexthash="257478"><ion-icon name="hand-right-outline"></ion-icon>Solicitantes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page"  href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
+          <a class="nav-link"  href="./GestionChoferesView.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
+        <a class="nav-link" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" _msthash="1070953" _msttexthash="262119"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
@@ -62,6 +63,7 @@
 </nav>
 </body>
 
+
 <body class = "" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br>
   <div style="background-color: #302E71">
@@ -72,29 +74,32 @@
 </div>
 </br></br>
 
+
         <table class="table">
         <thead style="background-color: #302E71;">
             <tr>
-                <th>Nombre</th>
+                <th>Nombre Completo</th>
                 <th>Cedula</th>
-                <th>Licencia Vigente</th>
+                <th>Correo</th>
+                <th>Cargo</th>
                 <th>Modificar</th>
                 <th>Eliminar</th>
                 <th>Visualizar</th>
                 <th></th>
             </tr>
-        </thead>
+            </thead>
             <?php
-            $ChoferBusiness = new ChoferBusiness();
-            $allChoferes = $ChoferBusiness->getAllChofer();
-            foreach ($allChoferes as $current) {
-                echo '<form method="post" enctype="multipart/form-data" action="../business/ChoferAction.php">';
-                echo '<input type="hidden" name="chofer_id" value="' . $current->getChoferId() . '">';
-                echo '<td><input type="text" name="chofer_nombre" id="chofer_nombre" value="' . $current->getChoferNombre() . '"/></td>';
-                echo '<td><input type="text" name="chofer_cedula" id="chofer_cedula" value="' . $current->getChoferCedula() . '"/></td>';
-                echo '<td><input type="text" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="' . $current->getChoferLicenciaVigente() . '"/></td>';
+            $SolicitantesBusiness = new SolicitanteBusiness();
+            $allSolicitantes = $SolicitantesBusiness->getAllSolicitantes(); 
+            foreach ($allSolicitantes as $current) {
+                echo '<form method="post" enctype="multipart/form-data" action="../business/FuncionarioAction.php">';
+                echo '<input type="hidden" name="solicitante_id" value="' . $current->getSolicitanteId() . '">';
+                echo '<td><input type="text" readonly name="solicitante_nombre" id="solicitante_nombre" value="' . $current->getSolicitanteNombre() . ' '. $current->getSolicitanteApellidos() .'"/></td>';
+                echo '<td><input type="text" readonly name="solicitante_cedula" id="solicitante_cedula" value="' . $current->getSolicitanteCedula() . '"/></td>';
+                echo '<td><input type="text" readonly name="solicitante_correo" id="solicitante_correo" value="' . $current->getSolicitanteCorreo() . '"/></td>';
+                echo '<td><input type="text" readonly name="solicitante_cargo" id="solicitante_cargo" value="' . $current->getSolicitanteCargo() . '"/></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
-                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getChoferId() .')">delete</button></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getSolicitanteId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';
@@ -119,8 +124,8 @@
                 </td>
             </tr>
         </table>
-        
-    <nav aria-label="Page navigation example">
+
+  <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
     <li class="page-item disabled">
     <a class="page-link">Anterior</a>
@@ -132,22 +137,18 @@
     <a class="page-link" href="#">Siguiente</a>
     </li>
     </ul>
-    </nav>
+  </nav>
 
         </br>
-
-        <form method="post" enctype="multipart/form-data" action="../View/RegistroChofer.php">
+        <form method="post" enctype="multipart/form-data" action="./RegistroSolicitanteView.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" class="btn btn-dark btn-block" value="Registrar Chofer" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" class="btn btn-dark btn-block" value="Registrar Solicitante" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
-        <a href="./PaginaPrincipal.php" style="color: #393f81;">Pagina Principal</a></p>
+
+        <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Pagina Principal</a></p>
 
 </body>
-
-
-
 </html>
-

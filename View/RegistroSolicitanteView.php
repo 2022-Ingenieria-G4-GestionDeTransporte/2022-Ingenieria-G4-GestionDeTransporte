@@ -21,11 +21,8 @@
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
-                <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
-                            
+                <form method="post" enctype="multipart/form-data" action="">     
                   <center><h2 class="" style= ""> Registro Solicitante</h2></center></br>
-
-
      <table  border = '2' class="table">
   <thead>
     
@@ -41,49 +38,30 @@
         <td  width='200'>
         <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
     <input type="text" class="form-control" id="nombre" placeholder="Ingrese su apellido..."> 
-      
   </td>
-
- 
     </tr>
-
     <tr>
-   
 <td  width='200'>
     <label for="exampleFormControlInput1" class="form-label">Cédula:</label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su cédula...">
-  
 </td>
-
 <td  width='200'>
     <label for="exampleFormControlInput1" class="form-label">Cargo:</label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su cargo...">
-  
 </td>
-
-    
-
 <tr>
 <td  colspan="2" width='200'>
         <label for="exampleFormControlInput1" class="form-label">Correo:</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@dominio.com">
-      
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@dominio.com">  
     </td>
-
 </tr>
-
-
-
 <tr>
-
 <td>
 <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" enabled>
         <label class="form-check-label" for="disabledFieldsetCheck">
           Licencia de Conducir
         </label>
-
         </td>
-
         <td>
 <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" enabled>
         <label class="form-check-label" for="disabledFieldsetCheck">
@@ -91,58 +69,28 @@
         </label>
 
         </td>
-
-
     </tr>
-
-
-
-
     <tr>
-
-
-
     <td>
-
-
     
        <label for="exampleFormControlInput1" class="form-label">Fecha de Vencimiento:</label>
         <input type="date" class="form-control" id="exampleFormControlInput1">
-      
-
         </td>
-
         <td>
-
 
         <label for="exampleFormControlInput1" class="form-label">Código Licencia:</label>
     <input type="text" class="form-control" id="nombre" placeholder="Ingrese código licencia..."> 
-
-
- </td>
-
+     </td>
     </tr>
-
   </tbody>
 </table>
-                                    
-              
-
-
-                
-                  <div align ="center" class="pt-0.1 mb-4">
-                    <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Registrar</button>
-                 
-                  
-                  
-
+<button class="btn btn-dark btn-block" name="login" id="login" type="submit">Registrar</button>       
 </form> 
-</div><div align ="right">
-<form action="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php">
-        <input type="submit" class="btn btn-link btn-block" value="Pagina Principal" />
-        </form> 
+        <form action="./GestionSolicitantesView.php">
+        <input type="submit" class="btn btn-link btn-block" value="Regresar" />
+        </form>   
+</div>
 
-        </div>
 
                 </div>
             </div>

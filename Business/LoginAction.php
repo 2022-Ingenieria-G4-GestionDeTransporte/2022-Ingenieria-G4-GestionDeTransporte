@@ -16,13 +16,13 @@ if (isset($_POST['login'])) {
                 $resultado = 3;
             }
             if ($resultado == 1) {
-                header("location: ../view/PaginaPrincipal.php");
+                header("location: ../view/PaginaPrincipalAdministradorView.php");
             }else
             if ($resultado == 2) {
-                header("location: ../view/PaginaPrincipalSolicitante.php");
+                header("location: ../view/PaginaPrincipalSolicitanteView.php");
             }else
             if ($resultado == 3) {
-                header("location: ../view/PaginaPrincipalChofer.php");
+                header("location: ../view/PaginaPrincipalChoferView.php");
             }else {
                 header("location: ../view/Login.php?error=dbError");
             }

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html xml:th="http://thymeleaf.org">
 <head>
-    <title>Solicitud!</title>
+    <title>Solicitud de Gira</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript" src="funciones.js"></script>
-    <h1><img  src="logo.png" height = "85px" width = "100px" alt=""> --Registro Participantes De La Gira--</h1>
+    <h1><img  src="logo.png" height = "85px" width = "100px" alt="">Solicitud de Gira</h1>
 </head>
+</head>
+<body>  
+<header>  
+<nav>  
+<ul>  
+<li>  
+<a href="./SolicitudGiraDatosView.php"> Solicitud de Gira </a>  
+</li>  
+<li>  
+<a href="./SolicitudGiraDestinoView.php"> Destino Gira </a>  
+</li>  
+<li>  
+<a href="./SolicitudGiraItinerarioView.php"> Itinerario Gira </a>  
+</li>  
+<li> 
+<a href="./SolicitudGiraParticipantesView.php"> Registro Participantes De La Gira </a>  
+</li>   
+</ul>  
+</nav>  
+</header>
+<h1>Registro de Participantes a la Gira</h1>
 <body>
     <div id="fondo">
         <form th:action="@{/registrar}" method="post">
@@ -29,7 +50,7 @@
 
         </form>
     </div>
-    <form action="/2022-Ingenieria-G4-GestionDeTransporte/View/Index.php">
+    <form action="./PaginaPrincipalSolicitanteView.php">
         <input type="submit" value="Finalizar solicitud" />
         <div id="contenedor"></div>
     </form>

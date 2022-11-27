@@ -24,7 +24,7 @@
         <input type="submit" value="<"><input type="search" name="tipo" required placeholder="Buscar">
     </form>
     </br>
-    <form action="/paginaPrincipal">
+    <form action="./PaginaPrincipalAdministradorView.php">
         <input type="submit" value="Pagina Principal" />
         <div id="contenedor"></div>
     </form>

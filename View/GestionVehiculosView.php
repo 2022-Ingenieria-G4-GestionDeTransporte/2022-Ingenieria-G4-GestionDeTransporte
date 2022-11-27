@@ -1,13 +1,11 @@
 ﻿<!DOCTYPE html>
 <head>
-    <script src="../js/Function.js"></script>
-    <title>Funcionarios</title>
+    <title>Vehiculos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include '../Business/SolicitanteBusiness.php';
+    include '../business/VehiculoBusiness.php';
     ?>
-    </link>
     <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
@@ -28,20 +26,19 @@
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarGiras.php" _msthash="1070225" _msttexthash="177827"><ion-icon name="flag-outline"></ion-icon>Giras</a>
+          <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827"><ion-icon name="flag-outline"></ion-icon>Giras</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarSolicitantes.php" _msthash="1070407" _msttexthash="257478"><ion-icon name="hand-right-outline"></ion-icon>Solicitantes</a>
+          <a class="nav-link" href="./GestionSolicitantesView.php" _msthash="1070407" _msttexthash="257478"><ion-icon name="hand-right-outline"></ion-icon>Solicitantes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarChoferes.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
+          <a class="nav-link"  href="./GestionChoferesView.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/2022-Ingenieria-G4-GestionDeTransporte/View/VisualizarVehiculos.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
+        <a class="nav-link active" aria-current="page" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" _msthash="1070953" _msttexthash="262119"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
@@ -63,7 +60,6 @@
 </nav>
 </body>
 
-
 <body class = "" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br>
   <div style="background-color: #302E71">
@@ -74,32 +70,30 @@
 </div>
 </br></br>
 
-
-        <table class="table">
+        <table class = "table">
         <thead style="background-color: #302E71;">
             <tr>
-                <th>Nombre Completo</th>
-                <th>Cedula</th>
-                <th>Correo</th>
-                <th>Cargo</th>
+                <th>Matricula</th>
+                <th>Tipo</th>
+                <th>Modelo</th>
+                <th>Estado</th>
                 <th>Modificar</th>
                 <th>Eliminar</th>
                 <th>Visualizar</th>
-                <th></th>
             </tr>
             </thead>
             <?php
-            $SolicitantesBusiness = new SolicitanteBusiness();
-            $allSolicitantes = $SolicitantesBusiness->getAllSolicitantes(); 
-            foreach ($allSolicitantes as $current) {
-                echo '<form method="post" enctype="multipart/form-data" action="../business/FuncionarioAction.php">';
-                echo '<input type="hidden" name="solicitante_id" value="' . $current->getSolicitanteId() . '">';
-                echo '<td><input type="text" readonly name="solicitante_nombre" id="solicitante_nombre" value="' . $current->getSolicitanteNombre() . ' '. $current->getSolicitanteApellidos() .'"/></td>';
-                echo '<td><input type="text" readonly name="solicitante_cedula" id="solicitante_cedula" value="' . $current->getSolicitanteCedula() . '"/></td>';
-                echo '<td><input type="text" readonly name="solicitante_correo" id="solicitante_correo" value="' . $current->getSolicitanteCorreo() . '"/></td>';
-                echo '<td><input type="text" readonly name="solicitante_cargo" id="solicitante_cargo" value="' . $current->getSolicitanteCargo() . '"/></td>';
+            $VehiculoBusiness = new VehiculoBusiness();
+            $allVehiculos = $VehiculoBusiness->getAllVehiculo();
+            foreach ($allVehiculos as $current) {
+                echo '<form method="post" enctype="multipart/form-data" action="../business/VehiculoAction.php">';
+                echo '<input type="hidden" name="vehiculo_id" value="' . $current->getVehiculoId() . '">';
+                echo '<td><input type="text" readonly name="vehiculo_matricula" id="vehiculo_matricula" value="' . $current->getVehiculoMatricula() . '"/></td>';
+                echo '<td><input type="text" readonly name="vehiculo_tipo" id="vehiculo_tipo" value="' . $current->getVehiculoTipo() . '"/></td>';
+                echo '<td><input type="text" readonly name="vehiculo_modelo" id="vehiculo_modelo" value="' . $current->getVehiculoModelo() . '"/></td>';
+                echo '<td><input type="text" readonly name="vehiculo_estado" id="vehiculo_estado" value="' . $current->getVehiculoEstado() . '"/></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
-                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getSolicitanteId() .')">delete</button></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="deleteVehiculo('. $current->getVehiculoId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';
@@ -125,7 +119,7 @@
             </tr>
         </table>
 
-  <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
     <li class="page-item disabled">
     <a class="page-link">Anterior</a>
@@ -136,19 +130,18 @@
     <li class="page-item">
     <a class="page-link" href="#">Siguiente</a>
     </li>
-    </ul>
-  </nav>
-
+  </ul>
+</nav>
         </br>
-        <form method="post" enctype="multipart/form-data" action="/2022-Ingenieria-G4-GestionDeTransporte/View/RegistroSolicitante.php">
+        <form method="post" enctype="multipart/form-data" action="./RegistroVehiculoView.php">
                 <tr>
                 <?php
-                   echo '<td><input type="submit" class="btn btn-dark btn-block" value="Registrar Solicitante" name="registro" id="registro"/></td></tr></br>';
+                   echo '<td><input type="submit" class="btn btn-dark btn-block" value="Registrar Vehiculo" name="registro" id="registro"/></td></tr></br>';
                  ?>
                  </br>
         </form>
-
-        <a href="./PaginaPrincipal.php" style="color: #393f81;">Pagina Principal</a></p>
+        
+        <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Pagina Principal</a></p>
 
 </body>
 </html>

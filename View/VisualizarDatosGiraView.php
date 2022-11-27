@@ -25,18 +25,18 @@
 
     <ul class="nav nav-pills" style="background-color: #302E71">
         <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./visualizarGiras.php" _msthash="1070225" _msttexthash="177827">
+            <a class="nav-link" style="color: white" aria-current="page" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
                 <ion-icon name="arrow-back-circle-outline"></ion-icon>Regresar
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" style="color: white" aria-current="page" href="./informacionGira.php">Información Básica</a>
+            <a class="nav-link active" style="color: white" aria-current="page" href="./VisualizarDatosGiraView.php">Información Básica</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style="color: white" href="./participantesGira.php">Participantes</a>
+            <a class="nav-link" style="color: white" href="./VisualizarParticipantesGiraView.php">Participantes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./destinoInformacionGira.php">Destino e Itinerario</a>
+            <a class="nav-link" style="color: white" aria-current="page" href="./VisualizarDestinoGiraView.php">Destino e Itinerario</a>
         </li>
     </ul>
     <br>
