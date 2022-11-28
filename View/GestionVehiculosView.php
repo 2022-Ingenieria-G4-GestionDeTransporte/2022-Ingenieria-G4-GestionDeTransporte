@@ -63,7 +63,7 @@
 <body class = "" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br>
   <div style="background-color: #302E71">
-    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
+  <img src="../Images/LOGO-UNA1-Blanco.png" alt="logo" style="float:right" width="129px">
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
     <h5 style="color: white">Lista de Vehículos</h5>
     <br>

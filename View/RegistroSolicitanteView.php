@@ -79,7 +79,7 @@
                             <label for="exampleFormControlInput1" class="form-label">Fecha de Vencimiento:</label>
                             <input type="date" class="form-control" id="exampleFormControlInput1">
                           </td>
-                          <td>
+                          <td> 
 
                             <label for="exampleFormControlInput1" class="form-label">Código Licencia:</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Ingrese código licencia...">
