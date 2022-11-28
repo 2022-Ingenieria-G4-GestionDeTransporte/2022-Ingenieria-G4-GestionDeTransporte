@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itenerario Chofer</title>
+    <title>Itinerario Chofer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <?php
     include '../Business/ItenerarioChoferBusiness.php';
@@ -19,7 +19,7 @@
     <div style="background-color: #302E71">
         <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="155">
         <h3 style="color: white">Sistema Gestión de Transportes</h3>
-        <h4 style="color: white">Itenerario Chofer</h4>
+        <h4 style="color: white">Itinerario Chofer</h4>
         <br>
         <br>
       
@@ -40,7 +40,6 @@
           <th>Fecha Salida SRHNC</th>
           <th>Fecha Llegada SRHNC</th>
           <th>Observaciones</th>
-          <th></th>
         </tr>
       </thead>
       <tbody id="buscar">
