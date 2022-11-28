@@ -6,32 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionario</title>
+    <link rel = "stylesheet" href="../css/styl.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<div style="background-color: #d1052a">
-    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
-    <h3 style="color: white">Sistema Gestión de Transportes</h3>
-    <h5 style="color: white">Módulo de Solicitantes</h5>
-    <br>
-</div>
+    <?php
+    include '../Business/GiraBusiness.php';
+    //#302E71 #C30721
+    ?>
+</head>
+<style>
+  thead th {
+  color: #fff;
+}
+</style>
+<center>
+    <div style="background-color: #302E71">
+        <a href="./Login.php" style="float: right">
+            <ion-icon name="log-out-sharp"></ion-icon>Cerrar Sesión
+        </a>
+        <br>
+        <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
+        <h4 style="color: white">Sistema Gestión de Transportes</h4>
+        <h5 style="color: white">Módulo de Solicitantes</h5>
+        <br>
+    </div>
+</center>
 <br>
 
 <body>
-    <div class="container">
-        <form method="post" action="../business/SolicitanteAction.php">
-            <input type="submit" class="btn btn-secondary" value="Nueva Solicitud de gira" name="nuevaSolicitudGira" style="float: right">
-        </form>
-    </div>
-
-    <br>
-    <br>
     <center>
-        <h4>Lista de Giras Realizadas</h4>
-        <br>
         <div class="container">
-            <table class="table table-striped table-responsive">
-                <thead class="table-dark">
+            <h4>Lista de Giras Realizadas</h4>
+            <br>
+            <table class="table">
+                <thead style="background-color: #302E71;">
                     <tr>
                         <th>Encargado</th>
                         <th>Destino</th>
@@ -41,14 +53,32 @@
 
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Kendall</td>
-                        <td>Guácimo</td>
-                        <td>Ingeniería en Sistemas</td>
-                        <td>Educativa</td>
-                        <td></td>
-                    </tr>
+                <tbody id=buscar>
+                    <?php
+                    $GiraBusiness = new GiraBusiness();
+                    $allGiras = $GiraBusiness->getAllGira();
+                    foreach ($allGiras as $current) {
+                        echo '<form method="post" enctype="multipart/form-data" action="../business/GiraAction.php">';
+                        echo '<input type="hidden" name="tbgiraid" value="' . $current->getGiraId() . '">';
+                        echo '<td><input type="text" readonly name="tbgiranombreencargado" id="tbgiranombreencargado" value="' . $current->getGiraNombreEncargado() . '"/></td>';
+                        echo '<td> Guápiles </td>';
+                        echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
+                        echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
+                        if ($current->getGiraEstado() == "Aprobada") {
+                            $Estado = "Aprobada"; //Representar con colores
+                            echo '<td><input type="button" class="buttonAprobado" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';
+                        } else if ($current->getGiraEstado() == "Denegada") {
+                            $Estado = "Denegada"; //Representar con colores
+                            echo '<td><input type="button" class="buttonDenegado" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';
+                        } else {
+                            $Estado = "Sin revisar";
+                            echo '<td><input type="button" class="buttonPendiente" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';
+                        }
+
+                        echo '</tr>';
+                        echo '</form>';
+                    }
+                    ?>
                 </tbody>
             </table>
             <nav aria-label="Page navigation example">
@@ -65,18 +95,21 @@
                 </ul>
             </nav>
         </div>
-
+        <div class="container">
+        <form method="post" action="../business/SolicitanteAction.php">
+            <input type="submit" class="btn btn-dark btn-block" value="Nueva Solicitud de gira" name="nuevaSolicitudGira" style="float: right">
+        </form>
+    </div>
     </center>
-
+    <!--
     <div class="container">
 
         <br>
         <form method="post" action="../business/SolicitanteAction.php">
-            <input type="submit" class="btn btn-secondary" value="Cerrar sesión" name="back">
+            <input type="submit" class="btn btn-dark btn-block" value="Cerrar sesión" name="back">
         </form>
-    </div>
+    </div>-->
 
 </body>
 
 </html>
-<?

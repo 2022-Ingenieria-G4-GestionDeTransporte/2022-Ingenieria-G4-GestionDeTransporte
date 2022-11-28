@@ -16,39 +16,76 @@
     ?>
 </head>
 <style>
-  thead th {
-  color: #fff;
-}
+    thead th {
+        color: #fff;
+    }
 </style>
-<div style="background-color: #AA041B">
-    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
-    <h3 style="color: white">Sistema Gestión de Transportes</h3>
-    <h5 style="color: white">Información participantes de la gira</h5>
-    <br>
-</div>
 
-<body>
-    <ul class="nav nav-pills" style="background-color: #302E71">
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
-                <ion-icon name="arrow-back-circle-outline"></ion-icon>Regresar
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./VisualizarDatosGiraView.php">Información Básica</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" style="color: white" href="./VisualizarParticipantesGiraView.php">Participantes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./VisualizarDestinoGiraView.php">Destino e Itinerario</a>
-        </li>
-    </ul>
-    <br><br>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="arrow-back-circle-sharp"></ion-icon>Regresar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VisualizarDatosGiraView.php" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="information-circle-sharp"></ion-icon>Información Básica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./VisualizarParticipantesGiraView.php">
+                        <ion-icon name="people-sharp"></ion-icon>Participantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VisualizarDestinoGiraView.php">
+                        <ion-icon name="earth-sharp"></ion-icon>Destino e Itinerario</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</br>
+</br>
+<body class="">
+    </br>
+    <div style="background-color: #302E71">
+        <h3 style="color: white">Sistema Gestión de Transportes</h3>
+        <h5 style="color: white">Información participantes de la gira</h5>
+        <br>
+    </div>
+    </br></br>
+        <center>
+                <table>
+                    <td><img src="../Images/listaParticipantes.jpg" class="img-thumbnail" style="float:right" width="330" height="330"></td>
+                    <td></td>
+                    <td><input type="submit" class="btn btn-dark btn-block" value="Eliminar" /></td>
+                </table>
+            <br>
+            <br>
+            <table>
+                <td>
+                    <div class="mb-2" width='200'>
+                        <label for="formFile" class="form-label">Actualizar archivo de registro de participantes</label>
+                        <input class="form-control" type="file" id="formFile">
 
-    <div class="container">
-        <table class="table table-striped table-responsive">
+                    </div>
+                </td>
+                <td><input type="submit" class="btn btn-dark btn-block" name="actualizarParticipantes" id="actualizarParticipantes" value="Guardar" /></td>
+            </table>
+        </center>
+        <!--<table class="table table-striped table-responsive">
             <thead style="background-color: #302E71;">
                 <tr>
                     <th>Cédula</th>
@@ -59,8 +96,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                $ParticipantesBusiness = new ParticipantesBusiness();
+                /*$ParticipantesBusiness = new ParticipantesBusiness();
                 $allParticipantes = $ParticipantesBusiness->getAllParticipantes();
                 foreach ($allParticipantes as $current) {
                     echo '<input type="hidden" name="tbparticipanteid" value="' . $current->getParticipanteId() . '">';
@@ -73,27 +109,10 @@
 
                     echo '</tr>';
                     echo '</form>';
-                }
-                ?>
+                }*/
             </tbody>
 
-        </table>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link">Anterior</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                </li>
-            </ul>
-        </nav>
-
-        <input type="submit" class="btn btn-dark btn-block" value="Actualizar y Guardar" />
-    </div>
+        </table>-->
 </body>
 
 </html>

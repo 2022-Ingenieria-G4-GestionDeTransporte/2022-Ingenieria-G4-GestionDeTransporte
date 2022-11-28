@@ -38,7 +38,7 @@
           <a class="nav-link"  href="./GestionChoferesView.php" _msthash="1070589" _msttexthash="76245"><ion-icon name="man-outline"></ion-icon>Choferes</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehiculos</a>
+        <a class="nav-link active" aria-current="page" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880"><ion-icon name="car-outline"></ion-icon> Vehículos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" _msthash="1070953" _msttexthash="262119"><ion-icon name="settings-outline"></ion-icon>Configuración</a>
@@ -65,7 +65,7 @@
   <div style="background-color: #302E71">
     <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
-    <h5 style="color: white">Lista de Giras</h5>
+    <h5 style="color: white">Lista de Vehículos</h5>
     <br>
 </div>
 </br></br>
@@ -73,7 +73,7 @@
         <table class = "table">
         <thead style="background-color: #302E71;">
             <tr>
-                <th>Matricula</th>
+                <th>Matrícula</th>
                 <th>Tipo</th>
                 <th>Modelo</th>
                 <th>Estado</th>
@@ -141,7 +141,7 @@
                  </br>
         </form>
         
-        <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Pagina Principal</a></p>
+        <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Página Principal</a></p>
 
 </body>
 </html>

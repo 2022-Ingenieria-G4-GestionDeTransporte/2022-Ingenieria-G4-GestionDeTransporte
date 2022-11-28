@@ -23,7 +23,7 @@
                                     <div class="card-body p-4 p-lg-5 text-black">
                                         <form method="post" enctype="multipart/form-data" action="../Business/LoginAction.php">
 
-                                            <h2 class="" style= ""> Registro Solicitante</h2></center></br>
+                                            <h2 class=""> Registro Solicitante</h2></center></br>
                                             <table class="table">
                                                 <thead>
                                                 </thead>

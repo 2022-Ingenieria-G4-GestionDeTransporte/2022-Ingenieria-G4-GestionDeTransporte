@@ -39,7 +39,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./ActualizarAdministradorView.php" _msthash="1070225" _msttexthash="177827">
-            <ion-icon name="person-outline"></ion-icon>Informacion Personal
+            <ion-icon name="person-outline"></ion-icon>Información Personal
             </a>
           </li>
           <li class="nav-item">
@@ -54,7 +54,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Login.php" _msthash="1070771" _msttexthash="282880">
-            <ion-icon name="log-out-outline"></ion-icon> Cerrar Sesion
+            <ion-icon name="log-out-outline"></ion-icon> Cerrar Sesión
             </a>
           </li>
         </ul>
