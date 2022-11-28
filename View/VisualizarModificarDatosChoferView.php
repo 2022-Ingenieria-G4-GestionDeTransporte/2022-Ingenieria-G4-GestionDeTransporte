@@ -57,8 +57,8 @@
                     <label><b>Nombre Completo:</b></label>
                     <input type="text" class="form-control" placeholder="Ingrese el nombre del chofer..." name="nombre" required=""> <br>
 
-                    <label><b>Cedula:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la cedula del chofer..." name="cedula" required=""> <br>
+                    <label><b>Cédula:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese la cédula del chofer..." name="cedula" required=""> <br>
 
                     <label><b>Posee Licencia:</b></label>
                     <div class="form-check">

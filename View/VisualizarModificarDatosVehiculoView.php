@@ -46,7 +46,7 @@
     </br>
     <div style="background-color: #302E71">
         <h4 style="color: white">Sistema Gestión de Transportes</h4>
-        <h5 style="color: white">Información del Vehiculo Seleccionado</h5>
+        <h5 style="color: white">Información del Vehículo Seleccionado</h5>
         <br>
     </div>
     </br></br>
@@ -55,28 +55,28 @@
             <div class="row">
                 <div class="form-group col">
                     <label><b>Matricula:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la matricula del vehiculo..." name="nombre" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese la matricula del vehículo..." name="nombre" required=""> <br>
 
                     <label><b>Marca:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la marca del vehiculo..." name="apellidos" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese la marca del vehículo..." name="apellidos" required=""> <br>
 
                     <label><b>Modelo:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el modelo del vehiculo..." name="cedula" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese el modelo del vehículo..." name="cedula" required=""> <br>
 
                     <label><b>Tipo:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el tipo de vehiculo..." name="cargo" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese el tipo de vehículo..." name="cargo" required=""> <br>
                 </div>
                 <div class="form-group col">
-                    <label><b>Estado del Vehiculo:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el estado del vehiculo..." name="area" required=""> <br>
+                    <label><b>Estado del Vehículo:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el estado del vehículo..." name="area" required=""> <br>
 
                     
                     <label><b>Nivel de aceite:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el nivel de aceite del vehiculo..." name="correo" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese el nivel de aceite del vehículo..." name="correo" required=""> <br>
 
 
                     <label><b>Kilometraje:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el kilometraje del vehiculo..." name="password" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese el kilometraje del vehículo..." name="password" required=""> <br>
                 </div>
 
             </div>

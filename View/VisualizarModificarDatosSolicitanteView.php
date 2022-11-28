@@ -60,8 +60,8 @@
                     <label><b>Apellidos:</b></label>
                     <input type="text" class="form-control" placeholder="Ingrese los apellidos del solicitante..." name="apellidos" required=""> <br>
 
-                    <label><b>Cedula:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la cedula del solicitante..." name="cedula" required=""> <br>
+                    <label><b>Cédula:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese la cédula del solicitante..." name="cedula" required=""> <br>
 
                     <label><b>Cargo:</b></label>
                     <input type="text" class="form-control" placeholder="Ingrese el cargo que desempeña el solicitante..." name="cargo" required=""> <br>
@@ -85,8 +85,8 @@
                     <input type="date" class="form-control"  name="area" required=""> <br>
 
                     
-                    <label><b>Correo Electronico:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el correo electronico del solicitante..." name="correo" required=""> <br>
+                    <label><b>Correo Electrónico:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el correo electrónico del solicitante..." name="correo" required=""> <br>
 
 
                     <label><b>Contraseña:</b></label>
