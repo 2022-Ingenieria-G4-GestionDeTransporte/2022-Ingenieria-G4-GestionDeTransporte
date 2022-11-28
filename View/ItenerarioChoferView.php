@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itinerario Chofer</title>
+    </link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <?php
     include '../Business/ItenerarioChoferBusiness.php';
     ?>
@@ -40,6 +46,8 @@
           <th>Fecha Salida SRHNC</th>
           <th>Fecha Llegada SRHNC</th>
           <th>Observaciones</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
         </tr>
       </thead>
       <tbody id="buscar">
@@ -54,6 +62,8 @@
             echo '<td><input type="datetime" readonly name="tbitenerariochoferfechallegada" id="tbitenerariochoferfechallegada" value="' . $current->getItenerariochoferfechallegada() . '"/></td>';
             echo '<td><input type="datetime" readonly name="tbitenerariochoferfechasalida" id="tbitenerariochoferfechasalida" value="' . $current->getItenerariochoferfechasalida() . '"/></td>';
             echo '<td><input type="text" readonly name="tbitenerariochoferobservaciones" id="tbitenerariochoferobservaciones" value="' . $current->getItenerariochoferobservaciones() . '"/></td>';
+            echo '<td><input type="submit" class="material-symbols-outlined" value="update" name="update" id="update"/></td>';
+            echo '<td><button class="material-symbols-outlined" value="delete" onclick="">delete</button></td>';
             echo '</tr>';
             echo '</form>';
           }
