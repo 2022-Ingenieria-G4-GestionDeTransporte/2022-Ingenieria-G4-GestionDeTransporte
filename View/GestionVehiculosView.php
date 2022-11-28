@@ -78,7 +78,6 @@
                 <th>Tipo</th>
                 <th>Modelo</th>
                 <th>Estado</th>
-                <th>Modificar</th>
                 <th>Eliminar</th>
                 <th>Visualizar</th>
             </tr>
@@ -93,7 +92,6 @@
                 echo '<td><input type="text" readonly name="vehiculo_tipo" id="vehiculo_tipo" value="' . $current->getVehiculoTipo() . '"/></td>';
                 echo '<td><input type="text" readonly name="vehiculo_modelo" id="vehiculo_modelo" value="' . $current->getVehiculoModelo() . '"/></td>';
                 echo '<td><input type="text" readonly name="vehiculo_estado" id="vehiculo_estado" value="' . $current->getVehiculoEstado() . '"/></td>';
-                echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
                 echo '<td><button class="material-symbols-outlined" onclick="deleteVehiculo('. $current->getVehiculoId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';

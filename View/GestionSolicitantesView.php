@@ -83,7 +83,6 @@
                 <th>Cédula</th>
                 <th>Correo</th>
                 <th>Cargo</th>
-                <th>Modificar</th>
                 <th>Eliminar</th>
                 <th>Visualizar</th>
                 <th></th>
@@ -93,13 +92,12 @@
             $SolicitantesBusiness = new SolicitanteBusiness();
             $allSolicitantes = $SolicitantesBusiness->getAllSolicitantes(); 
             foreach ($allSolicitantes as $current) {
-                echo '<form method="post" enctype="multipart/form-data" action="../business/FuncionarioAction.php">';
+                echo '<form method="post" enctype="multipart/form-data" action="../business/SolicitanteAction.php">';
                 echo '<input type="hidden" name="solicitante_id" value="' . $current->getSolicitanteId() . '">';
                 echo '<td><input type="text" readonly name="solicitante_nombre" id="solicitante_nombre" value="' . $current->getSolicitanteNombre() . ' '. $current->getSolicitanteApellidos() .'"/></td>';
                 echo '<td><input type="text" readonly name="solicitante_cedula" id="solicitante_cedula" value="' . $current->getSolicitanteCedula() . '"/></td>';
                 echo '<td><input type="text" readonly name="solicitante_correo" id="solicitante_correo" value="' . $current->getSolicitanteCorreo() . '"/></td>';
                 echo '<td><input type="text" readonly name="solicitante_cargo" id="solicitante_cargo" value="' . $current->getSolicitanteCargo() . '"/></td>';
-                echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
                 echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getSolicitanteId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';

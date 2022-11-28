@@ -79,7 +79,6 @@
                 <th>Nombre</th>
                 <th>Cédula</th>
                 <th>Licencia Vigente</th>
-                <th>Modificar</th>
                 <th>Eliminar</th>
                 <th>Visualizar</th>
                 <th></th>
@@ -98,7 +97,6 @@
                 }else{
                 echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="0"/></td>';
                 }
-                echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
                 echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getChoferId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
