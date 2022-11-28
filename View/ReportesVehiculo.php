@@ -30,6 +30,64 @@
     
   </thead>
   <tbody align="left">
+  <tr>
+
+<td width='200'>
+  <label class="form-label">Placa:</label>
+<input type="text" class="form-control" id="nombre" placeholder="Ingrese su placa..."> 
+
+</td>
+
+<td  width='200'>
+  <label class="form-label">Nivel de Aceite:</label>
+<input type="text" class="form-control" id="nombre" placeholder="Ingrese nivel de aceite..."> 
+
+</td>
+
+</tr>
+
+<tr>
+
+    <td  width='200'>
+  <label class="form-label">Modelo:</label>
+<input type="text" class="form-control" id="nombre" placeholder="Ingrese el modelo..."> 
+
+</td>
+
+
+<td  width='200'>
+  <label class="form-label">Kilometraje:</label>
+<input type="text" class="form-control" id="nombre" placeholder="Ingrese el kilometraje..."> 
+
+</td>
+</tr>
+
+
+<tr>
+
+<td  width='200'>
+<label class="form-label">Tipo Vehiculo:</label>   
+<select class="form-select" aria-label="Default select example">
+<option selected>Seleccione!</option>
+<option value="1">Pickup</option>
+<option value="2">Prado</option>
+<option value="3">Buseta</option>
+</select>
+
+</td>
+
+<td  width='200'>
+  
+</br>
+<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" enabled>
+  <label class="form-check-label" for="disabledFieldsetCheck">
+    Licencia del Campus
+  </label>
+
+</td>
+
+</tr>
+
   </tbody>
 </table>
 <button class="btn btn-dark btn-block" name="login" id="login" type="submit">Registrar</button>    
