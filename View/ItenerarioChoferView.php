@@ -22,14 +22,15 @@
 }
 
 </style>
+<center>
     <div style="background-color: #302E71">
-        <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="155">
-        <h3 style="color: white">Sistema Gestión de Transportes</h3>
-        <h4 style="color: white">Itinerario Chofer</h4>
         <br>
+        <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
+        <h4 style="color: white">Sistema Gestión de Transportes</h4>
+        <h5 style="color: white">Itinerario de Chofer</h5>
         <br>
-      
     </div>
+</center>
     <br><br>
 <body class="body">
   <div class="container">

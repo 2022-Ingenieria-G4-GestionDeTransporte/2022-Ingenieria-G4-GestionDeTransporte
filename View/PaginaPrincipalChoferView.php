@@ -20,14 +20,18 @@
   color: #fff;
 }
 </style>
+<center>
     <div style="background-color: #302E71">
-        <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="155">
-        <h3 style="color: white">Sistema Gestión de Transportes</h3>
-        <h4 style="color: white">Pagina Principal Chofer</h4>
+        <a href="./Login.php" style="float: right">
+            <ion-icon name="log-out-sharp"></ion-icon>Cerrar Sesión
+        </a>
         <br>
+        <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
+        <h4 style="color: white">Sistema Gestión de Transportes</h4>
+        <h5 style="color: white">Módulo de Chofer</h5>
         <br>
-      
     </div>
+</center>
 <body>
         <br><br>
         <div class="container-lg">
@@ -87,13 +91,5 @@
         </nav>
         </div>
         <br>
-
-        <div class="container">
-
-        <br>
-        <form method="post" action="../business/GiraAction.php">
-            <input type="submit" class="btn btn-secondary" value="Cerrar sesión" name="volver">
-        </form>
-    </div>
 </body>
 </html>
