@@ -65,7 +65,8 @@
     </br></br>
     <div class="container">
         <br>
-        <table class="table">
+        <center><div class="table-responsive card-body card mask-custom col-12 row justify-content-center container">
+        <table class="table table-borderless text-white mb-0">
             <thead style="background-color: #302E71;">
                 <tr>
                     <th>Destino (Provincia, Cantón, Distrito)</th>
@@ -78,17 +79,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="">
-                    <td>Limon, Guacimo, Guacimo</td>
-                    <td>Hotel Los Rios</td>
-                    <td>07-11-2022</td>
-                    <td>Actividades Recreativas</td>
-                    <td>7:00 am / 7:00 pm</td>
-                    <td>6:00 am</td>
-                    <td>8:00 pm</td>
-                </tr>
+                
             </tbody>
         </table>
+        </div></center>
 
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">

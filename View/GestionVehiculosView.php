@@ -6,13 +6,14 @@
     <?php
     include '../business/VehiculoBusiness.php';
     ?>
-    <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/Function.js"></script>
+    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+
 </head>
 <style>
   thead th {
@@ -69,8 +70,8 @@
     <br>
 </div>
 </br></br>
-
-        <table class = "table">
+<center><div class="table-responsive card-body card mask-custom col-12 row justify-content-center container">
+        <table class="table table-borderless text-white mb-0">
         <thead style="background-color: #302E71;">
             <tr>
                 <th>Matrícula</th>
@@ -118,6 +119,7 @@
                 </td>
             </tr>
         </table>
+        </div></center>
 
     <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">

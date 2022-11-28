@@ -7,13 +7,14 @@
     include '../business/ChoferBusiness.php';
     ?>
     </link>
-    <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/Function.js"></script>
+    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+
 </head>
 <style>
   thead th {
@@ -62,7 +63,7 @@
 </nav>
 </body>
 
-<body class = "" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<body class = "bg-image h-100" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br>
   <div style="background-color: #302E71">
   <img src="../Images/LOGO-UNA1-Blanco.png" alt="logo" style="float:right" width="129px">
@@ -71,8 +72,8 @@
     <br>
 </div>
 </br></br>
-
-        <table class="table">
+<center><div class="table-responsive card-body card mask-custom col-12 row justify-content-center container mask d-flex align-items-center h-100">
+        <table class="table table-borderless text-white mb-0">
         <thead style="background-color: #302E71;">
             <tr>
                 <th>Nombre</th>
@@ -94,7 +95,6 @@
                 echo '<td><input type="text" name="chofer_cedula" id="chofer_cedula" value="' . $current->getChoferCedula() . '"/></td>';
                 if($current->getChoferLicenciaVigente()==1){
                 echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" checked value="1"/></td>';
-
                 }else{
                 echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="0"/></td>';
                 }
@@ -124,6 +124,7 @@
                 </td>
             </tr>
         </table>
+      </div></center>
         
     <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
