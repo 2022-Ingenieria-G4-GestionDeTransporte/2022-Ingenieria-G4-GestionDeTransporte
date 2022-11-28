@@ -92,7 +92,12 @@
                 echo '<input type="hidden" name="chofer_id" value="' . $current->getChoferId() . '">';
                 echo '<td><input type="text" name="chofer_nombre" id="chofer_nombre" value="' . $current->getChoferNombre() . '"/></td>';
                 echo '<td><input type="text" name="chofer_cedula" id="chofer_cedula" value="' . $current->getChoferCedula() . '"/></td>';
-                echo '<td><input type="text" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="' . $current->getChoferLicenciaVigente() . '"/></td>';
+                if($current->getChoferLicenciaVigente()==1){
+                echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" checked value="1"/></td>';
+
+                }else{
+                echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="0"/></td>';
+                }
                 echo '<td><input type="submit" class="material-symbols-outlined" value="settings" name="update" id="update"/></td>';
                 echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getChoferId() .')">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
