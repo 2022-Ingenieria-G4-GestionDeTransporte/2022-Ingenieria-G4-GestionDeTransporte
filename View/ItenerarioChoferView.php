@@ -40,6 +40,7 @@
           <th>Fecha Salida SRHNC</th>
           <th>Fecha Llegada SRHNC</th>
           <th>Observaciones</th>
+          <th></th>
         </tr>
       </thead>
       <tbody id="buscar">

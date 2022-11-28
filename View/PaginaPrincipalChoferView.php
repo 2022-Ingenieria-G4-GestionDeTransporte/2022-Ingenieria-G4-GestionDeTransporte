@@ -48,6 +48,7 @@
                     <th>Tipo de Gira</th>
                     <th>Itenerario</th>
                     <th>Reportes</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody id="buscar">

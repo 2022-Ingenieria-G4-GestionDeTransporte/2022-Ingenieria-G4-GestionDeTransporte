@@ -38,6 +38,7 @@
         <form action="./PaginaPrincipalChoferView.php">
         <input type="submit" class="btn btn-link btn-block" value="Regresar" />
         </form>   
+        <th></th>
 </div>
 
 

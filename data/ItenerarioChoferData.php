@@ -3,7 +3,7 @@
 include_once 'data.php';
 include '../domain/ItenerarioChofer.php';
 
-class ItenerarioChoferData extends Data{
+class ItenerarioChoferData extends Data{//data
 
     public function getAllItenerarioChofer() {
         $conn = mysqli_connect($this->server, $this->user, $this->password, $this->db);

@@ -59,7 +59,7 @@ class ItenerarioChofer{
 		return $this->itenerariochoferobservaciones;
 	}
 
-
+	//set
 	public function setItenerariochoferobservaciones($itenerariochoferobservaciones) {
 		$this->itenerariochoferobservaciones = $itenerariochoferobservaciones;
 	
