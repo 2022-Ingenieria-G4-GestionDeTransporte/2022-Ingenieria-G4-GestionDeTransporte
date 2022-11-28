@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+
 </head>
 <style>
     thead th {
@@ -65,7 +67,8 @@
     </br></br>
     <div class="container">
         <br>
-        <table class="table">
+        <center><div class="table-responsive card-body card mask-custom col-12 row justify-content-center container">
+        <table class="table table-borderless text-white mb-0">
             <thead style="background-color: #302E71;">
                 <tr>
                     <th>Destino (Provincia, Cantón, Distrito)</th>
@@ -78,17 +81,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="">
-                    <td>Limon, Guacimo, Guacimo</td>
-                    <td>Hotel Los Rios</td>
-                    <td>07-11-2022</td>
-                    <td>Actividades Recreativas</td>
-                    <td>7:00 am / 7:00 pm</td>
-                    <td>6:00 am</td>
-                    <td>8:00 pm</td>
-                </tr>
+                
             </tbody>
         </table>
+        </div></center>
 
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">

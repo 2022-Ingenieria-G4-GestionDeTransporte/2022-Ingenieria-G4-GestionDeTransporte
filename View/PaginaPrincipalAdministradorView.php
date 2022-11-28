@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
     </link>
-    <link rel = "stylesheet" href="../css/sty.css" type = "text/css"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/Function.js"></script>
+    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+
     <?php
     include '../Business/GiraBusiness.php';
     //#302E71 #C30721
@@ -72,7 +73,7 @@
 <body class="" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
   </br>
   <div style="background-color: #302E71">
-    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
+  <img src="../Images/LOGO-UNA1-Blanco.png" alt="logo" style="float:right" width="129px">
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
     <h5 style="color: white">Calendario</h5>
     <br>
@@ -109,7 +110,7 @@
       });
     </script>
     </br>
-    <div class = "container col-md-8 offset-md-2">
+    <div class = "container col-md-8 offset-md-2 card-body card col-12 row justify-content-center" >
     <div id='calendar'></div>
     </div>
 </body>
