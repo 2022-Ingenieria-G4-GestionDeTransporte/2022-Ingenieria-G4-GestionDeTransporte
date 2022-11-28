@@ -12,34 +12,57 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+<style>
+    thead th {
+        color: #fff;
+    }
+</style>
 
-<div style="background-color: #AA041B">
-    <img src="../Images/UNA-transparente.png" class="img-thumbnail" style="float:right" width="155" height="150">
-    <h3 style="color: white">Sistema Gestión de Transportes</h3>
-    <h5 style="color: white">Información General de la Gira</h5>
-    <br>
-</div>
-
-
-<body>
-
-    <ul class="nav nav-pills" style="background-color: #302E71">
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
-                <ion-icon name="arrow-back-circle-outline"></ion-icon>Regresar
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" style="color: white" aria-current="page" href="./VisualizarDatosGiraView.php">Información Básica</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" href="./VisualizarParticipantesGiraView.php">Participantes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color: white" aria-current="page" href="./VisualizarDestinoGiraView.php">Destino e Itinerario</a>
-        </li>
-    </ul>
-    <br>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="arrow-back-circle-sharp"></ion-icon>Regresar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./VisualizarDatosGiraView.php" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="information-circle-sharp"></ion-icon>Información Básica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VisualizarParticipantesGiraView.php">
+                        <ion-icon name="people-sharp"></ion-icon>Participantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./VisualizarDestinoGiraView.php">
+                        <ion-icon name="earth-sharp"></ion-icon>Destino e Itinerario</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</br>
+</br>
+<body class="">
+    </br>
+    <div style="background-color: #302E71">
+        <h4 style="color: white">Sistema Gestión de Transportes</h4>
+        <h5 style="color: white">Información General de la Gira</h5>
+        <br>
+    </div>
+    </br></br>
     <div class="container px-4">
         <form>
             <div class="row">

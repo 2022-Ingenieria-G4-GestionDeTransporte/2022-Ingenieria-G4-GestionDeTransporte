@@ -51,7 +51,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./GestionVehiculosView.php" _msthash="1070771" _msttexthash="282880">
-              <ion-icon name="car-outline"></ion-icon> Vehiculos
+              <ion-icon name="car-outline"></ion-icon> Vehículos
             </a>
           </li>
           <li class="nav-item dropdown">
