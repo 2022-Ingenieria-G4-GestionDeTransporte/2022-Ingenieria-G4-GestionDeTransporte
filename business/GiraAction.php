@@ -8,7 +8,7 @@ if ($_POST['show']) {
 }if ($_POST['back']) {
     header("location: ../view/GestionGirasView.php");
 }if ($_POST['ver']) {
-    header("location: ../view/ItenerarioChofer.php");
+    header("location: ../view/ItenerarioChoferView.php");
 }if ($_POST['reporte']) {
     header("location: ../view/ReportesVehiculo.php");
 }if ($_POST['volver']) {

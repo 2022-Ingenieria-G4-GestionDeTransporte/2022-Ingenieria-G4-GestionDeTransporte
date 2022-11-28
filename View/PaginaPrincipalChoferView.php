@@ -46,8 +46,8 @@
                     <th>Fecha de Gira</th>
                     <th>Carrera</th>
                     <th>Tipo de Gira</th>
-                    <th>Visualizar</th>
-                    <th>Reporte Vehiculo</th>
+                    <th>Itenerario</th>
+                    <th>Reportes</th>
                 </tr>
                 </thead>
                 <tbody id="buscar">
