@@ -151,7 +151,7 @@
     </ul>
   </nav>
 
-  <form action="../.php">
+  <form action="../View/SolicitudDeGiraView.php">
     <form action="">
       <input type="submit" class="btn btn-dark btn-block" value="Ingresar una nueva gira" />
       <div id="contenedor"></div>
