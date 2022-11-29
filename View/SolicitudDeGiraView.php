@@ -43,13 +43,14 @@
                         <a class="nav-link" href="./SolicitudGiraDestinoView.php">
                         <ion-icon name="people-sharp"></ion-icon> Destino de la Gira</a>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="./AgregarParticipantesGiraView.php">
-                        <ion-icon name="people-sharp"></ion-icon> Participantes</a>
+                        <a class="nav-link" aria-current="page" href="./SolicitudGiraItinerarioView.php">
+                        <ion-icon name="earth-sharp"></ion-icon> Itinerario de la Gira</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./VisualizarDestinoGiraView.php">
-                        <ion-icon name="earth-sharp"></ion-icon> Destino e Itinerario</a>
+                        <a class="nav-link" href="./SolicitudGiraParticipantesView.php">
+                        <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     
                 </ul>
