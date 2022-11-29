@@ -39,11 +39,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./VisualizarDatosGiraView.php" _msthash="1070225" _msttexthash="177827">
-                        <ion-icon name="information-circle-sharp"></ion-icon> Información Básica</a>
+                        <a class="nav-link" href="./SolicitudDeGiraView.php" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="information-circle-sharp"></ion-icon> Información Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./VisualizarParticipantesGiraView.php">
+                        <a class="nav-link active" href="./AgregarParticipantesGiraView.php">
                         <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     <li class="nav-item">

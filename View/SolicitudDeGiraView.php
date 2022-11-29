@@ -31,7 +31,7 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                        <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
+                        <a class="nav-link" href="./PaginaPrincipalSolicitanteView.php" _msthash="1070225" _msttexthash="177827">
                         <ion-icon name="arrow-back-circle-sharp"></ion-icon> Regresar
                         </a>
                     </li>
@@ -64,10 +64,10 @@
     </div>
     </br></br>
     <div class="container px-4">
-        <form>
+        <form action="../View/AgregarParticipantesGiraView.php">
             <div class="row">
                 <div class="form-group col">
-                    <label><b>Fecha de gira:</b></label>
+                     <label><b>Fecha de Solicitud:</b></label>
                     <input type="date" class="form-control" placeholder="Ingrese la fecha de la gira..." name="fecha" required=""> <br>
 
                     <label><b>Encargado de la gira:</b></label>
@@ -76,9 +76,53 @@
                     <label><b>Acompañante de la gira:</b></label>
                     <input type="text" class="form-control" placeholder="Ingrese el acompañante de la gira..." name="acompanante" required=""> <br>
 
-                    <label><b>NRC y nombre del curso:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el NRC y nombre del curso..." name="NCR" required=""> <br>
+                    <label><b>Carrera o proyecto:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese la Carrera o proyecto..." name="carrera" required=""> <br>
 
+                   
+                    <label><b>Codigo y NRC del curso o proyecto:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el NRC y codigo..." name="NCR" required=""> <br>
+
+                    <label><b>Tipo de Vehiculo Requerido:</b></label>
+                    <select class="form-select" aria-label="Default select example">
+    <option selected>Seleccione...</option>
+    <option value="1">Pickup</option>
+    <option value="2">Buseta</option>
+    <option value="3">Prado</option>
+                </select><br>
+
+
+                <label><b>Nombre del chofer:</b></label>
+                <select class="form-select" aria-label="Default select example">
+    <option selected>Seleccione...</option>
+    <option value="1">Juan</option>
+                  </select><br>
+                                 
+                </div>
+                <div class="form-group col">
+
+                    <label><b>Área a la que pertenece la gira:</b></label>
+                    <select class="form-select" aria-label="Default select example">
+    <option selected>Seleccione...</option>
+    <option value="1">Administrativa</option>
+    <option value="2">Académica</option>
+    <option value="3">Para-académica</option>
+    <option value="4">Proyecto</option>
+    <option value="4">Otra</option>
+                </select><br>
+
+                    <label><b>Numero de cedula de encargado de la gira:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..." name="cedula" required=""> <br>
+
+                    <label><b>Numero de cedula de la persona acompañante:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..." name="cedula" required=""> <br>
+
+                    <label><b>Nombre del curso:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el nombre del curso..." name="carrera" required=""> <br>
+
+                    <label><b>Fecha de la gira:</b></label>
+                    <input type="date" class="form-control" placeholder="Ingrese la fecha de la gira..." name="fecha" required=""> <br>
+                    
                     <label><b>Requiere chofer:</b></label>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -91,31 +135,23 @@
                         <label class="form-check-label" for="flexCheckChecked">
                             No
                         </label>
-                    </div>
-                </div>
-                <div class="form-group col">
-                    <label><b>Área a la que pertenece la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el area de la gira..." name="area" required=""> <br>
-
-                    <label><b>Numero de cedula de encargado de la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..." name="cedula" required=""> <br>
-
-                    <label><b>Carrera o proyecto:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la Carrera o proyecto..." name="carrera" required=""> <br>
-
-                    <label><b>Tipo de Vehiculo:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el tipo de Vehiculo..." name="tipo" required=""> <br>
-
-                    <label><b>Nombre del chofer:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el nombre del chofer..." name="chofer" required=""> <br>
-
-                </div>
-
+                    </div> 
+                    <br>
+                  
+                    <div align="right"> 
+            <input style = "width: 200px" type="submit" class="btn btn-dark btn-block" value="Guardar y Continuar" />
             </div>
+                  
+                                      
+                </div>
+              
+            </div>
+           
+      
+           
+
         </form>
         <br>
-
-        <input type="submit" class="btn btn-dark btn-block" value="Actualizar y Guardar" />
     </div>
     <br>
 

@@ -1,7 +1,7 @@
 <?php
 
 if ($_POST['nuevaSolicitudGira']) {
-        header("location: ../View/SolicitudGiraDatosView.php");
+        header("location: ../View/SolicitudDeGiraView.php");
 }
 if ($_POST['back']) {
     header("location: ../index.php");

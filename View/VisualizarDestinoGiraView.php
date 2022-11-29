@@ -34,20 +34,20 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                         <a class="nav-link" href="./GestionGirasView.php" _msthash="1070225" _msttexthash="177827">
-                        <ion-icon name="arrow-back-circle-sharp"></ion-icon>Regresar
+                        <ion-icon name="arrow-back-circle-sharp"></ion-icon> Regresar
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./VisualizarDatosGiraView.php" _msthash="1070225" _msttexthash="177827">
-                        <ion-icon name="information-circle-sharp"></ion-icon>Información Básica</a>
+                        <ion-icon name="information-circle-sharp"></ion-icon> Información Básica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./VisualizarParticipantesGiraView.php">
-                        <ion-icon name="people-sharp"></ion-icon>Participantes</a>
+                        <a class="nav-link" href="./AgregarParticipantesGiraView.php">
+                        <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./VisualizarDestinoGiraView.php">
-                        <ion-icon name="earth-sharp"></ion-icon>Destino e Itinerario</a>
+                        <ion-icon name="earth-sharp"></ion-icon> Destino e Itinerario</a>
                     </li>
                     
                 </ul>
