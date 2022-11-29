@@ -34,7 +34,7 @@
 <body class="body">
   <div class="container">
     <form action="./RegistroItinerarioChofer.php">
-      <input type="submit" class="btn btn-success" value="Agregar Registro" name="insert">
+      <input type="submit" class="btn btn-outline-success" value="Agregar Registro" name="insert">
     </form>
   </div>
   <br>
