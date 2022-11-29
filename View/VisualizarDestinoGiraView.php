@@ -56,7 +56,6 @@
     </nav>
 </body>
 </br>
-</br>
 <body class="">
     </br>
     <div style="background-color: #302E71">
@@ -64,7 +63,7 @@
         <h5 style="color: white">Destino e Itinerario de Gira</h5>
         <br>
     </div>
-    </br></br>
+    </br>
     <div class="container">
         <br>
         <center><div class="table-responsive card-body card mask-custom col-12 row justify-content-center container">
