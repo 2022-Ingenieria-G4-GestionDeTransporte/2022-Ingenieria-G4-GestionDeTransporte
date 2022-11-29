@@ -12,7 +12,7 @@
 
 
 <body class="body">
-    <section class="vh-100" style="background-color: #AA041B;">
+    <section class="vh-100" style="background-color: #302E71;">
         <div class="container py-4 h-50">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-9">

@@ -40,17 +40,17 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./ActualizarAdministradorView.php" _msthash="1070225" _msttexthash="177827">
-            <ion-icon name="person-outline"></ion-icon>Información Personal
+            <ion-icon name="person-outline"></ion-icon> Información Personal
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./GestionGirasView.php" _msthash="1070407" _msttexthash="257478">
-            <ion-icon name="list-circle-outline"></ion-icon>Visualizar Listas
+            <ion-icon name="list-circle-outline"></ion-icon> Visualizar Listas
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./VisualizarReportesView.php" _msthash="1070589" _msttexthash="76245">
-            <ion-icon name="eye-outline"></ion-icon>Ver Reportes
+            <ion-icon name="eye-outline"></ion-icon> Ver Reportes
             </a>
           </li>
           <li class="nav-item">
