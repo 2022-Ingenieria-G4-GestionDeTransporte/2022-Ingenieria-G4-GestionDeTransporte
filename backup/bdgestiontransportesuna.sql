@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2022 at 09:35 AM
+-- Generation Time: Nov 29, 2022 at 08:02 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -105,18 +105,19 @@ CREATE TABLE `tbgira` (
   `tbgirarequierechofer` tinyint(2) NOT NULL,
   `tbgiraobjetivo` text NOT NULL,
   `tbgiraidchofer` int(11) NOT NULL,
-  `tbgiraestado` text NOT NULL
+  `tbgiraestado` text NOT NULL,
+  `tbgiracolor` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbgira`
 --
 
-INSERT INTO `tbgira` (`tbgiraid`, `tbgiranombreencargado`, `tbgiraapellidoencargado`, `tbgiracedulaencargado`, `tbgirafechasolicitud`, `tbgiranombreacompanante`, `tbgiraapellidoacompanante`, `tbgiracedulaacompanante`, `tbgirafechagira`, `tbgirafechafin`, `tbgiracarrera`, `tbgiratipogira`, `tbgirarequierechofer`, `tbgiraobjetivo`, `tbgiraidchofer`, `tbgiraestado`) VALUES
-(1, 'Carolina', 'Aguilar Solano', '407650677', '2022-10-09', 'Carlos', 'Hernandez Mora', '704560890', '2022-11-10', '2022-11-13', 'Turismo', 'Formativa', 1, 'Aprendizaje sobre el entorno', 1, 'Aprobada'),
-(2, 'Omar', 'Fernandez Aguirre', '507890654', '2022-10-19', 'Julian', 'Herrera Jimenez', '403450678', '2022-11-04', '2022-11-06', 'Ingles', 'Educativa', 0, 'Explorar ingles de la zona', 2, 'Sin Revisar'),
-(3, 'Maria', 'Gomez Pereira', '206780765', '2022-10-25', 'Roxana', 'Solis Carballo', '405670543', '2022-11-20', '2022-11-22', 'Ingles', 'Educativa', 1, 'Reforzar Idioma', 2, 'Denegada'),
-(4, 'Miranda', 'Murillo Salazar', '107650456', '2022-11-01', 'Mario', 'Vega Rodriguez', '204560656', '2022-11-15', '2022-11-17', 'Ingenieria en Sistemas', 'Formativa', 1, 'Aprendizaje', 1, 'Aprobada');
+INSERT INTO `tbgira` (`tbgiraid`, `tbgiranombreencargado`, `tbgiraapellidoencargado`, `tbgiracedulaencargado`, `tbgirafechasolicitud`, `tbgiranombreacompanante`, `tbgiraapellidoacompanante`, `tbgiracedulaacompanante`, `tbgirafechagira`, `tbgirafechafin`, `tbgiracarrera`, `tbgiratipogira`, `tbgirarequierechofer`, `tbgiraobjetivo`, `tbgiraidchofer`, `tbgiraestado`, `tbgiracolor`) VALUES
+(1, 'Carolina', 'Aguilar Solano', '407650677', '2022-10-09', 'Carlos', 'Hernandez Mora', '704560890', '2022-11-10', '2022-11-13', 'Turismo', 'Formativa', 1, 'Aprendizaje sobre el entorno', 1, 'Aprobada', '#302E71'),
+(2, 'Omar', 'Fernandez Aguirre', '507890654', '2022-10-19', 'Julian', 'Herrera Jimenez', '403450678', '2022-11-04', '2022-11-06', 'Ingles', 'Educativa', 0, 'Explorar ingles de la zona', 2, 'Sin Revisar', '#302E71'),
+(3, 'Maria', 'Gomez Pereira', '206780765', '2022-10-25', 'Roxana', 'Solis Carballo', '405670543', '2022-11-20', '2022-11-22', 'Ingles', 'Educativa', 1, 'Reforzar Idioma', 2, 'Denegada', '#302E71'),
+(4, 'Miranda', 'Murillo Salazar', '107650456', '2022-11-01', 'Mario', 'Vega Rodriguez', '204560656', '2022-11-15', '2022-11-17', 'Ingenieria en Sistemas', 'Formativa', 1, 'Aprendizaje', 1, 'Aprobada', '#302E71');
 
 -- --------------------------------------------------------
 
