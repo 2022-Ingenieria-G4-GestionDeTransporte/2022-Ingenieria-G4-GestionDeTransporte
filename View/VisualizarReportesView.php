@@ -16,16 +16,6 @@
         //#302E71 #C30721
         ?>
 </head>
-<style>
-  thead th {
-  color: #fff;
-}
-   button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-   }
-</style>
 <center>
     <div style="background-color: #302E71">
         <br>
@@ -36,83 +26,40 @@
     </div>
 </center>
     <br>
-<body>
-    <div class="container">
-    <select name="dato" id="dato">
-        <option value="funcionario">Funcionarios</option>
-        <option value="chofer">Chofer</option>
-        <option value="vehiculo">Vehiculos</option>
-    </select>
+    <body class="body">
+    <section class="vh-100" style="background-color: #302E71;">
+      <div class="container py-5 h-50">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="../Images/Login.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+                    <div class="container" style="right: inherit;">
+                    <form action="">
+                    <h1>Seleccione el reporte que desea cargar:</h1>
+                      <select name="dato" id="dato" required>
+                        <option value="funcionario">Funcionarios</option>
+                        <option value="chofer">Chofer</option>
+                        <option value="vehiculo">Vehiculos</option>
+                        <option value="vehiculo">Giras</option>
+                      </select>
+                        <input type="submit" class="btn btn-dark" value="Generar pdf"/>
+                        </form>
+                        <form form action="./PaginaPrincipalAdministradorView.php">
+                        <input type="submit" class="btn btn-secondary" value="Regresar" />
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<br>
-        <div class="container-lg">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" _mstplaceholder="76154" _mstaria-label="76154">
-                <button class="btn btn-outline-success" type="submit" _msthash="1202799" _msttexthash="76154">Buscar</button>
-            </form>
-        </div>
-        <br>
-        <div class="container">
-            <table border="2"  class="table table-striped">
-                <thead style="background-color: #302E71;">
-                <tr>
-                    <th>Nombre de Encargado</th>
-                    <th>Fecha Solicitud</th>
-                    <th>Fecha de Gira</th>
-                    <th>Carrera</th>
-                    <th>Tipo de Gira</th>
-                    <th>Itinerario</th>
-                    <th>Reportes</th>
-                </tr>
-                </thead>
-                <tbody id="buscar">
-                <?php
-                    $GiraBusiness = new GiraBusiness();
-                    $allGiras = $GiraBusiness->getAllGira();
-                    foreach ($allGiras as $current) {
-                        echo '<form method="post" enctype="multipart/form-data" action="../business/GiraAction.php">';
-                        echo '<tr>';
-                        echo '<input type="hidden" name="tbgiraid" value="' . $current->getGiraId() . '">';
-                        echo '<td><input type="text" readonly name="tbgiranombreencargado" id="tbgiranombreencargado" value="' . $current->getGiraNombreEncargado() . '"/></td>';
-                        echo '<td><input type="date" readonly name="tbgirafechasolicitud" id="tbgirafechasolicitud" value="' . $current->getGiraFechaSolicitud() . '"/></td>';
-                        echo '<td><input type="date" readonly name="tbgirafechagira" id="tbgirafechagira" value="' . $current->getGiraFechaGira() . '"/></td>';
-                        echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
-                        echo '<td><input type="text" readonly name="tbgiratipogira" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
-                        echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="ver" id="ver"/></td>';
-                        echo '<td><input type="submit" class="material-symbols-outlined" value="add" name="reporte" id="ver"/></td>';
-                        echo '</tr>';
-                        echo '</form>';
-                    }
-                ?>
-                </tbody>
-            </table>
-            <br>
-            <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link">Anterior</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-
-        <div class="container" style="right: inherit;">
-            <form action="">
-            <input type="submit" class="btn btn-dark" value="Generar pdf"/>
-            </form>
-        </div>
-        <br>
-        <div class="container">
-        <form form action="./PaginaPrincipalAdministradorView.php">
-            <input type="submit" class="btn btn-secondary" value="Regresar" />
-        </form>  
-        </div>
 </body>
 </html>
   <?
