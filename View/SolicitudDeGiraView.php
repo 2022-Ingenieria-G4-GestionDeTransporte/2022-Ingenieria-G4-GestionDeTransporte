@@ -40,6 +40,10 @@
                         <ion-icon name="information-circle-sharp"></ion-icon> Información Principal</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./SolicitudGiraDestinoView.php">
+                        <ion-icon name="people-sharp"></ion-icon> Destino de la Gira</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./AgregarParticipantesGiraView.php">
                         <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
