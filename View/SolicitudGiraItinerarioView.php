@@ -22,7 +22,7 @@
 
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
-        <div class="container-fluid">
+    <div class="container-fluid">
             <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
                 <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
             </a>
@@ -43,15 +43,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./SolicitudGiraDestinoView.php">
-                        <ion-icon name="earth-sharp"></ion-icon> Destinos de la Gira</a>
+                        <ion-icon name="bus"></ion-icon> Destino de la Gira</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./SolicitudGiraItinerarioView.php">
+                        <ion-icon name="bookmarks"></ion-icon> Itinerario de la Gira</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./SolicitudGiraItinerarioView.php">
-                        <ion-icon name="information-circle-sharp"></ion-icon> Itinerario de la Gira</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./SolicitudGiraParticipantesView.php">
-                        <ion-icon name="people-sharp"></ion-icon> Participantes de la Gira</a>
+                        <a class="nav-link" href="./SolicitudGiraParticipantesView.php">
+                        <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     
                 </ul>

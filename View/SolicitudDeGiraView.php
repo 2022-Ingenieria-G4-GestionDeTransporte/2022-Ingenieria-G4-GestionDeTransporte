@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
 </head>
 <style>
     thead th {
@@ -41,12 +43,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./SolicitudGiraDestinoView.php">
-                        <ion-icon name="people-sharp"></ion-icon> Destino de la Gira</a>
+                        <ion-icon name="bus"></ion-icon> Destino de la Gira</a>
                     </li>
                     
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./SolicitudGiraItinerarioView.php">
-                        <ion-icon name="earth-sharp"></ion-icon> Itinerario de la Gira</a>
+                        <ion-icon name="bookmarks"></ion-icon> Itinerario de la Gira</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./SolicitudGiraParticipantesView.php">
