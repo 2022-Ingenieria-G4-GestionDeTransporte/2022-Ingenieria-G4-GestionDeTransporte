@@ -23,7 +23,7 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
     <div class="container-fluid">
-            <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+            <a class="navbar-brand" href="./PaginaPrincipalSolicitanteView.php">
                 <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
             </a>
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
@@ -61,9 +61,8 @@
     </nav>
 </body>
 </br>
-</br>
 <body class="">
-    </br>
+</br>
     <div style="background-color: #302E71">
         <h4 style="color: white">Sistema Gestión de Transportes</h4>
         <h5 style="color: white">Destinos de la Gira</h5>
