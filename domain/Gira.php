@@ -4,38 +4,42 @@ class Gira{
     
     private $giraId;
     private $giraNombreEncargado; 
-    private $giraApellidoEncargado;
     private $giraCedulaEncargado;
     private $giraFechaSolicitud;
     private $giraNombreAcompanante;
-    private $giraApellidoACompanante;
     private $giraCedulaAcompanante;
     private $giraFechaGira;
 	private $giraFechaGiraFin;
     private $giraCarrera;
+	private $giraCurso;
+	private $giraCursoNRC;
     private $giraTipoGira;
     private $giraRequireChofer;
     private $giraObjetivo;
     private $giraIdChofer;
 	private $giraEstado;
+	private $giraColor;
+	private $giraArea;
 
-    function Gira($giraId, $giraNombreEncargado, $giraApellidoEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraApellidoACompanante, $giraCedulaAcompanante, $giraFechaGira, $giraFechaGiraFin, $giraCarrera, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer, $giraEstado){
+    function Gira($giraId, $giraNombreEncargado, $giraCedulaEncargado, $giraFechaSolicitud, $giraNombreAcompanante, $giraCedulaAcompanante, $giraFechaGira, $giraFechaGiraFin, $giraCarrera, $giraCurso, $giraCursoNRC, $giraTipoGira, $giraRequireChofer, $giraObjetivo, $giraIdChofer, $giraEstado, $giraColor, $giraArea){
         $this->giraId = $giraId;
         $this->giraNombreEncargado = $giraNombreEncargado;
-        $this->giraApellidoEncargado = $giraApellidoEncargado;
         $this->giraCedulaEncargado = $giraCedulaEncargado;
         $this->giraFechaSolicitud = $giraFechaSolicitud;
         $this->giraNombreAcompanante = $giraNombreAcompanante;
-        $this->giraApellidoACompanante = $giraApellidoACompanante;
         $this->giraCedulaAcompanante = $giraCedulaAcompanante;
         $this->giraFechaGira = $giraFechaGira;
         $this->giraFechaGiraFin = $giraFechaGiraFin;
         $this->giraCarrera = $giraCarrera;
+		$this->giraCurso = $giraCurso;
+		$this->giraCursoNRC = $giraCursoNRC;
         $this->giraTipoGira = $giraTipoGira;
         $this->giraRequireChofer = $giraRequireChofer;
         $this->giraObjetivo = $giraObjetivo;
         $this->giraIdChofer = $giraIdChofer;
 		$this->giraEstado = $giraEstado;
+		$this->giraColor = $giraColor;
+		$this->giraArea = $giraArea;
     }
 	
 	function getGiraId() {
@@ -52,15 +56,6 @@ class Gira{
 	
 	function setGiraNombreEncargado($giraNombreEncargado) {
 		$this->giraNombreEncargado = $giraNombreEncargado;
-
-	}
-
-	function getGiraApellidoEncargado() {
-		return $this->giraApellidoEncargado;
-	}
-	
-	function setGiraApellidoEncargado($giraApellidoEncargado) {
-		$this->giraApellidoEncargado = $giraApellidoEncargado;
 
 	}
 
@@ -89,15 +84,6 @@ class Gira{
 	function setGiraNombreAcompanante($giraNombreAcompanante) {
 		$this->giraNombreAcompanante = $giraNombreAcompanante;
 	
-	}
-
-	function getGiraApellidoACompanante() {
-		return $this->giraApellidoACompanante;
-	}
-
-	function setGiraApellidoACompanante($giraApellidoACompanante) {
-		$this->giraApellidoACompanante = $giraApellidoACompanante;
-
 	}
 	
 	function getGiraCedulaAcompanante() {
@@ -133,6 +119,24 @@ class Gira{
 	
 	function setGiraCarrera($giraCarrera) {
 		$this->giraCarrera = $giraCarrera;
+	
+	}
+
+	function getGiraCurso() {
+		return $this->giraCurso;
+	}
+	
+	function setGiraCurso($giraCurso) {
+		$this->giraCurso = $giraCurso;
+	
+	}
+
+	function getGiraCursoNRC() {
+		return $this->giraCursoNRC;
+	}
+	
+	function setGiraCursoNRC($giraCursoNRC) {
+		$this->giraCursoNRC = $giraCursoNRC;
 	
 	}
 	
@@ -177,5 +181,21 @@ class Gira{
 	
 	function setGiraEstado($giraEstado) {
 		$this->giraEstado = $giraEstado;
+	}
+
+	function getGiraColor() {
+		return $this->giraColor;
+	}
+	
+	function setGiraColor($giraColor) {
+		$this->giraColor = $giraColor;
+	}
+
+	function getGiraArea() {
+		return $this->giraArea;
+	}
+	
+	function setGiraArea($giraArea) {
+		$this->giraArea = $giraArea;
 	}
 }

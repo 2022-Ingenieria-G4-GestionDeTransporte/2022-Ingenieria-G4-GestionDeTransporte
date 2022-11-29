@@ -88,7 +88,7 @@
     </div>
   <?php
 include('../Data/config.php');
-  $SqlEventos   = ("SELECT * FROM tbgira");
+  $SqlEventos   = ("SELECT * FROM tbgira WHERE tbgiraestado = 'Aprobada'");
   $resulEventos = mysqli_query($con, $SqlEventos);
 ?>
 <div class="mt-5"></div>

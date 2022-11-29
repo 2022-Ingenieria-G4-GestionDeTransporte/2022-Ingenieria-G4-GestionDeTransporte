@@ -13,6 +13,10 @@ class GiraBusiness {
     public function getAllGira() {
         return $this->GirasData->getAllGira();
     }
+    
+    public function getGira($idGira) {
+        return $this->GirasData->getGira($idGira);
+    }
 
     public function getAllGiraAprobadas() {
         return $this->GirasData->getAllGiraAprobadas();

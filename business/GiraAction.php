@@ -2,7 +2,8 @@
 
 
 if ($_POST['show']) {
-        header("location: ../view/VisualizarDatosGiraView.php");
+       $id = $_POST['tbgiraid'];
+        header("location: ../view/VisualizarDatosGiraView.php?id=$id");
 }if ($_POST['search']) {
     header("location: ../view/AnalizarGiraView.php");
 }if ($_POST['back']) {

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <?php
+    include('../Business/GiraBusiness.php');
+    ?>
 </head>
 <style>
     thead th {
@@ -40,7 +43,7 @@
                         <ion-icon name="information-circle-sharp"></ion-icon> Información Básica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./VisualizarParticipantesGiraView.php">
+                        <a class="nav-link" href="./VisualizarParticipantesGiraView.php?id=<?php $id //agregar bien direccionamiento de los nav?>"
                         <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     <li class="nav-item">
@@ -64,44 +67,79 @@
     </div>
     </br></br>
     <div class="container px-4">
-        <form>
+
+    <?php
+    $id = "";
+    $color = "";
+    $nombre = "aaa";
+    if(isset($_GET['color'])){
+    $color = $_GET['color'];
+    }
+    if(isset($_GET['id'])){
+    $id = $_GET['id'];
+    }
+    $GiraBusiness = new GiraBusiness();
+    $Gira = $GiraBusiness->getGira($id);
+    ?>
+    <?php
+        echo'<form>
             <div class="row">
                 <div class="form-group col">
-                    <label><b>Fecha de gira:</b></label>
-                    <input type="date" class="form-control" placeholder="Ingrese la fecha de la gira..." name="fecha" required=""> <br>
+                    <label><b>Fecha de solicitud:</b></label>
+                    <input type="date" class="form-control" placeholder="Ingrese la fecha de solicitud de la gira..." name="fechaSolicitud" value = "'. $Gira->getGiraFechaGira() .'" required=""> <br>
 
                     <label><b>Encargado de la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el Encargado de la gira..." name="encargado" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese el Encargado de la gira..." value = "'. $Gira->getGiraNombreEncargado() .'" name="encargado" required=""> <br>
+                  
+                    <label><b>Numero de cedula de encargado de la gira:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..."  value = "'. $Gira->getGiraCedulaEncargado() .'" name="cedula" required=""> <br>
 
-                    <label><b>Acompañante de la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el acompañante de la gira..." name="acompanante" required=""> <br>
+                    <label><b>Nombre del curso:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el nombre del curso..." value = "'. $Gira->getGiraCurso() .'" name="NCR" required=""> <br>
 
-                    <label><b>NRC y nombre del curso:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el NRC y nombre del curso..." name="NCR" required=""> <br>
+                    <label><b>NRC del curso:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el NRC del curso..." value = "'. $Gira->getGiraCursoNRC() .'" name="NCR" required=""> <br>
+
+                    <label><b>Área a la que pertenece la gira:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el area de la gira..." value = "'. $Gira->getGiraArea() .'" name="area" required=""> <br>
 
                     <label><b>Requiere chofer:</b></label>
                     <div class="form-check">
+                        ';if($Gira->getGiraRequireChofer()==1){echo'
+                        <input class="form-check-input" type="checkbox" checked value="" id="flexCheckDefault">
+                        ';}else{echo'
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        ';}echo'
                         <label class="form-check-label" for="flexCheckDefault">
                             Sí
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        ';if($Gira->getGiraRequireChofer()==0){echo'
+                        <input class="form-check-input" type="checkbox" checked value="" id="flexCheckChecked">
+                        ';}else{echo'
+                        <input class="form-check-input" type="checkbox"  value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        ';}echo'
                             No
                         </label>
                     </div>
                 </div>
                 <div class="form-group col">
-                    <label><b>Área a la que pertenece la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el area de la gira..." name="area" required=""> <br>
+                    <label><b>Fecha inicial de la gira:</b></label>
+                    <input type="date" class="form-control" placeholder="Ingrese la fecha inicial de la gira..." value = "'. $Gira->getGiraFechaGira() .'" name="fechaInicial" required=""> <br>
 
-                    <label><b>Numero de cedula de encargado de la gira:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..." name="cedula" required=""> <br>
+                    <label><b>Fecha final de la gira:</b></label>
+                    <input type="date" class="form-control" placeholder="Ingrese la fecha final de la gira..." value = "'. $Gira->getGiraFechaFin() .'" name="fechaFinal" required=""> <br>
+
+                    <label><b>Acompañante de la gira:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el acompañante de la gira..." value = "'. $Gira->getGiraNombreAcompanante() .'" name="acompanante" required=""> <br>
+
+                    <label><b>Numero de cedula del acompañante de la gira:</b></label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de cedula..." value = "'. $Gira->getGiraCedulaAcompanante() .'" name="cedula" required=""> <br>
 
                     <label><b>Carrera o proyecto:</b></label>
-                    <input type="text" class="form-control" placeholder="Ingrese la Carrera o proyecto..." name="carrera" required=""> <br>
+                    <input type="text" class="form-control" placeholder="Ingrese la Carrera o proyecto..." value = "'. $Gira->getGiraCarrera() .'" name="carrera" required=""> <br>
 
                     <label><b>Tipo de Vehiculo:</b></label>
                     <input type="text" class="form-control" placeholder="Ingrese el tipo de Vehiculo..." name="tipo" required=""> <br>
@@ -112,7 +150,8 @@
                 </div>
 
             </div>
-        </form>
+        </form>'
+        ?>
         <br>
 
         <input type="submit" class="btn btn-dark btn-block" value="Actualizar y Guardar" />
