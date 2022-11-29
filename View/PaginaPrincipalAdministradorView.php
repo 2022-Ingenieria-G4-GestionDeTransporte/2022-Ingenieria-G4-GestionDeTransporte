@@ -83,12 +83,18 @@
       center:'title',
       right:'dayGridMonth,timeGridWeek,timeGridDay'
       },
+      defaultView: "month",
+      navLinks: true, 
       selectable: true,
       editable: true,
+      eventLimit: true,
+      selectHelper: false,
+ 
       events: [
         <?php
       $GiraBusiness = new GiraBusiness();
-      $giras = $GiraBusiness->getAllGira();
+      $giras = $GiraBusiness->getAllGiraAprobadas();
+      
       foreach ($giras as $current) { ?>
       {
         _id: '<?php echo $current->getGiraId(); ?>',

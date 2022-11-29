@@ -14,4 +14,8 @@ class GiraBusiness {
         return $this->GirasData->getAllGira();
     }
 
+    public function getAllGiraAprobadas() {
+        return $this->GirasData->getAllGiraAprobadas();
+    }
+
 }
