@@ -16,6 +16,16 @@
         //#302E71 #C30721
         ?>
 </head>
+<style>
+  thead th {
+  color: #fff;
+}
+   button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   }
+</style>
 <center>
     <div style="background-color: #302E71">
         <br>
@@ -91,8 +101,13 @@
             </ul>
         </nav>
         </div>
-        <br>
 
+        <div class="container" style="right: inherit;">
+            <form action="">
+            <input type="submit" class="btn btn-dark" value="Generar pdf"/>
+            </form>
+        </div>
+        <br>
         <div class="container">
         <form form action="./PaginaPrincipalAdministradorView.php">
             <input type="submit" class="btn btn-secondary" value="Regresar" />
