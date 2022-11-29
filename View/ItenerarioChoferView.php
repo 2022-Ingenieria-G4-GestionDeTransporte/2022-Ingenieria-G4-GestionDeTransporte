@@ -20,7 +20,6 @@
   thead th {
   color: #fff;
 }
-
 </style>
 <center>
     <div style="background-color: #302E71">
