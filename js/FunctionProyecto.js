@@ -6,25 +6,25 @@ function CerrarSesion() {
 
 function EliminarVehiculo() {
     if (confirm("Seguro que desea eliminar el vehiculo seleccionado?")) {
-        document.location = '../GestionVehiculosView.php';
+        document.location = '../View/GestionVehiculosView.php';
     } else { }
 }
 
 function EliminarSolicitante() {
     if (confirm("Seguro que desea eliminar al solicitante seleccionado?")) {
-        document.location = '../GestionSolicitantesView.php';
+        document.location = '../View/GestionSolicitantesView.php';
     } else { }
 }
 
 function EliminarChofer() {
     if (confirm("Seguro que desea eliminar al chofer seleccionado?")) {
-        document.location = '../GestionChoferesView.php';
+        document.location = '../View/GestionChoferesView.php';
     } else { }
 }
 
 function EliminarGira() {
     if (confirm("Seguro que desea eliminar la gira seleccionada?")) {
-        document.location = './GestionGirasView.php';
+        document.location = '../View/GestionGirasView.php';
     } else { }
 }
 
