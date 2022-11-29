@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./SolicitudDeGiraView.php" _msthash="1070225" _msttexthash="177827">
+                        <a class="nav-link" href="./SolicitudDeGiraView.php" _msthash="1070225" _msttexthash="177827">
                         <ion-icon name="information-circle-sharp"></ion-icon> Información Principal</a>
                     </li>
                     <li class="nav-item">
@@ -52,7 +52,7 @@
                         <ion-icon name="bookmarks"></ion-icon> Itinerario de la Gira</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./SolicitudGiraParticipantesView.php">
+                        <a class="nav-link active" href="./SolicitudGiraParticipantesView.php">
                         <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/Function.js"></script>
+    <script src="../js/FunctionProyecto.js"></script>
     <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
 
 </head>
@@ -92,7 +92,7 @@
                 echo '<td><input type="text" readonly name="vehiculo_tipo" id="vehiculo_tipo" value="' . $current->getVehiculoTipo() . '"/></td>';
                 echo '<td><input type="text" readonly name="vehiculo_modelo" id="vehiculo_modelo" value="' . $current->getVehiculoModelo() . '"/></td>';
                 echo '<td><input type="text" readonly name="vehiculo_estado" id="vehiculo_estado" value="' . $current->getVehiculoEstado() . '"/></td>';
-                echo '<td><button class="material-symbols-outlined" onclick="deleteVehiculo('. $current->getVehiculoId() .')">delete</button></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="EliminarVehiculo()">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';

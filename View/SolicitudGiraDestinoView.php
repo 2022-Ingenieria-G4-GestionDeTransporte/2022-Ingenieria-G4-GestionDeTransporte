@@ -38,11 +38,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./SolicitudDeGiraView.php" _msthash="1070225" _msttexthash="177827">
+                        <a class="nav-link" href="./SolicitudDeGiraView.php" _msthash="1070225" _msttexthash="177827">
                         <ion-icon name="information-circle-sharp"></ion-icon> Información Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./SolicitudGiraDestinoView.php">
+                        <a class="nav-link active" href="./SolicitudGiraDestinoView.php">
                         <ion-icon name="bus"></ion-icon> Destino de la Gira</a>
                     </li>
                     

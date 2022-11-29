@@ -42,7 +42,7 @@
                         <ion-icon name="information-circle-sharp"></ion-icon> Información Básica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./AgregarParticipantesGiraView.php">
+                        <a class="nav-link" href="./VisualizarParticipantesGiraView.php">
                         <ion-icon name="people-sharp"></ion-icon> Participantes</a>
                     </li>
                     <li class="nav-item">

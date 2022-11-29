@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/Function.js"></script>
+    <script src="../js/FunctionProyecto.js"></script>
     <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
 
     <?php
@@ -115,7 +115,7 @@
         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
         echo '<td><input type="text" readonly name="tbgiratipogira" size = "10px" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
         echo '<td><center><input type="submit" class="material-symbols-outlined" value="visibility" name="show" id="show"/></center></td>';
-        echo '<td><center><input type="submit" class="material-symbols-outlined" value="delete" name="delete" id="delete"/></center></td>';
+        echo '<td><button class="material-symbols-outlined" onclick="EliminarGira()">delete</button></td>';
         echo '<td><center><input type="submit" class="material-symbols-outlined" value="search" name="search" id="search"/></center></td>';
         if ($current->getGiraEstado() == "Aprobada") {
           $Estado = "Aprobada"; //Representar con colores
@@ -150,13 +150,6 @@
       </li>
     </ul>
   </nav>
-
-  <form action="../View/VisualizarDatosGiraView.php">
-    <form action="">
-      <input type="submit" class="btn btn-dark btn-block" value="Ingresar una nueva gira" />
-      <div id="contenedor"></div>
-    </form>
-  </form>
   </br>
   
   <a href="./PaginaPrincipalAdministradorView.php" style="color: #393f81;">Pagina Principal</a></p>

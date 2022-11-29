@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/FunctionProyecto.js"></script>
 
     <?php
     include '../Business/GiraBusiness.php';
@@ -23,13 +24,30 @@
   color: #fff;
 }
 </style>
-<center>
+<nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./PaginaPrincipalSolicitanteView.php">
+            <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbar" style="font-size: 1rem">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link" href="javascript:CerrarSesion()" _msthash="1070225" _msttexthash="177827">
+                        <ion-icon name="arrow-back-circle-sharp"></ion-icon> Cerrar Sesion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </br></br>
+<center> 
     <div style="background-color: #302E71">
-        <a href="./Login.php" style="float: right">
-            <ion-icon name="log-out-sharp"></ion-icon>Cerrar Sesión
-        </a>
         <br>
-        <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
         <h4 style="color: white">Sistema Gestión de Transportes</h4>
         <h5 style="color: white">Módulo de Solicitantes</h5>
         <br>

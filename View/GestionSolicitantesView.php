@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/Function.js"></script>
+    <script src="../js/FunctionProyecto.js"></script>
     <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
 
 </head>
@@ -98,7 +98,7 @@
                 echo '<td><input type="text" readonly name="solicitante_cedula" id="solicitante_cedula" value="' . $current->getSolicitanteCedula() . '"/></td>';
                 echo '<td><input type="text" readonly name="solicitante_correo" id="solicitante_correo" value="' . $current->getSolicitanteCorreo() . '"/></td>';
                 echo '<td><input type="text" readonly name="solicitante_cargo" id="solicitante_cargo" value="' . $current->getSolicitanteCargo() . '"/></td>';
-                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getSolicitanteId() .')">delete</button></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="EliminarSolicitante()">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/Function.js"></script>
+    <script src="../js/FunctionProyecto.js"></script>
     <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
 
 </head>
@@ -97,7 +97,7 @@
                 }else{
                 echo '<td><input type="checkbox" name="chofer_licencia_vigente" id="chofer_licencia_vigente" value="0"/></td>';
                 }
-                echo '<td><button class="material-symbols-outlined" onclick="deleteSolicitante('. $current->getChoferId() .')">delete</button></td>';
+                echo '<td><button class="material-symbols-outlined" onclick="EliminarChofer()">delete</button></td>';
                 echo '<td><input type="submit" class="material-symbols-outlined" value="visibility" name="view" id="view"/></td>';
                 echo '</tr>';
                 echo '</form>';
