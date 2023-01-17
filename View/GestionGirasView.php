@@ -13,7 +13,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/FunctionProyecto.js"></script>
-    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+    <link rel = "stylesheet" href="../css/stylePro.css" type = "text/css"></link>
 
     <?php
     include '../Business/GiraBusiness.php';
@@ -28,6 +28,9 @@
 <body class="bg-light">
   <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
     <div class="container-fluid">
+    <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
+            </a>
       <a class="navbar-brand" href="#" _msthash="418717" _msttexthash="924456">Listas</a>
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
         <span class="navbar-toggler-icon"></span>
@@ -76,11 +79,10 @@
     </div>
   </nav>
 </body>
-
-<body class="" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 </br>
+<body class="" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+</br></br>
   <div style="background-color: #302E71">
-    <img src="../Images/LOGO-UNA1-Blanco.png" alt="logo" style="float:right" width="129px">
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
     <h5 style="color: white">Lista de Giras</h5>
     <br>
@@ -115,13 +117,13 @@
         echo '<td><input type="text" readonly name="tbgiracarrera" id="tbgiracarrera" value="' . $current->getGiraCarrera() . '"/></td>';
         echo '<td><input type="text" readonly name="tbgiratipogira" size = "10px" id="tbgiratipogira" value="' . $current->getGiraTipoGira() . '"/></td>';
         echo '<td><center><input type="submit" class="material-symbols-outlined" value="visibility" name="show" id="show"/></center></td>';
-        echo '<td><button class="material-symbols-outlined" onclick="EliminarGira()">delete</button></td>';
+        echo '<td><center><button class="material-symbols-outlined" onclick="EliminarGira()">delete</button></center></td>';
         echo '<td><center><input type="submit" class="material-symbols-outlined" value="search" name="search" id="search"/></center></td>';
         if ($current->getGiraEstado() == "Aprobada") {
           $Estado = "Aprobada"; //Representar con colores
           echo '<td><input type="button" class="buttonAprobado" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';
         } else 
-                if ($current->getGiraEstado() == "Denegada") {
+        if ($current->getGiraEstado() == "Denegada") {
           $Estado = "Denegada"; //Representar con colores
           echo '<td><input type="button" class="buttonDenegado" readonly value= "' . $Estado . '" name="estado" id="estado"/></td>';
         } else {

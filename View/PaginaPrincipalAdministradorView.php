@@ -13,7 +13,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/FunctionProyecto.js"></script>
-    <link rel ="stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+    <link rel ="stylesheet" href="../css/stylePro.css" type = "text/css"></link>
     <link rel="stylesheet" type="text/css" href="../css/fullcalendar.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,6 +42,9 @@
 <body class="bg-light">
   <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
     <div class="container-fluid">
+    <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
+            </a>
       <a class="navbar-brand" href="#" _msthash="418717" _msttexthash="924456">Secciones</a>
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
         <span class="navbar-toggler-icon"></span>
@@ -78,7 +81,7 @@
 <body class="" style="background-image: url(../Images/.webp); background-repeat: no-repeat; background-size: cover; background-position: center center;">
   </br>
   <div style="background-color: #302E71">
-  <img src="../Images/LOGO-UNA1-Blanco.png" alt="logo" style="float:right" width="129px">
+</br></br>
     <h3 style="color: white">Sistema Gestión de Transportes</h3>
     <h5 style="color: white">Calendario</h5>
     <br>

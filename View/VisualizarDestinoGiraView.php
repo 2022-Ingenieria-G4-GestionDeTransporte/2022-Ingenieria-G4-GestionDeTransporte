@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel = "stylesheet" href="../css/styleProyect.css" type = "text/css"></link>
+    <link rel = "stylesheet" href="../css/stylePro.css" type = "text/css"></link>
 
 </head>
 <style>
@@ -57,7 +57,7 @@
 </body>
 </br>
 <body class="">
-    </br>
+    </br></br>
     <div style="background-color: #302E71">
         <h4 style="color: white">Sistema Gestión de Transportes</h4>
         <h5 style="color: white">Destino e Itinerario de Gira</h5>

@@ -19,7 +19,9 @@
 <center>
     <div style="background-color: #302E71">
         <br>
-        <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="200px">
+        <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
+                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
+        </a>
         <h4 style="color: white">Sistema Gestión de Transportes</h4>
         <h5 style="color: white">Reportes</h5>
         <br>
