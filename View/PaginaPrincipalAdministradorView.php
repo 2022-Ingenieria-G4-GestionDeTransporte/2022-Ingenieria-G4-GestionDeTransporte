@@ -43,7 +43,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark" style="background-color: #302E71" aria-label="Navegación principal" _mstaria-label="441961">
     <div class="container-fluid">
     <a class="navbar-brand" href="./PaginaPrincipalAdministradorView.php">
-                <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
+    <img src="../Images/LOGO-UNAHorizontal-BLANCO .png" alt="logo" width="189px">
             </a>
       <a class="navbar-brand" href="#" _msthash="418717" _msttexthash="924456">Secciones</a>
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" _msthidden="A" _msthiddenattr="360672" _mstaria-label="320099">
