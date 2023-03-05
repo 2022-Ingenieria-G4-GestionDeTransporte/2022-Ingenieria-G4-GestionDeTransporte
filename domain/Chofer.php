@@ -2,6 +2,7 @@
 
 class Chofer{
 
+ 
     private $choferId;
     private $choferCedula;
     private $choferNombre;

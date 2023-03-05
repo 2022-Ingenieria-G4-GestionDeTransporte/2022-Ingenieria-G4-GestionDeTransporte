@@ -2,6 +2,7 @@
 
 class CursosGira{
 
+	//gsudifhisdfis
     private $cursosGiraId;
     private $giraId;
     private $cursoNRC;
